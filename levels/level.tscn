@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://b8plhjpixjnje"]
+
+[ext_resource type="Texture2D" uid="uid://bsceqdx35mug8" path="res://icon.svg" id="1_hjsbj"]
+[ext_resource type="PackedScene" uid="uid://dvgsbanb3g0ir" path="res://player/player.tscn" id="2_cwqvt"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hjsbj"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_cwqvt"]
+sky_material = SubResource("ProceduralSkyMaterial_hjsbj")
+
+[sub_resource type="Environment" id="Environment_5mrsh"]
+background_mode = 2
+sky = SubResource("Sky_cwqvt")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_umreq"]
+size = Vector3(15, 1, 15)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5mrsh"]
+albedo_texture = ExtResource("1_hjsbj")
+uv1_scale = Vector3(3, 2, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_80vhd"]
+material = SubResource("StandardMaterial3D_5mrsh")
+
+[node name="level" type="Node3D" unique_id=453926201]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=923679023]
+environment = SubResource("Environment_5mrsh")
+
+[node name="flooor" type="StaticBody3D" parent="." unique_id=1312248287]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="flooor" unique_id=1360469047]
+shape = SubResource("BoxShape3D_umreq")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="flooor" unique_id=2109008830]
+transform = Transform3D(15, 0, 0, 0, 1, 0, 0, 0, 15, 0, 0, 0)
+mesh = SubResource("BoxMesh_80vhd")
+
+[node name="player" parent="." unique_id=1711829232 instance=ExtResource("2_cwqvt")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4306605, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=307518786]
+transform = Transform3D(0.7431448, 0.55144805, -0.37899977, 0, 0.56640625, 0.8241262, 0.6691306, -0.6124451, 0.42092186, 0, 7.8, 0)
+shadow_enabled = true

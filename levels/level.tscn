@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bsceqdx35mug8" path="res://icon.svg" id="1_hjsbj"]
 [ext_resource type="PackedScene" uid="uid://dvgsbanb3g0ir" path="res://player/player.tscn" id="2_cwqvt"]
+[ext_resource type="PackedScene" uid="uid://bekjmyl4aash6" path="res://scenery/house.tscn" id="3_cwqvt"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hjsbj"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -46,3 +47,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4306605, 0)
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=307518786]
 transform = Transform3D(0.7431448, 0.55144805, -0.37899977, 0, 0.56640625, 0.8241262, 0.6691306, -0.6124451, 0.42092186, 0, 7.8, 0)
 shadow_enabled = true
+
+[node name="house" parent="." unique_id=1812514796 instance=ExtResource("3_cwqvt")]
+transform = Transform3D(-0.5, 0, 4.371139e-08, 0, 0.5, 0, -4.371139e-08, 0, -0.5, -38.524067, 3.0949583, 0)

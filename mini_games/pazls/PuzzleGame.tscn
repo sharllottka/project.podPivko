@@ -1,0 +1,370 @@
+[gd_scene format=3 uid="uid://dd1oyum2uyw28"]
+
+[ext_resource type="Script" uid="uid://b74tntted5qis" path="res://levels/puzzle_ui.gd" id="1_nxssh"]
+[ext_resource type="Texture2D" uid="uid://cnjqhe60fj3yp" path="res://стол.jpg" id="2_0fpsw"]
+[ext_resource type="PackedScene" uid="uid://cfda0kjmi5l74" path="res://mini_games/pazls/piece.tscn" id="2_vewrl"]
+[ext_resource type="Texture2D" uid="uid://ddsl4uqxrg27h" path="res://image-part-2.png" id="3_0fpsw"]
+[ext_resource type="Texture2D" uid="uid://bdu3rl0ffnvec" path="res://картинка призрака.jpg" id="3_dalkg"]
+[ext_resource type="Texture2D" uid="uid://bkqpouytwgqeb" path="res://image-part-3.png" id="4_dalkg"]
+[ext_resource type="Texture2D" uid="uid://cbpardvyxibne" path="res://image-part-4.png" id="5_bi6ko"]
+[ext_resource type="Texture2D" uid="uid://hjug26hvwjhi" path="res://image-part-5.png" id="6_r7pye"]
+[ext_resource type="Texture2D" uid="uid://cr6arhrxr68dk" path="res://image-part-6.png" id="7_5cc2f"]
+[ext_resource type="Texture2D" uid="uid://qokw8b23afcx" path="res://image-part-7.png" id="8_gnbhc"]
+[ext_resource type="Texture2D" uid="uid://3df81rsax6xq" path="res://image-part-8.png" id="9_80dot"]
+[ext_resource type="Texture2D" uid="uid://dhym12fm6p3vl" path="res://image-part-9.png" id="10_hdh2n"]
+[ext_resource type="Texture2D" uid="uid://cw4xd8ijsbk8j" path="res://image-part-10.png" id="11_0tj50"]
+[ext_resource type="Texture2D" uid="uid://tjgbctef5k7r" path="res://image-part-11.png" id="12_5wgi7"]
+[ext_resource type="Texture2D" uid="uid://c0j4yecgnna4e" path="res://image-part-12.png" id="13_bycdq"]
+[ext_resource type="Texture2D" uid="uid://bjfjwfcrrtg2o" path="res://image-part-13.png" id="14_1bmo6"]
+[ext_resource type="Texture2D" uid="uid://d3dy3fpmplsj0" path="res://image-part-14.png" id="15_utc27"]
+[ext_resource type="Texture2D" uid="uid://nd7qxh6w7dnj" path="res://image-part-15.png" id="16_lyan8"]
+[ext_resource type="Texture2D" uid="uid://bn051hculy1pt" path="res://image-part-16.png" id="17_prsns"]
+[ext_resource type="Texture2D" uid="uid://dvmwjy673k4mx" path="res://image-part-17.png" id="18_cj1fv"]
+[ext_resource type="Texture2D" uid="uid://d3qr8v2gyy162" path="res://image-part-18.png" id="19_8udkv"]
+[ext_resource type="Texture2D" uid="uid://drfae1as5p821" path="res://image-part-19.png" id="20_tvs84"]
+[ext_resource type="Texture2D" uid="uid://21p2u4ycau0r" path="res://image-part-20.png" id="21_ubw56"]
+[ext_resource type="Texture2D" uid="uid://bykveetu3btpp" path="res://image-part-21.png" id="22_go35g"]
+[ext_resource type="Texture2D" uid="uid://csux22ricac1w" path="res://image-part-22.png" id="23_u01f4"]
+[ext_resource type="Texture2D" uid="uid://ckco4wfrghy66" path="res://image-part-23.png" id="24_w8lyf"]
+[ext_resource type="Texture2D" uid="uid://v5nsnt46evyp" path="res://image-part-24.png" id="25_64i5e"]
+[ext_resource type="Texture2D" uid="uid://ckuh756ew1yb6" path="res://image-part-25.png" id="26_gpur5"]
+[ext_resource type="Texture2D" uid="uid://7nw00i1xnlfo" path="res://image-part-26.png" id="27_1t36y"]
+[ext_resource type="Texture2D" uid="uid://m246vq7wp8en" path="res://image-part-27.png" id="28_iknaj"]
+[ext_resource type="Texture2D" uid="uid://beg31gtnmiufw" path="res://image-part-28.png" id="29_se1tk"]
+[ext_resource type="Texture2D" uid="uid://qwhc6qs5141" path="res://image-part-29.png" id="30_kqlrq"]
+[ext_resource type="Texture2D" uid="uid://hfswnmsapmqm" path="res://image-part-30.png" id="31_mka8v"]
+[ext_resource type="Texture2D" uid="uid://bpisixugtaedc" path="res://image-part-31.png" id="32_y6b43"]
+[ext_resource type="Texture2D" uid="uid://cjm1rwkm3x11f" path="res://image-part-32.png" id="33_0uvaf"]
+[ext_resource type="Texture2D" uid="uid://dxc0g45ld1603" path="res://image-part-33.png" id="34_hta7f"]
+[ext_resource type="Texture2D" uid="uid://b4rpgma44j1qk" path="res://image-part-34.png" id="35_5rba5"]
+[ext_resource type="Texture2D" uid="uid://df3hg0wb6hyyd" path="res://image-part-35.png" id="36_hr566"]
+[ext_resource type="Texture2D" uid="uid://ds0q01i1i7u8e" path="res://image-part-36.png" id="37_oxng5"]
+[ext_resource type="Texture2D" uid="uid://bcgjbabxqbm5m" path="res://image-part-37.png" id="38_vha38"]
+[ext_resource type="Texture2D" uid="uid://c2nd0yd2d3wi5" path="res://image-part-38.png" id="39_sen5b"]
+[ext_resource type="Texture2D" uid="uid://cjsa5ewnqo8rn" path="res://image-part-40.png" id="40_dtthm"]
+[ext_resource type="Texture2D" uid="uid://bdorfgohn8s6b" path="res://image-part-41.png" id="41_is4e7"]
+[ext_resource type="Texture2D" uid="uid://ds3xt12sgrkhd" path="res://image-part-42.png" id="42_q4aix"]
+
+[node name="PuzzleUI" type="CanvasLayer" unique_id=1276889938]
+script = ExtResource("1_nxssh")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1663703249]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_0fpsw")
+
+[node name="PuzzleScaler" type="Node2D" parent="." unique_id=1012307579]
+scale = Vector2(0.9, 0.9)
+
+[node name="GhostImage" type="TextureRect" parent="PuzzleScaler" unique_id=290193203]
+self_modulate = Color(1, 1, 1, 0.3647059)
+offset_left = 690.00006
+offset_top = 27.777779
+offset_right = 1426.0
+offset_bottom = 1131.7778
+texture = ExtResource("3_dalkg")
+
+[node name="piece" parent="PuzzleScaler" unique_id=1538021410 instance=ExtResource("2_vewrl")]
+position = Vector2(752.00006, 104.77779)
+
+[node name="piece2" parent="PuzzleScaler" unique_id=1360926349 instance=ExtResource("2_vewrl")]
+position = Vector2(874.00006, 104.77779)
+
+[node name="visual" parent="PuzzleScaler/piece2" index="0" unique_id=2112941432]
+texture = ExtResource("3_0fpsw")
+
+[node name="piece3" parent="PuzzleScaler" unique_id=1716192812 instance=ExtResource("2_vewrl")]
+position = Vector2(996.00006, 104.77779)
+
+[node name="visual" parent="PuzzleScaler/piece3" index="0" unique_id=2112941432]
+texture = ExtResource("4_dalkg")
+
+[node name="piece4" parent="PuzzleScaler" unique_id=101031601 instance=ExtResource("2_vewrl")]
+position = Vector2(1118.0001, 104.77779)
+
+[node name="visual" parent="PuzzleScaler/piece4" index="0" unique_id=2112941432]
+texture = ExtResource("5_bi6ko")
+
+[node name="piece5" parent="PuzzleScaler" unique_id=2018211438 instance=ExtResource("2_vewrl")]
+position = Vector2(1240.0001, 104.77779)
+
+[node name="visual" parent="PuzzleScaler/piece5" index="0" unique_id=2112941432]
+texture = ExtResource("6_r7pye")
+
+[node name="piece6" parent="PuzzleScaler" unique_id=72512303 instance=ExtResource("2_vewrl")]
+position = Vector2(1362.0001, 104.77779)
+
+[node name="visual" parent="PuzzleScaler/piece6" index="0" unique_id=2112941432]
+texture = ExtResource("7_5cc2f")
+
+[node name="piece7" parent="PuzzleScaler" unique_id=1719118688 instance=ExtResource("2_vewrl")]
+position = Vector2(752.00006, 261.7778)
+
+[node name="visual" parent="PuzzleScaler/piece7" index="0" unique_id=2112941432]
+texture = ExtResource("8_gnbhc")
+
+[node name="piece8" parent="PuzzleScaler" unique_id=220180118 instance=ExtResource("2_vewrl")]
+position = Vector2(874.00006, 261.7778)
+
+[node name="visual" parent="PuzzleScaler/piece8" index="0" unique_id=2112941432]
+texture = ExtResource("9_80dot")
+
+[node name="piece9" parent="PuzzleScaler" unique_id=1077263107 instance=ExtResource("2_vewrl")]
+position = Vector2(996.00006, 261.7778)
+
+[node name="visual" parent="PuzzleScaler/piece9" index="0" unique_id=2112941432]
+texture = ExtResource("10_hdh2n")
+
+[node name="piece10" parent="PuzzleScaler" unique_id=776715157 instance=ExtResource("2_vewrl")]
+position = Vector2(1118.0001, 261.7778)
+
+[node name="visual" parent="PuzzleScaler/piece10" index="0" unique_id=2112941432]
+texture = ExtResource("11_0tj50")
+
+[node name="piece11" parent="PuzzleScaler" unique_id=432100292 instance=ExtResource("2_vewrl")]
+position = Vector2(1240.0001, 261.7778)
+
+[node name="visual" parent="PuzzleScaler/piece11" index="0" unique_id=2112941432]
+texture = ExtResource("12_5wgi7")
+
+[node name="piece12" parent="PuzzleScaler" unique_id=1039212360 instance=ExtResource("2_vewrl")]
+position = Vector2(1362.0001, 261.7778)
+
+[node name="visual" parent="PuzzleScaler/piece12" index="0" unique_id=2112941432]
+texture = ExtResource("13_bycdq")
+
+[node name="piece13" parent="PuzzleScaler" unique_id=1108068184 instance=ExtResource("2_vewrl")]
+position = Vector2(752.00006, 418.77777)
+
+[node name="visual" parent="PuzzleScaler/piece13" index="0" unique_id=2112941432]
+texture = ExtResource("14_1bmo6")
+
+[node name="piece14" parent="PuzzleScaler" unique_id=1564630804 instance=ExtResource("2_vewrl")]
+position = Vector2(874.00006, 418.77777)
+
+[node name="visual" parent="PuzzleScaler/piece14" index="0" unique_id=2112941432]
+texture = ExtResource("15_utc27")
+
+[node name="piece15" parent="PuzzleScaler" unique_id=658867631 instance=ExtResource("2_vewrl")]
+position = Vector2(996.00006, 418.77777)
+
+[node name="visual" parent="PuzzleScaler/piece15" index="0" unique_id=2112941432]
+texture = ExtResource("16_lyan8")
+
+[node name="piece16" parent="PuzzleScaler" unique_id=1688472270 instance=ExtResource("2_vewrl")]
+position = Vector2(1118.0001, 418.77777)
+
+[node name="visual" parent="PuzzleScaler/piece16" index="0" unique_id=2112941432]
+texture = ExtResource("17_prsns")
+
+[node name="piece17" parent="PuzzleScaler" unique_id=323149569 instance=ExtResource("2_vewrl")]
+position = Vector2(1240.0001, 418.77777)
+
+[node name="visual" parent="PuzzleScaler/piece17" index="0" unique_id=2112941432]
+texture = ExtResource("18_cj1fv")
+
+[node name="piece18" parent="PuzzleScaler" unique_id=1147501139 instance=ExtResource("2_vewrl")]
+position = Vector2(1362.0001, 418.77777)
+
+[node name="visual" parent="PuzzleScaler/piece18" index="0" unique_id=2112941432]
+texture = ExtResource("19_8udkv")
+
+[node name="piece19" parent="PuzzleScaler" unique_id=2106343506 instance=ExtResource("2_vewrl")]
+position = Vector2(752.00006, 575.7777)
+
+[node name="visual" parent="PuzzleScaler/piece19" index="0" unique_id=2112941432]
+texture = ExtResource("20_tvs84")
+
+[node name="piece20" parent="PuzzleScaler" unique_id=1899761295 instance=ExtResource("2_vewrl")]
+position = Vector2(874.00006, 575.7777)
+
+[node name="visual" parent="PuzzleScaler/piece20" index="0" unique_id=2112941432]
+texture = ExtResource("21_ubw56")
+
+[node name="piece21" parent="PuzzleScaler" unique_id=171722272 instance=ExtResource("2_vewrl")]
+position = Vector2(996.00006, 575.7777)
+
+[node name="visual" parent="PuzzleScaler/piece21" index="0" unique_id=2112941432]
+texture = ExtResource("22_go35g")
+
+[node name="piece22" parent="PuzzleScaler" unique_id=1880178049 instance=ExtResource("2_vewrl")]
+position = Vector2(1118.0001, 575.7777)
+
+[node name="visual" parent="PuzzleScaler/piece22" index="0" unique_id=2112941432]
+texture = ExtResource("23_u01f4")
+
+[node name="piece23" parent="PuzzleScaler" unique_id=656511170 instance=ExtResource("2_vewrl")]
+position = Vector2(1240.0001, 575.7777)
+
+[node name="visual" parent="PuzzleScaler/piece23" index="0" unique_id=2112941432]
+texture = ExtResource("24_w8lyf")
+
+[node name="piece24" parent="PuzzleScaler" unique_id=2053996255 instance=ExtResource("2_vewrl")]
+position = Vector2(1362.0001, 575.7777)
+
+[node name="visual" parent="PuzzleScaler/piece24" index="0" unique_id=2112941432]
+texture = ExtResource("25_64i5e")
+
+[node name="piece25" parent="PuzzleScaler" unique_id=1760432383 instance=ExtResource("2_vewrl")]
+position = Vector2(752.00006, 732.7777)
+
+[node name="visual" parent="PuzzleScaler/piece25" index="0" unique_id=2112941432]
+texture = ExtResource("26_gpur5")
+
+[node name="piece26" parent="PuzzleScaler" unique_id=44907670 instance=ExtResource("2_vewrl")]
+position = Vector2(874.00006, 732.7777)
+
+[node name="visual" parent="PuzzleScaler/piece26" index="0" unique_id=2112941432]
+texture = ExtResource("27_1t36y")
+
+[node name="piece27" parent="PuzzleScaler" unique_id=567775313 instance=ExtResource("2_vewrl")]
+position = Vector2(996.00006, 732.7777)
+
+[node name="visual" parent="PuzzleScaler/piece27" index="0" unique_id=2112941432]
+texture = ExtResource("28_iknaj")
+
+[node name="piece28" parent="PuzzleScaler" unique_id=1847533126 instance=ExtResource("2_vewrl")]
+position = Vector2(1118.0001, 732.7777)
+
+[node name="visual" parent="PuzzleScaler/piece28" index="0" unique_id=2112941432]
+texture = ExtResource("29_se1tk")
+
+[node name="piece29" parent="PuzzleScaler" unique_id=759077202 instance=ExtResource("2_vewrl")]
+position = Vector2(1240.0001, 732.7777)
+
+[node name="visual" parent="PuzzleScaler/piece29" index="0" unique_id=2112941432]
+texture = ExtResource("30_kqlrq")
+
+[node name="piece30" parent="PuzzleScaler" unique_id=991194678 instance=ExtResource("2_vewrl")]
+position = Vector2(1362.0001, 732.7777)
+
+[node name="visual" parent="PuzzleScaler/piece30" index="0" unique_id=2112941432]
+texture = ExtResource("31_mka8v")
+
+[node name="piece31" parent="PuzzleScaler" unique_id=1917573123 instance=ExtResource("2_vewrl")]
+position = Vector2(752.00006, 889.7777)
+
+[node name="visual" parent="PuzzleScaler/piece31" index="0" unique_id=2112941432]
+texture = ExtResource("32_y6b43")
+
+[node name="piece32" parent="PuzzleScaler" unique_id=1001048551 instance=ExtResource("2_vewrl")]
+position = Vector2(874.00006, 889.7777)
+
+[node name="visual" parent="PuzzleScaler/piece32" index="0" unique_id=2112941432]
+texture = ExtResource("33_0uvaf")
+
+[node name="piece33" parent="PuzzleScaler" unique_id=1027607936 instance=ExtResource("2_vewrl")]
+position = Vector2(996.00006, 889.7777)
+
+[node name="visual" parent="PuzzleScaler/piece33" index="0" unique_id=2112941432]
+texture = ExtResource("34_hta7f")
+
+[node name="piece34" parent="PuzzleScaler" unique_id=1260524465 instance=ExtResource("2_vewrl")]
+position = Vector2(1118.0001, 889.7777)
+
+[node name="visual" parent="PuzzleScaler/piece34" index="0" unique_id=2112941432]
+texture = ExtResource("35_5rba5")
+
+[node name="piece35" parent="PuzzleScaler" unique_id=148014720 instance=ExtResource("2_vewrl")]
+position = Vector2(1240.0001, 889.7777)
+
+[node name="visual" parent="PuzzleScaler/piece35" index="0" unique_id=2112941432]
+texture = ExtResource("36_hr566")
+
+[node name="piece36" parent="PuzzleScaler" unique_id=205809271 instance=ExtResource("2_vewrl")]
+position = Vector2(1362.0001, 889.7777)
+
+[node name="visual" parent="PuzzleScaler/piece36" index="0" unique_id=2112941432]
+texture = ExtResource("37_oxng5")
+
+[node name="piece37" parent="PuzzleScaler" unique_id=146605360 instance=ExtResource("2_vewrl")]
+position = Vector2(752.00006, 1046.7778)
+
+[node name="visual" parent="PuzzleScaler/piece37" index="0" unique_id=2112941432]
+texture = ExtResource("38_vha38")
+
+[node name="piece38" parent="PuzzleScaler" unique_id=868046410 instance=ExtResource("2_vewrl")]
+position = Vector2(874.00006, 1046.7778)
+
+[node name="visual" parent="PuzzleScaler/piece38" index="0" unique_id=2112941432]
+texture = ExtResource("39_sen5b")
+
+[node name="piece39" parent="PuzzleScaler" unique_id=312466329 instance=ExtResource("2_vewrl")]
+position = Vector2(996.00006, 1046.7778)
+
+[node name="visual" parent="PuzzleScaler/piece39" index="0" unique_id=2112941432]
+texture = ExtResource("39_sen5b")
+
+[node name="piece40" parent="PuzzleScaler" unique_id=155344969 instance=ExtResource("2_vewrl")]
+position = Vector2(1118.0001, 1046.7778)
+
+[node name="visual" parent="PuzzleScaler/piece40" index="0" unique_id=2112941432]
+texture = ExtResource("40_dtthm")
+
+[node name="piece41" parent="PuzzleScaler" unique_id=1470029273 instance=ExtResource("2_vewrl")]
+position = Vector2(1240.0001, 1046.7778)
+
+[node name="visual" parent="PuzzleScaler/piece41" index="0" unique_id=2112941432]
+texture = ExtResource("41_is4e7")
+
+[node name="piece42" parent="PuzzleScaler" unique_id=1539342924 instance=ExtResource("2_vewrl")]
+position = Vector2(1362.0001, 1046.7778)
+
+[node name="visual" parent="PuzzleScaler/piece42" index="0" unique_id=2112941432]
+texture = ExtResource("42_q4aix")
+
+[node name="Button" type="Button" parent="." unique_id=1598875018]
+offset_left = 1834.0
+offset_top = 24.0
+offset_right = 1886.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 32
+text = "X"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+
+[editable path="PuzzleScaler/piece"]
+[editable path="PuzzleScaler/piece2"]
+[editable path="PuzzleScaler/piece3"]
+[editable path="PuzzleScaler/piece4"]
+[editable path="PuzzleScaler/piece5"]
+[editable path="PuzzleScaler/piece6"]
+[editable path="PuzzleScaler/piece7"]
+[editable path="PuzzleScaler/piece8"]
+[editable path="PuzzleScaler/piece9"]
+[editable path="PuzzleScaler/piece10"]
+[editable path="PuzzleScaler/piece11"]
+[editable path="PuzzleScaler/piece12"]
+[editable path="PuzzleScaler/piece13"]
+[editable path="PuzzleScaler/piece14"]
+[editable path="PuzzleScaler/piece15"]
+[editable path="PuzzleScaler/piece16"]
+[editable path="PuzzleScaler/piece17"]
+[editable path="PuzzleScaler/piece18"]
+[editable path="PuzzleScaler/piece19"]
+[editable path="PuzzleScaler/piece20"]
+[editable path="PuzzleScaler/piece21"]
+[editable path="PuzzleScaler/piece22"]
+[editable path="PuzzleScaler/piece23"]
+[editable path="PuzzleScaler/piece24"]
+[editable path="PuzzleScaler/piece25"]
+[editable path="PuzzleScaler/piece26"]
+[editable path="PuzzleScaler/piece27"]
+[editable path="PuzzleScaler/piece28"]
+[editable path="PuzzleScaler/piece29"]
+[editable path="PuzzleScaler/piece30"]
+[editable path="PuzzleScaler/piece31"]
+[editable path="PuzzleScaler/piece32"]
+[editable path="PuzzleScaler/piece33"]
+[editable path="PuzzleScaler/piece34"]
+[editable path="PuzzleScaler/piece35"]
+[editable path="PuzzleScaler/piece36"]
+[editable path="PuzzleScaler/piece37"]
+[editable path="PuzzleScaler/piece38"]
+[editable path="PuzzleScaler/piece39"]
+[editable path="PuzzleScaler/piece40"]
+[editable path="PuzzleScaler/piece41"]
+[editable path="PuzzleScaler/piece42"]

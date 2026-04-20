@@ -49,5 +49,5 @@ func _on_button_pressed() -> void:
 	queue_free()
 
 func _input(event):
-	if event.is_action_pressed("ui_cancel"): # Это стандартная клавиша Esc
+	if event.is_action_pressed("ui_cancel"): #стандартная клавиша Esc
 		queue_free()

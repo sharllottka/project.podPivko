@@ -13,9 +13,7 @@ func _input_event(viewport, event, shape_idx):
 			dragging = true
 			z_index = 100
 			offset = get_global_mouse_position() - global_position
-			
-			# ГЛАВНОЕ ДОПОЛНЕНИЕ:
-			# Это останавливает распространение клика на объекты "под" этим пазлом
+	
 			get_viewport().set_input_as_handled()
 		else:
 			dragging = false

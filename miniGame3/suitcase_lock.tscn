@@ -1,0 +1,145 @@
+[gd_scene format=3 uid="uid://cvil2tngoiq4s"]
+
+[ext_resource type="Script" uid="uid://c004rp6pqtkg" path="res://miniGame3/suitcase_lock.gd" id="1_dqavt"]
+[ext_resource type="Texture2D" uid="uid://c1n70ithjb6a0" path="res://miniGame3/замок.png" id="1_m6bos"]
+
+[node name="SuitcaseLock" type="Control" unique_id=485463837]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dqavt")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=582480245]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0, 0, 0, 0.41960785)
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1646167848]
+layout_mode = 0
+offset_left = 484.0
+offset_top = 151.0
+offset_right = 1374.0
+offset_bottom = 837.0
+
+[node name="Замок" type="Sprite2D" parent="." unique_id=1425320434]
+position = Vector2(974, 559)
+scale = Vector2(1.0845304, 1.0845302)
+texture = ExtResource("1_m6bos")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1011768548]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 440.0
+offset_right = 680.0
+offset_bottom = 571.0
+scale = Vector2(3.5, 3.5)
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=770715077]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=887078772]
+layout_mode = 2
+text = "^"
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=1830728643]
+layout_mode = 2
+text = "0
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button2" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=2048355421]
+layout_mode = 2
+text = "v
+"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer" unique_id=1583625347]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/VBoxContainer2" unique_id=1259475437]
+layout_mode = 2
+text = "^"
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer2" unique_id=1589533707]
+layout_mode = 2
+text = "0
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button2" type="Button" parent="HBoxContainer/VBoxContainer2" unique_id=1168252324]
+layout_mode = 2
+text = "v
+"
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="HBoxContainer" unique_id=1247815857]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/VBoxContainer3" unique_id=1017999655]
+layout_mode = 2
+text = "^"
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer3" unique_id=1317869550]
+layout_mode = 2
+text = "0
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button2" type="Button" parent="HBoxContainer/VBoxContainer3" unique_id=546553207]
+layout_mode = 2
+text = "v
+"
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="HBoxContainer" unique_id=151424812]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="HBoxContainer/VBoxContainer4" unique_id=970986903]
+layout_mode = 2
+text = "^"
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer4" unique_id=342513580]
+layout_mode = 2
+text = "0
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button2" type="Button" parent="HBoxContainer/VBoxContainer4" unique_id=1666296283]
+layout_mode = 2
+text = "v
+"
+
+[node name="Button" type="Button" parent="." unique_id=9719697]
+layout_mode = 0
+offset_left = 1258.0
+offset_top = 764.0
+offset_right = 1418.0
+offset_bottom = 843.0
+text = "ОТКРЫТЬ"
+
+[node name="Button2" type="Button" parent="." unique_id=689392393]
+layout_mode = 0
+offset_left = 1834.0
+offset_top = 24.0
+offset_right = 1886.0
+offset_bottom = 68.0
+theme_override_font_sizes/font_size = 32
+text = "X"
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Button" to="." method="change_digit" binds= [0, 1]]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Button2" to="." method="change_digit" binds= [0, -1]]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/Button" to="." method="change_digit" binds= [1, 1]]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/Button2" to="." method="change_digit" binds= [1, -1]]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer3/Button" to="." method="change_digit" binds= [2, 1]]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer3/Button2" to="." method="change_digit" binds= [2, -1]]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer4/Button" to="." method="change_digit" binds= [3, 1]]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer4/Button2" to="." method="_on_button_2_pressed" binds= [3, -1]]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer4/Button2" to="." method="change_digit" binds= [3, -1]]
+[connection signal="pressed" from="Button" to="." method="_on_open_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

@@ -48,5 +48,5 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4306605, 0)
 transform = Transform3D(0.7431448, 0.55144805, -0.37899977, 0, 0.56640625, 0.8241262, 0.6691306, -0.6124451, 0.42092186, 0, 7.8, 0)
 shadow_enabled = true
 
-[node name="house" parent="." unique_id=735083772 instance=ExtResource("3_cwqvt")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -22.814945, -2.2767205, -10.630718)
+[node name="house" parent="." unique_id=1733450414 instance=ExtResource("3_cwqvt")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -22.704151, -3.145327, -14.936382)

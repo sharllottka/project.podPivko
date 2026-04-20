@@ -1,7 +1,6 @@
-# Godot 4+ specific ignores
+# Godot-specific ignores
 .godot/
-/android/
 .import/
-.export/
-export.cfg
-*.translation
+export_preset.cfg
+# Build artifacts
+build/

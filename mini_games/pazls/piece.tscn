@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cfda0kjmi5l74"]
 
-[ext_resource type="Script" uid="uid://cho3qqogel327" path="res://piece.gd" id="1_p0xnt"]
-[ext_resource type="Texture2D" uid="uid://bx2rv4ur0x5y4" path="res://image-part-1.png" id="2_boiu6"]
+[ext_resource type="Script" uid="uid://cho3qqogel327" path="res://mini_games/pazzels/piece.gd" id="1_p0xnt"]
+[ext_resource type="Texture2D" uid="uid://bx2rv4ur0x5y4" path="res://mini_games/pazzels/image-part-1.png" id="2_boiu6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_boiu6"]
 size = Vector2(122, 157)

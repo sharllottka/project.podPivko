@@ -44,6 +44,10 @@
 [ext_resource type="Texture2D" uid="uid://cjsa5ewnqo8rn" path="res://mini_games/pazzels/image-part-40.png" id="40_dtthm"]
 [ext_resource type="Texture2D" uid="uid://bdorfgohn8s6b" path="res://mini_games/pazzels/image-part-41.png" id="41_is4e7"]
 [ext_resource type="Texture2D" uid="uid://ds3xt12sgrkhd" path="res://mini_games/pazzels/image-part-42.png" id="42_q4aix"]
+[ext_resource type="AudioStream" uid="uid://dc3e1i31wx7fc" path="res://mini_games/pazzels/пазл взять.wav" id="45_5cc2f"]
+[ext_resource type="AudioStream" uid="uid://dn8gcum5q8gar" path="res://mini_games/pazzels/пазл кинуть.mp3" id="46_gnbhc"]
+[ext_resource type="AudioStream" uid="uid://cgynw5ohkmgt8" path="res://mini_games/pazzels/пазл на месте.wav" id="47_80dot"]
+[ext_resource type="AudioStream" uid="uid://3equse2tr8yn" path="res://mini_games/pazzels/победа.mp3" id="48_hdh2n"]
 
 [node name="PuzzleUI" type="CanvasLayer" unique_id=1276889938]
 script = ExtResource("1_nxssh")
@@ -323,6 +327,18 @@ offset_right = 1886.0
 offset_bottom = 68.0
 theme_override_font_sizes/font_size = 32
 text = "X"
+
+[node name="PickSound" type="AudioStreamPlayer" parent="." unique_id=1562216867]
+stream = ExtResource("45_5cc2f")
+
+[node name="DropSound" type="AudioStreamPlayer" parent="." unique_id=1158167393]
+stream = ExtResource("46_gnbhc")
+
+[node name="SnapSound" type="AudioStreamPlayer" parent="." unique_id=1532829004]
+stream = ExtResource("47_80dot")
+
+[node name="WinSound" type="AudioStreamPlayer" parent="." unique_id=1345983986]
+stream = ExtResource("48_hdh2n")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 

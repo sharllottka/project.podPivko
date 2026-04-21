@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dn8gcum5q8gar"
+path="res://.godot/imported/пазл кинуть.mp3-8bbc8d2242a033e095af98951b89e5ec.mp3str"
+
+[deps]
+
+source_file="res://mini_games/pazzels/пазл кинуть.mp3"
+dest_files=["res://.godot/imported/пазл кинуть.mp3-8bbc8d2242a033e095af98951b89e5ec.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

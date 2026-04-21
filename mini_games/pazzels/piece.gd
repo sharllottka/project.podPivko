@@ -13,7 +13,13 @@ func _input_event(viewport, event, shape_idx):
 			dragging = true
 			z_index = 100
 			offset = get_global_mouse_position() - global_position
-	
+			
+			
+			if owner and owner.has_method("play_pick"):
+				owner.play_pick()
+			elif get_parent().get_parent().has_method("play_pick"):
+				get_parent().get_parent().play_pick()
+				
 			get_viewport().set_input_as_handled()
 		else:
 			dragging = false
@@ -25,7 +31,6 @@ func _process(_delta):
 		global_position = get_global_mouse_position() - offset
 
 func check_win_condition():
-	
 	if global_position.distance_to(correct_position) < 20:
 		global_position = correct_position 
 		input_pickable = false 
@@ -35,3 +40,10 @@ func check_win_condition():
 			owner.add_piece_placed() 
 		else:
 			get_parent().get_parent().add_piece_placed()
+	else:
+		
+		if owner and owner.has_method("play_drop"):
+			owner.play_drop()
+		elif get_parent().get_parent().has_method("play_drop"):
+			get_parent().get_parent().play_drop()
+		

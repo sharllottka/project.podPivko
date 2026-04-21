@@ -2,6 +2,9 @@
 
 [ext_resource type="Script" uid="uid://c004rp6pqtkg" path="res://miniGame3/suitcase_lock.gd" id="1_dqavt"]
 [ext_resource type="Texture2D" uid="uid://c1n70ithjb6a0" path="res://miniGame3/замок.png" id="1_m6bos"]
+[ext_resource type="AudioStream" uid="uid://0vplv0ngb1w3" path="res://miniGame3/для замка.wav" id="3_ktbh8"]
+[ext_resource type="AudioStream" uid="uid://bfwou26akl3vb" path="res://miniGame3/открыть чемодан.wav" id="4_2ussq"]
+[ext_resource type="AudioStream" uid="uid://cwh8yolhwosxb" path="res://miniGame3/error.ogg" id="5_y5n2i"]
 
 [node name="SuitcaseLock" type="Control" unique_id=485463837]
 layout_mode = 3
@@ -132,6 +135,15 @@ offset_bottom = 68.0
 theme_override_font_sizes/font_size = 32
 text = "X"
 
+[node name="ClickSound" type="AudioStreamPlayer" parent="." unique_id=619801433]
+stream = ExtResource("3_ktbh8")
+
+[node name="OpenSound" type="AudioStreamPlayer" parent="." unique_id=157843937]
+stream = ExtResource("4_2ussq")
+
+[node name="ErrorSound" type="AudioStreamPlayer" parent="." unique_id=1669339931]
+stream = ExtResource("5_y5n2i")
+
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Button" to="." method="change_digit" binds= [0, 1]]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Button2" to="." method="change_digit" binds= [0, -1]]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer2/Button" to="." method="change_digit" binds= [1, 1]]
@@ -139,7 +151,6 @@ text = "X"
 [connection signal="pressed" from="HBoxContainer/VBoxContainer3/Button" to="." method="change_digit" binds= [2, 1]]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer3/Button2" to="." method="change_digit" binds= [2, -1]]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer4/Button" to="." method="change_digit" binds= [3, 1]]
-[connection signal="pressed" from="HBoxContainer/VBoxContainer4/Button2" to="." method="_on_button_2_pressed" binds= [3, -1]]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer4/Button2" to="." method="change_digit" binds= [3, -1]]
 [connection signal="pressed" from="Button" to="." method="_on_open_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

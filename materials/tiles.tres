@@ -1,0 +1,14 @@
+[gd_resource type="StandardMaterial3D" format=3 uid="uid://dok20eut12du5"]
+
+[ext_resource type="Texture2D" uid="uid://b3lioexwahhqe" path="res://materials/Tiles094_2K-JPG_Color.jpg" id="1_jboaw"]
+[ext_resource type="Texture2D" uid="uid://dwltg3pxnam3o" path="res://materials/Tiles094_2K-JPG_NormalGL.jpg" id="2_bydpu"]
+[ext_resource type="Texture2D" uid="uid://c6o07hsw4vkt3" path="res://materials/Tiles094_2K-JPG_Roughness.jpg" id="3_n6lb2"]
+
+[resource]
+albedo_texture = ExtResource("1_jboaw")
+roughness_texture = ExtResource("3_n6lb2")
+normal_enabled = true
+normal_texture = ExtResource("2_bydpu")
+uv1_scale = Vector3(12, 3, 3)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 10.0

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bda2xmfgwsxuy"]
+
+[ext_resource type="PackedScene" uid="uid://rji0utdr26r1" path="res://electricbox/electric_box.glb" id="1_1u64t"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5vcju"]
+size = Vector3(0.2915039, 0.78466797, 0.6133728)
+
+[node name="Area3D" type="Area3D" unique_id=2111399856]
+
+[node name="Sketchfab_Scene" parent="." unique_id=1484992586 instance=ExtResource("1_1u64t")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2598374, -1.1920929e-07, 0.5389445)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1388289664]
+transform = Transform3D(0.99998844, 0.0014918381, -0.0045774784, -0.0015347761, 0.9999547, -0.009394153, 0.004563261, 0.009401067, 0.9999454, 0.2579899, 0.4104589, 0.5394708)
+shape = SubResource("BoxShape3D_5vcju")

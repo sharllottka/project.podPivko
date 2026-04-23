@@ -5,8 +5,11 @@
 [ext_resource type="PackedScene" uid="uid://bekjmyl4aash6" path="res://scenery/house.tscn" id="3_cwqvt"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hjsbj"]
-sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
-ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+sky_top_color = Color(0, 0, 0, 1)
+sky_horizon_color = Color(0, 0, 0, 1)
+sky_cover_modulate = Color(0, 0, 0, 1)
+ground_bottom_color = Color(0, 0, 0, 1)
+ground_horizon_color = Color(0, 0, 0, 1)
 
 [sub_resource type="Sky" id="Sky_cwqvt"]
 sky_material = SubResource("ProceduralSkyMaterial_hjsbj")
@@ -50,3 +53,6 @@ shadow_enabled = true
 
 [node name="house" parent="." unique_id=1733450414 instance=ExtResource("3_cwqvt")]
 transform = Transform3D(0.49999368, 0.0003501026, 0.0024885791, -0.00033791433, 0.4999939, -0.0024485262, -0.0024902634, 0.002446813, 0.4999878, -22.704151, -3.145327, -14.936382)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=145745822]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.701975, 1.5625662, 0)

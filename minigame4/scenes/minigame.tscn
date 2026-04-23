@@ -1,0 +1,56 @@
+[gd_scene format=3 uid="uid://cwpfqk5b815vu"]
+
+[ext_resource type="Script" uid="uid://bgvsne0bkcrdf" path="res://minigame4/minigame.gd" id="1_5iev5"]
+[ext_resource type="Script" uid="uid://by6y32ufiig3s" path="res://minigame4/wire_layer.gd" id="2_hwsak"]
+[ext_resource type="Script" uid="uid://dsyhs8r5vatli" path="res://minigame4/exit.gd" id="3_uwtn2"]
+
+[node name="Minigame" type="Control" unique_id=547567431]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_5iev5")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1906530144]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.08, 0.07, 0.05, 1)
+
+[node name="BgPanel" type="Panel" parent="." unique_id=2043032039]
+layout_direction = 2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 315.0
+offset_top = 135.0
+offset_right = -306.0
+offset_bottom = -139.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1979611269]
+layout_mode = 0
+columns = 6
+
+[node name="WireLayer" type="Node2D" parent="." unique_id=1825513364]
+script = ExtResource("2_hwsak")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=741847173]
+
+[node name="Button" type="Button" parent="UI" unique_id=1585633000]
+offset_left = 1818.0
+offset_top = 8.0
+offset_right = 1892.0
+offset_bottom = 74.0
+theme_override_font_sizes/font_size = 32
+text = "X"
+script = ExtResource("3_uwtn2")
+
+[connection signal="pressed" from="UI/Button" to="UI/Button" method="_on_pressed"]

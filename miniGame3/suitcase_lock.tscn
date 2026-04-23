@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://cvil2tngoiq4s"]
 
-[ext_resource type="Script" uid="uid://c004rp6pqtkg" path="res://miniGame3/suitcase_lock.gd" id="1_dqavt"]
-[ext_resource type="Texture2D" uid="uid://c1n70ithjb6a0" path="res://miniGame3/замок.png" id="1_m6bos"]
-[ext_resource type="AudioStream" uid="uid://0vplv0ngb1w3" path="res://miniGame3/для замка.wav" id="3_ktbh8"]
-[ext_resource type="AudioStream" uid="uid://bfwou26akl3vb" path="res://miniGame3/открыть чемодан.wav" id="4_2ussq"]
-[ext_resource type="AudioStream" uid="uid://cwh8yolhwosxb" path="res://miniGame3/error.ogg" id="5_y5n2i"]
+[ext_resource type="Script" uid="uid://c004rp6pqtkg" path="res://minigame3/suitcase_lock.gd" id="1_dqavt"]
+[ext_resource type="Texture2D" uid="uid://c1n70ithjb6a0" path="res://minigame3/замок.png" id="1_m6bos"]
+[ext_resource type="AudioStream" uid="uid://0vplv0ngb1w3" path="res://minigame3/для замка.wav" id="3_ktbh8"]
+[ext_resource type="AudioStream" uid="uid://bfwou26akl3vb" path="res://minigame3/открыть чемодан.wav" id="4_2ussq"]
+[ext_resource type="AudioStream" uid="uid://cwh8yolhwosxb" path="res://minigame3/error.ogg" id="5_y5n2i"]
 
 [node name="SuitcaseLock" type="Control" unique_id=485463837]
 layout_mode = 3

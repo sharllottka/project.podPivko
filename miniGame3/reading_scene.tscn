@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bmohpta1g0gfx"]
 
-[ext_resource type="Script" uid="uid://77othuepiqt7" path="res://miniGame3/reading_scene.gd" id="1_5l4mq"]
-[ext_resource type="Texture2D" uid="uid://cm78ngmegxn61" path="res://miniGame3/ключ-removebg-preview.png" id="1_nlwoq"]
-[ext_resource type="Texture2D" uid="uid://csckim1db1cio" path="res://miniGame3/шифр-removebg-preview.png" id="2_5l4mq"]
+[ext_resource type="Script" uid="uid://77othuepiqt7" path="res://minigame3/reading_scene.gd" id="1_5l4mq"]
+[ext_resource type="Texture2D" uid="uid://cm78ngmegxn61" path="res://minigame3/ключ-removebg-preview.png" id="1_nlwoq"]
+[ext_resource type="Texture2D" uid="uid://csckim1db1cio" path="res://minigame3/шифр-removebg-preview.png" id="2_5l4mq"]
 
 [node name="ReadingScene" type="Control" unique_id=801153976]
 layout_mode = 3

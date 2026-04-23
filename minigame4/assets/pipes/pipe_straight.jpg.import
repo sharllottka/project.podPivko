@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cm78ngmegxn61"
-path="res://.godot/imported/ключ-removebg-preview.png-208459b971d417b16c37d50a90eceef7.ctex"
+uid="uid://portb022xkf3"
+path="res://.godot/imported/pipe_straight.jpg-78b2fb7a19dbf08b7a1eeb9287d132ef.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://minigame3/ключ-removebg-preview.png"
-dest_files=["res://.godot/imported/ключ-removebg-preview.png-208459b971d417b16c37d50a90eceef7.ctex"]
+source_file="res://minigame4/assets/pipes/pipe_straight.jpg"
+dest_files=["res://.godot/imported/pipe_straight.jpg-78b2fb7a19dbf08b7a1eeb9287d132ef.ctex"]
 
 [params]
 

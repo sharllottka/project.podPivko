@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cyc770x1r80c3"]
+
+[ext_resource type="Script" uid="uid://dwa8vylwejudu" path="res://minigame4/tile.gd" id="1_3dk36"]
+
+[node name="Tile" type="Control"]
+custom_minimum_size = Vector2(96, 96)
+script = ExtResource("1_3dk36")

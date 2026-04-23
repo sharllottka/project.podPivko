@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cm78ngmegxn61"
-path="res://.godot/imported/ключ-removebg-preview.png-208459b971d417b16c37d50a90eceef7.ctex"
+uid="uid://bx2rv4ur0x5y4"
+path="res://.godot/imported/image-part-1.png-9041168668d0680eaf328baa40ae4472.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://minigame3/ключ-removebg-preview.png"
-dest_files=["res://.godot/imported/ключ-removebg-preview.png-208459b971d417b16c37d50a90eceef7.ctex"]
+source_file="res://minigame1/pazzels/image-part-1.png"
+dest_files=["res://.godot/imported/image-part-1.png-9041168668d0680eaf328baa40ae4472.ctex"]
 
 [params]
 

@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b71wbwtqi5q3"
-path.s3tc="res://.godot/imported/hatch_1.png-7442e150fd72ac22067a772ff28ad440.s3tc.ctex"
+uid="uid://babsk7ialo3yg"
+path.s3tc="res://.godot/imported/hatch_0.png-90fb120be720c69cfb3f655783323d8d.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "d9a287c47e9d108ea05d462159e746fe"
+"md5": "914f611021c3d8640087a9cace520223"
 }
 
 [deps]
 
-source_file="res://models/hatch_1.png"
-dest_files=["res://.godot/imported/hatch_1.png-7442e150fd72ac22067a772ff28ad440.s3tc.ctex"]
+source_file="res://hatch/hatch_0.png"
+dest_files=["res://.godot/imported/hatch_0.png-90fb120be720c69cfb3f655783323d8d.s3tc.ctex"]
 
 [params]
 

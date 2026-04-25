@@ -5,13 +5,13 @@
 [ext_resource type="Texture2D" uid="uid://igvnixfr2kux" path="res://minigame2/assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="Texture2D" uid="uid://cocwa8ppj74wi" path="res://minigame2/assets/sprites/Dungeon Tile Set.png" id="4_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://88p575a4305h" path="res://minigame2/scenes/coin.tscn" id="4_lbhrr"]
-[ext_resource type="Script" uid="uid://drxbbffvkh42s" path="res://minigame2/scenes/exit_button.gd" id="5_ik7fb"]
+[ext_resource type="Script" path="res://minigame2/scenes/exit_button.gd" id="5_ik7fb"]
 [ext_resource type="PackedScene" uid="uid://clpwbel6672ue" path="res://minigame2/scenes/killzone.tscn" id="5_iywne"]
 [ext_resource type="PackedScene" uid="uid://ddex2r41633ro" path="res://minigame2/scenes/slime.tscn" id="6_p57ef"]
 [ext_resource type="PackedScene" uid="uid://b371g02hwaab3" path="res://minigame2/scenes/most.tscn" id="6_vtaks"]
 [ext_resource type="FontFile" uid="uid://cjnx2ykgcjn5s" path="res://minigame2/assets/fonts/PixelOperator8.ttf" id="7_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://bkde3trt1o6lt" path="res://minigame2/scenes/note.tscn" id="11_kvpfn"]
-[ext_resource type="Script" uid="uid://c5njmnokvm15h" path="res://minigame2/scenes/exit_dialog.gd" id="12_2hw8f"]
+[ext_resource type="Script" path="res://minigame2/scenes/exit_dialog.gd" id="12_2hw8f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -434,6 +434,7 @@ position = Vector2(551, 96)
 
 [node name="Label" type="Label" parent="Node" unique_id=2007303485]
 anchors_preset = -1
+anchor_top = -0.0055555557
 anchor_bottom = -0.0055555557
 offset_left = -190.0
 offset_top = -15.0

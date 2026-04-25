@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cc3jx6wd8mtud"]
+
+[ext_resource type="Script" uid="uid://jfx7vriiegel" path="res://sewage_hatch.gd" id="1_71r5r"]
+[ext_resource type="PackedScene" uid="uid://mhc3fqcxrfmt" path="res://hatch/hatch.glb" id="2_uynyr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_n402i"]
+size = Vector3(1.4726563, 0.33643913, 1.8052139)
+
+[node name="SewageHatch" type="Area3D" unique_id=1816285138]
+script = ExtResource("1_71r5r")
+
+[node name="Sketchfab_Scene" parent="." unique_id=1698803318 instance=ExtResource("2_uynyr")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=436602031]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0078125, 0.40116215, -0.020198822)
+shape = SubResource("BoxShape3D_n402i")

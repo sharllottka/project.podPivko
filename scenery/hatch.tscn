@@ -1,8 +1,8 @@
 [gd_scene format=4 uid="uid://b2pb1xvp5s7hj"]
 
-[ext_resource type="Texture2D" uid="uid://babsk7ialo3yg" path="res://models/hatch_0.png" id="1_qdp1l"]
-[ext_resource type="Texture2D" uid="uid://b71wbwtqi5q3" path="res://models/hatch_1.png" id="2_tp633"]
-[ext_resource type="Texture2D" uid="uid://3wcsdnqw7nu" path="res://models/hatch_2.png" id="3_wuci5"]
+[ext_resource type="Texture2D" uid="uid://babsk7ialo3yg" path="res://hatch/hatch_0.png" id="1_qdp1l"]
+[ext_resource type="Texture2D" uid="uid://b71wbwtqi5q3" path="res://hatch/hatch_1.png" id="2_tp633"]
+[ext_resource type="Texture2D" uid="uid://3wcsdnqw7nu" path="res://hatch/hatch_2.png" id="3_wuci5"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_82hu1"]
 resource_name = "Hatch"

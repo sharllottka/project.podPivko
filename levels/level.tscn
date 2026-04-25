@@ -3,6 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://bsceqdx35mug8" path="res://icon.svg" id="1_hjsbj"]
 [ext_resource type="PackedScene" uid="uid://dvgsbanb3g0ir" path="res://player/player.tscn" id="2_cwqvt"]
 [ext_resource type="PackedScene" uid="uid://bekjmyl4aash6" path="res://scenery/house.tscn" id="3_cwqvt"]
+[ext_resource type="PackedScene" uid="uid://bda2xmfgwsxuy" path="res://electricbox/electric_box.tscn" id="4_safpt"]
+[ext_resource type="PackedScene" uid="uid://cwpfqk5b815vu" path="res://minigame4/scenes/minigame.tscn" id="5_gjl0y"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hjsbj"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -55,4 +57,29 @@ shadow_enabled = true
 transform = Transform3D(0.49999368, 0.0003501026, 0.0024885791, -0.00033791433, 0.4999939, -0.0024485262, -0.0024902634, 0.002446813, 0.4999878, -22.704151, -3.145327, -14.936382)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=145745822]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.701975, 1.5625662, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.401983, 2.5687294, -0.024983168)
+omni_range = 7.3683796
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="." unique_id=426624748]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -20.15044, 3.5982494, -4.4778047)
+omni_range = 6.103189
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="." unique_id=362196786]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.792452, 1.8992524, 4.602756)
+omni_range = 6.1404023
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="." unique_id=1153142403]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.279751, 6.0139046, 0.31173396)
+omni_range = 9.764286
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="." unique_id=1047204898]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.00255, 6.645442, -0.15009832)
+omni_range = 9.764286
+
+[node name="OmniLight3D6" type="OmniLight3D" parent="." unique_id=655809056]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.218628, -2.6120348, 1.8020928)
+omni_range = 10.648975
+
+[node name="Area3D" parent="." unique_id=2111399856 instance=ExtResource("4_safpt")]
+transform = Transform3D(0.05358568, 0.0040235138, -0.9985551, 0.00073982694, 0.9999913, 0.0040689986, 0.9985629, -0.00095679826, 0.053582244, -23.604511, -3.6891444, 6.926676)
+minigame_scene = ExtResource("5_gjl0y")

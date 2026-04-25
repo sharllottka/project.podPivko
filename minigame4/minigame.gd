@@ -68,6 +68,13 @@ func update_power():
 
 func _on_win():
 	print("✅ ЦЕПЬ ЗАМКНУТА!")
+	if "has_wire_clue" in Global:
+		Global.has_wire_clue = true
+
+	await get_tree().create_timer(1.5).timeout
+
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	get_tree().change_scene_to_file("res://levels/level.tscn")
 
 func update_all_tiles():
 	for t in tiles:

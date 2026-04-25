@@ -72,3 +72,7 @@ func flash_red_effect():
 	
 	for label in labels:
 		label.modulate = Color.WHITE
+
+
+func _on_pressed() -> void:
+	pass # Replace with function body.

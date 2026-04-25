@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c1n70ithjb6a0"
-path="res://.godot/imported/замок.png-2dc28228206385109c08fa33857b8eef.ctex"
+path="res://.godot/imported/замок.png-325826dcf5e3d44784c51684356d25ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://minigame3/замок.png"
-dest_files=["res://.godot/imported/замок.png-2dc28228206385109c08fa33857b8eef.ctex"]
+source_file="res://miniGame3/замок.png"
+dest_files=["res://.godot/imported/замок.png-325826dcf5e3d44784c51684356d25ac.ctex"]
 
 [params]
 

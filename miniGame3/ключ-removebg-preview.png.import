@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cm78ngmegxn61"
-path="res://.godot/imported/ключ-removebg-preview.png-208459b971d417b16c37d50a90eceef7.ctex"
+path="res://.godot/imported/ключ-removebg-preview.png-8b46c94c400914278876073c5f1ec909.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://minigame3/ключ-removebg-preview.png"
-dest_files=["res://.godot/imported/ключ-removebg-preview.png-208459b971d417b16c37d50a90eceef7.ctex"]
+source_file="res://miniGame3/ключ-removebg-preview.png"
+dest_files=["res://.godot/imported/ключ-removebg-preview.png-8b46c94c400914278876073c5f1ec909.ctex"]
 
 [params]
 

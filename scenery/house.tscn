@@ -1944,6 +1944,7 @@ shape = SubResource("ConcavePolygonShape3D_ipmbr")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="коридорные лампочки" unique_id=2065706502]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.146988, 14.010614, 34.486237)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light2" parent="коридорные лампочки" unique_id=424945929 instance=ExtResource("9_ehtd8")]
@@ -1951,6 +1952,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="коридорные лампочки" unique_id=2053764602]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.146988, 14.010614, 23.208508)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light3" parent="коридорные лампочки" unique_id=722113022 instance=ExtResource("9_ehtd8")]
@@ -1958,6 +1960,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D3" type="OmniLight3D" parent="коридорные лампочки" unique_id=97003974]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.9163876, 14.010614, 23.208508)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light4" parent="коридорные лампочки" unique_id=894677356 instance=ExtResource("9_ehtd8")]
@@ -1965,6 +1968,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D4" type="OmniLight3D" parent="коридорные лампочки" unique_id=1117525423]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9004068, 14.010614, 39.03697)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light5" parent="коридорные лампочки" unique_id=175833777 instance=ExtResource("9_ehtd8")]
@@ -1972,6 +1976,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D5" type="OmniLight3D" parent="коридорные лампочки" unique_id=646354744]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.830034, 14.010614, 23.208508)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light6" parent="коридорные лампочки" unique_id=482686558 instance=ExtResource("9_ehtd8")]
@@ -1979,6 +1984,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D6" type="OmniLight3D" parent="коридорные лампочки" unique_id=1278153046]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.664545, 14.010614, 27.914444)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light7" parent="коридорные лампочки" unique_id=248972053 instance=ExtResource("9_ehtd8")]
@@ -1986,6 +1992,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D7" type="OmniLight3D" parent="коридорные лампочки" unique_id=2048283171]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.213997, 14.010614, 27.914444)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light8" parent="коридорные лампочки" unique_id=554689415 instance=ExtResource("9_ehtd8")]
@@ -1993,6 +2000,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D8" type="OmniLight3D" parent="коридорные лампочки" unique_id=1630539120]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.19441, 14.010614, 27.914444)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light9" parent="коридорные лампочки" unique_id=1762436855 instance=ExtResource("9_ehtd8")]
@@ -2000,6 +2008,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D9" type="OmniLight3D" parent="коридорные лампочки" unique_id=18666462]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.3158, 14.010614, 27.914444)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light10" parent="коридорные лампочки" unique_id=1184497689 instance=ExtResource("9_ehtd8")]
@@ -2007,6 +2016,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D11" type="OmniLight3D" parent="коридорные лампочки" unique_id=1010784657]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.38758, 14.010614, 27.914444)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light12" parent="коридорные лампочки" unique_id=494140769 instance=ExtResource("9_ehtd8")]
@@ -2014,6 +2024,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D12" type="OmniLight3D" parent="коридорные лампочки" unique_id=556796133]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.042305, 14.010614, 27.914444)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light13" parent="коридорные лампочки" unique_id=78930139 instance=ExtResource("9_ehtd8")]
@@ -2021,6 +2032,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D13" type="OmniLight3D" parent="коридорные лампочки" unique_id=295373224]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.612415, 14.010614, 22.309069)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light14" parent="коридорные лампочки" unique_id=991560433 instance=ExtResource("9_ehtd8")]
@@ -2028,6 +2040,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D10" type="OmniLight3D" parent="коридорные лампочки" unique_id=1716719067]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.146988, 23.74657, 34.486237)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light11" parent="коридорные лампочки" unique_id=699816853 instance=ExtResource("9_ehtd8")]
@@ -2035,6 +2048,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D14" type="OmniLight3D" parent="коридорные лампочки" unique_id=369209322]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.146988, 23.74657, 23.208508)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light15" parent="коридорные лампочки" unique_id=328700440 instance=ExtResource("9_ehtd8")]
@@ -2042,6 +2056,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D15" type="OmniLight3D" parent="коридорные лампочки" unique_id=1885085083]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30568123, 23.74657, 34.486237)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light16" parent="коридорные лампочки" unique_id=196208496 instance=ExtResource("9_ehtd8")]
@@ -2049,6 +2064,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D16" type="OmniLight3D" parent="коридорные лампочки" unique_id=225809082]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30568123, 23.74657, 23.208508)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light17" parent="коридорные лампочки" unique_id=1177938253 instance=ExtResource("9_ehtd8")]
@@ -2056,6 +2072,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D17" type="OmniLight3D" parent="коридорные лампочки" unique_id=1360075503]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.830034, 23.631283, 23.208508)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light18" parent="коридорные лампочки" unique_id=162635688 instance=ExtResource("9_ehtd8")]
@@ -2063,6 +2080,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D18" type="OmniLight3D" parent="коридорные лампочки" unique_id=562333236]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.664545, 23.631283, 27.914444)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light19" parent="коридорные лампочки" unique_id=1934909404 instance=ExtResource("9_ehtd8")]
@@ -2070,6 +2088,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D19" type="OmniLight3D" parent="коридорные лампочки" unique_id=600775928]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.213997, 23.631283, 27.914444)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light20" parent="коридорные лампочки" unique_id=1883114447 instance=ExtResource("9_ehtd8")]
@@ -2077,6 +2096,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D20" type="OmniLight3D" parent="коридорные лампочки" unique_id=1429184199]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.19441, 23.631283, 27.914444)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light21" parent="коридорные лампочки" unique_id=554220835 instance=ExtResource("9_ehtd8")]
@@ -2084,6 +2104,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D21" type="OmniLight3D" parent="коридорные лампочки" unique_id=1505012209]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.3158, 23.631283, 27.914444)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light22" parent="коридорные лампочки" unique_id=145364899 instance=ExtResource("9_ehtd8")]
@@ -2091,6 +2112,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D22" type="OmniLight3D" parent="коридорные лампочки" unique_id=1402342193]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.38758, 23.631283, 27.914444)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light23" parent="коридорные лампочки" unique_id=948266460 instance=ExtResource("9_ehtd8")]
@@ -2098,6 +2120,7 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D23" type="OmniLight3D" parent="коридорные лампочки" unique_id=301434882]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.042305, 23.631283, 27.914444)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light24" parent="коридорные лампочки" unique_id=656834440 instance=ExtResource("9_ehtd8")]
@@ -2105,10 +2128,14 @@ transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e
 
 [node name="OmniLight3D24" type="OmniLight3D" parent="коридорные лампочки" unique_id=467646485]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.547443, 23.631283, 21.927805)
+light_bake_mode = 1
 omni_range = 8.636383
 
 [node name="worn_overlead_light25" parent="коридорные лампочки" unique_id=1226713604 instance=ExtResource("9_ehtd8")]
 transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -62.573227, 24.027863, 21.970423)
+
+[node name="LightmapGI" type="LightmapGI" parent="коридорные лампочки" unique_id=1769872192]
+transform = Transform3D(1, 0, 0, 0, -0.9543916, 0.2985577, 0, -0.2985577, -0.9543916, 0, 0, 20.73137)
 
 [node name="комнатные лампочки" type="Node3D" parent="." unique_id=315313011]
 

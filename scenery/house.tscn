@@ -6,7 +6,11 @@
 [ext_resource type="Material" uid="uid://dok20eut12du5" path="res://materials/tiles.tres" id="2_cdgek"]
 [ext_resource type="Material" uid="uid://b1onfiem6bt4n" path="res://materials/concrete.tres" id="5_jotj8"]
 [ext_resource type="PackedScene" uid="uid://dm2icw2bxuvey" path="res://models/retro_light_-_oldclean_model.glb" id="7_h4qed"]
+[ext_resource type="PackedScene" uid="uid://dpmjlfjo2rce2" path="res://models/lantern.glb" id="8_rbql2"]
+[ext_resource type="PackedScene" uid="uid://ctijagmvllwo0" path="res://models/fluorescent_lamplight_-_4096px2.glb" id="9_ccgrf"]
 [ext_resource type="PackedScene" uid="uid://i4i1bmphvreo" path="res://models/worn_overlead_light.glb" id="9_ehtd8"]
+[ext_resource type="PackedScene" uid="uid://csq7oowoitiqt" path="res://models/asylum_bed.glb" id="10_h4qed"]
+[ext_resource type="PackedScene" uid="uid://wgnnpo502fno" path="res://models/sofa.glb" id="11_h57wj"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sy2ny"]
 resource_name = "Material.001"
@@ -2106,122 +2110,167 @@ omni_range = 8.636383
 [node name="worn_overlead_light25" parent="коридорные лампочки" unique_id=1226713604 instance=ExtResource("9_ehtd8")]
 transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -62.573227, 24.027863, 21.970423)
 
-[node name="Sketchfab_Scene" parent="." unique_id=1321790170 instance=ExtResource("7_h4qed")]
+[node name="комнатные лампочки" type="Node3D" parent="." unique_id=315313011]
+
+[node name="Sketchfab_Scene" parent="комнатные лампочки" unique_id=1321790170 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -19.001123, 12.38239, 38.048794)
 
-[node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=1510556767]
+[node name="OmniLight3D" type="OmniLight3D" parent="комнатные лампочки" unique_id=1510556767]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.711496, 11.919964, 38.127586)
 
-[node name="Sketchfab_Scene2" parent="." unique_id=1218674113 instance=ExtResource("7_h4qed")]
+[node name="Sketchfab_Scene2" parent="комнатные лампочки" unique_id=1218674113 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -32.25545, 12.38239, 38.048794)
 
-[node name="OmniLight3D2" type="OmniLight3D" parent="." unique_id=99445140]
+[node name="OmniLight3D2" type="OmniLight3D" parent="комнатные лампочки" unique_id=99445140]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.965824, 11.919964, 38.127586)
 
-[node name="Sketchfab_Scene3" parent="." unique_id=1315564502 instance=ExtResource("7_h4qed")]
+[node name="Sketchfab_Scene3" parent="комнатные лампочки" unique_id=1315564502 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -46.63868, 12.38239, 38.048794)
 
-[node name="OmniLight3D3" type="OmniLight3D" parent="." unique_id=1903246243]
+[node name="OmniLight3D3" type="OmniLight3D" parent="комнатные лампочки" unique_id=1903246243]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.349052, 11.919964, 38.127586)
 
-[node name="Sketchfab_Scene4" parent="." unique_id=1954955477 instance=ExtResource("7_h4qed")]
+[node name="Sketchfab_Scene4" parent="комнатные лампочки" unique_id=1954955477 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -60.995926, 12.38239, 38.048794)
 
-[node name="OmniLight3D4" type="OmniLight3D" parent="." unique_id=1279106242]
+[node name="OmniLight3D4" type="OmniLight3D" parent="комнатные лампочки" unique_id=1279106242]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.7063, 11.919964, 38.127586)
 
-[node name="Sketchfab_Scene5" parent="." unique_id=623937140 instance=ExtResource("7_h4qed")]
+[node name="Sketchfab_Scene5" parent="комнатные лампочки" unique_id=623937140 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -73.76273, 12.38239, 38.048794)
 
-[node name="OmniLight3D5" type="OmniLight3D" parent="." unique_id=1436664107]
+[node name="OmniLight3D5" type="OmniLight3D" parent="комнатные лампочки" unique_id=1436664107]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -73.47311, 11.919964, 38.127586)
 
-[node name="Sketchfab_Scene6" parent="." unique_id=1711266588 instance=ExtResource("7_h4qed")]
+[node name="Sketchfab_Scene6" parent="комнатные лампочки" unique_id=1711266588 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -87.92374, 12.38239, 38.048794)
 
-[node name="OmniLight3D6" type="OmniLight3D" parent="." unique_id=2079156410]
+[node name="OmniLight3D6" type="OmniLight3D" parent="комнатные лампочки" unique_id=2079156410]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -87.63411, 11.919964, 38.127586)
 
-[node name="Sketchfab_Scene7" parent="." unique_id=1207611327 instance=ExtResource("7_h4qed")]
+[node name="Sketchfab_Scene7" parent="комнатные лампочки" unique_id=1207611327 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -89.11236, 12.38239, 20.836306)
 
-[node name="OmniLight3D7" type="OmniLight3D" parent="." unique_id=794362037]
+[node name="OmniLight3D7" type="OmniLight3D" parent="комнатные лампочки" unique_id=794362037]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -88.82273, 11.919964, 20.915098)
 
-[node name="Sketchfab_Scene8" parent="." unique_id=1942306826 instance=ExtResource("7_h4qed")]
+[node name="Sketchfab_Scene8" parent="комнатные лампочки" unique_id=1942306826 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -77.72445, 12.38239, 20.836306)
 
-[node name="OmniLight3D8" type="OmniLight3D" parent="." unique_id=1921642423]
+[node name="OmniLight3D8" type="OmniLight3D" parent="комнатные лампочки" unique_id=1921642423]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.43482, 11.919964, 20.915098)
 
-[node name="Sketchfab_Scene9" parent="." unique_id=534530473 instance=ExtResource("7_h4qed")]
+[node name="Sketchfab_Scene9" parent="комнатные лампочки" unique_id=534530473 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -47.39142, 12.38239, 20.836306)
 
-[node name="OmniLight3D9" type="OmniLight3D" parent="." unique_id=1376518774]
+[node name="OmniLight3D9" type="OmniLight3D" parent="комнатные лампочки" unique_id=1376518774]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.10179, 11.919964, 20.915098)
 
-[node name="Sketchfab_Scene10" parent="." unique_id=56699604 instance=ExtResource("7_h4qed")]
+[node name="Sketchfab_Scene10" parent="комнатные лампочки" unique_id=56699604 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -35.556202, 12.38239, 20.836306)
 
-[node name="OmniLight3D10" type="OmniLight3D" parent="." unique_id=1702332328]
+[node name="OmniLight3D10" type="OmniLight3D" parent="комнатные лампочки" unique_id=1702332328]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.266575, 11.919964, 20.915098)
 
-[node name="Sketchfab_Scene11" parent="." unique_id=1315724013 instance=ExtResource("7_h4qed")]
+[node name="Sketchfab_Scene11" parent="комнатные лампочки" unique_id=1315724013 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -19.001123, 22.545448, 38.048794)
 
-[node name="OmniLight3D11" type="OmniLight3D" parent="." unique_id=383673754]
+[node name="OmniLight3D11" type="OmniLight3D" parent="комнатные лампочки" unique_id=383673754]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.711496, 22.083023, 38.127586)
 
-[node name="Sketchfab_Scene12" parent="." unique_id=1710001777 instance=ExtResource("7_h4qed")]
+[node name="Sketchfab_Scene12" parent="комнатные лампочки" unique_id=1710001777 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -32.25545, 22.545448, 38.048794)
 
-[node name="OmniLight3D12" type="OmniLight3D" parent="." unique_id=2083951903]
+[node name="OmniLight3D12" type="OmniLight3D" parent="комнатные лампочки" unique_id=2083951903]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.965824, 22.083023, 38.127586)
 
-[node name="Sketchfab_Scene13" parent="." unique_id=797803866 instance=ExtResource("7_h4qed")]
+[node name="Sketchfab_Scene13" parent="комнатные лампочки" unique_id=797803866 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -46.63868, 22.545448, 38.048794)
 
-[node name="OmniLight3D13" type="OmniLight3D" parent="." unique_id=10585489]
+[node name="OmniLight3D13" type="OmniLight3D" parent="комнатные лампочки" unique_id=10585489]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.349052, 22.083023, 38.127586)
 
-[node name="Sketchfab_Scene14" parent="." unique_id=1905734644 instance=ExtResource("7_h4qed")]
+[node name="Sketchfab_Scene14" parent="комнатные лампочки" unique_id=1905734644 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -60.995926, 22.545448, 38.048794)
 
-[node name="OmniLight3D14" type="OmniLight3D" parent="." unique_id=505999784]
+[node name="OmniLight3D14" type="OmniLight3D" parent="комнатные лампочки" unique_id=505999784]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.7063, 22.083023, 38.127586)
 
-[node name="Sketchfab_Scene15" parent="." unique_id=1324694169 instance=ExtResource("7_h4qed")]
+[node name="Sketchfab_Scene15" parent="комнатные лампочки" unique_id=1324694169 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -73.76273, 22.545448, 38.048794)
 
-[node name="OmniLight3D15" type="OmniLight3D" parent="." unique_id=292519046]
+[node name="OmniLight3D15" type="OmniLight3D" parent="комнатные лампочки" unique_id=292519046]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -73.47311, 22.083023, 38.127586)
 
-[node name="Sketchfab_Scene16" parent="." unique_id=370626304 instance=ExtResource("7_h4qed")]
+[node name="Sketchfab_Scene16" parent="комнатные лампочки" unique_id=370626304 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -87.92374, 22.545448, 38.048794)
 
-[node name="OmniLight3D16" type="OmniLight3D" parent="." unique_id=1090018483]
+[node name="OmniLight3D16" type="OmniLight3D" parent="комнатные лампочки" unique_id=1090018483]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -87.63411, 22.083023, 38.127586)
 
-[node name="Sketchfab_Scene17" parent="." unique_id=1132036387 instance=ExtResource("7_h4qed")]
+[node name="Sketchfab_Scene17" parent="комнатные лампочки" unique_id=1132036387 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -89.11236, 22.545448, 20.836306)
 
-[node name="OmniLight3D17" type="OmniLight3D" parent="." unique_id=1347875498]
+[node name="OmniLight3D17" type="OmniLight3D" parent="комнатные лампочки" unique_id=1347875498]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -88.82273, 22.083023, 20.915098)
 
-[node name="Sketchfab_Scene18" parent="." unique_id=1261062697 instance=ExtResource("7_h4qed")]
+[node name="Sketchfab_Scene18" parent="комнатные лампочки" unique_id=1261062697 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -77.72445, 22.545448, 20.836306)
 
-[node name="OmniLight3D18" type="OmniLight3D" parent="." unique_id=1059855942]
+[node name="OmniLight3D18" type="OmniLight3D" parent="комнатные лампочки" unique_id=1059855942]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.43482, 22.083023, 20.915098)
 
-[node name="Sketchfab_Scene19" parent="." unique_id=1644987231 instance=ExtResource("7_h4qed")]
+[node name="Sketchfab_Scene19" parent="комнатные лампочки" unique_id=1644987231 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -47.39142, 22.545448, 20.836306)
 
-[node name="OmniLight3D19" type="OmniLight3D" parent="." unique_id=221185802]
+[node name="OmniLight3D19" type="OmniLight3D" parent="комнатные лампочки" unique_id=221185802]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.10179, 22.083023, 20.915098)
 
-[node name="Sketchfab_Scene20" parent="." unique_id=533069205 instance=ExtResource("7_h4qed")]
+[node name="Sketchfab_Scene20" parent="комнатные лампочки" unique_id=533069205 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -35.556202, 22.545448, 20.836306)
 
-[node name="OmniLight3D20" type="OmniLight3D" parent="." unique_id=5999365]
+[node name="OmniLight3D20" type="OmniLight3D" parent="комнатные лампочки" unique_id=5999365]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.266575, 22.083023, 20.915098)
+
+[node name="подвальные лампочки" type="Node3D" parent="." unique_id=1671919142]
+
+[node name="Sketchfab_Scene2" parent="подвальные лампочки" unique_id=1744015479 instance=ExtResource("9_ccgrf")]
+transform = Transform3D(-1.09278474e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278474e-07, 11.123533, 5.528125, 30.671478)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="подвальные лампочки" unique_id=1708134147]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.120047, 3.0060792, 30.66949)
+omni_range = 6.717688
+
+[node name="Sketchfab_Scene" parent="подвальные лампочки" unique_id=1424713709 instance=ExtResource("8_rbql2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.322834, -2.525723, 41.087955)
+
+[node name="OmniLight3D2" type="OmniLight3D" parent="подвальные лампочки" unique_id=490691106]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.316985, -2.9188755, 41.09831)
+omni_range = 1.7049901
+
+[node name="Sketchfab_Scene3" parent="подвальные лампочки" unique_id=567645574 instance=ExtResource("9_ccgrf")]
+transform = Transform3D(-1.09278474e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278474e-07, -22.76238, 5.528125, 30.671478)
+
+[node name="OmniLight3D3" type="OmniLight3D" parent="подвальные лампочки" unique_id=873264813]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -22.765867, 3.0060792, 30.66949)
+omni_range = 6.717688
+
+[node name="Sketchfab_Scene4" parent="подвальные лампочки" unique_id=967280311 instance=ExtResource("9_ccgrf")]
+transform = Transform3D(-1.09278474e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278474e-07, -43.514137, 5.528125, 30.671478)
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="подвальные лампочки" unique_id=1448674941]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -43.517624, 3.0060792, 30.66949)
+omni_range = 6.717688
+
+[node name="Sketchfab_Scene5" parent="подвальные лампочки" unique_id=224135017 instance=ExtResource("9_ccgrf")]
+transform = Transform3D(-1.09278474e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278474e-07, -75.13114, 5.528125, 30.671478)
+
+[node name="OmniLight3D5" type="OmniLight3D" parent="подвальные лампочки" unique_id=1057124574]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -75.13463, 3.0060792, 30.66949)
+omni_range = 6.717688
+
+[node name="Sketchfab_Scene" parent="." unique_id=832183504 instance=ExtResource("10_h4qed")]
+transform = Transform3D(-0.3, 0, -2.6226834e-08, 0, 0.3, 0, 2.6226834e-08, 0, -0.3, -15.483992, 6.058344, 51.121796)
+
+[node name="Sketchfab_Scene3" parent="." unique_id=810489071 instance=ExtResource("11_h57wj")]
+transform = Transform3D(-3, 0, -4.5298742e-07, 0, 3, 0, 4.5298742e-07, 0, -3, -3.4780495, 6.52087, 42.43549)

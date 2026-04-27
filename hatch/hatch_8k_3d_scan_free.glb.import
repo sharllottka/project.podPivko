@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://mhc3fqcxrfmt"
-path="res://.godot/imported/hatch.glb-4c7eb5b9c1e066f3c89f2c3c6028642e.scn"
+uid="uid://3fttmxn4t052"
+path="res://.godot/imported/hatch_8k_3d_scan_free.glb-273f346cc3e7306f46d3f4a19eca6858.scn"
 
 [deps]
 
-source_file="res://models/hatch.glb"
-dest_files=["res://.godot/imported/hatch.glb-4c7eb5b9c1e066f3c89f2c3c6028642e.scn"]
+source_file="res://hatch/hatch_8k_3d_scan_free.glb"
+dest_files=["res://.godot/imported/hatch_8k_3d_scan_free.glb-273f346cc3e7306f46d3f4a19eca6858.scn"]
 
 [params]
 

@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://bda2xmfgwsxuy"]
 
 [ext_resource type="PackedScene" uid="uid://rji0utdr26r1" path="res://electricbox/electric_box.glb" id="1_1u64t"]
+[ext_resource type="Script" uid="uid://kdq6a5rn0ag3" path="res://electricbox/electric_box.gd" id="1_qywh2"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5vcju"]
 size = Vector3(0.2915039, 0.78466797, 0.6133728)
 
 [node name="Area3D" type="Area3D" unique_id=2111399856]
+script = ExtResource("1_qywh2")
 
 [node name="Sketchfab_Scene" parent="." unique_id=1484992586 instance=ExtResource("1_1u64t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2598374, -1.1920929e-07, 0.5389445)

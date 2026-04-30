@@ -1,0 +1,68 @@
+[gd_scene format=4 uid="uid://cbxdbu7cqrcv4"]
+
+[ext_resource type="Texture2D" uid="uid://77nj7foxt8op" path="res://models/carpet (1)_0.png" id="1_vfkwu"]
+[ext_resource type="Texture2D" uid="uid://4cax0dt7mh8d" path="res://models/carpet (1)_1.png" id="2_06rat"]
+[ext_resource type="Texture2D" uid="uid://dsvrfxfx8fvii" path="res://models/carpet (1)_2.png" id="3_s6dc3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xc184"]
+resource_name = "Mat_1"
+cull_mode = 2
+albedo_texture = ExtResource("1_vfkwu")
+metallic_texture = ExtResource("2_06rat")
+metallic_texture_channel = 2
+roughness = 0.58362085
+roughness_texture = ExtResource("2_06rat")
+roughness_texture_channel = 1
+normal_enabled = true
+normal_texture = ExtResource("3_s6dc3")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_npj7j"]
+_surfaces = [{
+"aabb": AABB(-34.026123, -47.675083, 0, 68.800446, 96.98184, 1e-05),
+"format": 34359742465,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"name": "Mat_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("wBoIwkmzPsIAAAAA5xgLQh86RUIAAAAA5xgLQkmzPsIAAAAAwBoIwh86RUIAAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_tkiv1"]
+resource_name = "Sketchfab_Scene_Object_0"
+_surfaces = [{
+"aabb": AABB(-34.026123, -47.675083, 0, 68.800446, 96.98184, 1e-05),
+"attribute_data": PackedByteArray("n5IjPrB0vjyvBVk/tDl+P68FWT+wdL48n5IjPrQ5fj8="),
+"format": 34359742487,
+"index_count": 6,
+"index_data": PackedByteArray("AAABAAIAAAADAAEA"),
+"material": SubResource("StandardMaterial3D_xc184"),
+"name": "Mat_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray("wBoIwkmzPsIAAAAA5xgLQh86RUIAAAAA5xgLQkmzPsIAAAAAwBoIwh86RUIAAAAA/3//f////7//f/9/////v/9//3////+//3//f////78=")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_npj7j")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_athwx"]
+data = PackedVector3Array(-34.0261, -47.6751, 0, 34.7743, 49.306797, 0, 34.7743, -47.6751, 0, -34.0261, -47.6751, 0, -34.0261, 49.306797, 0, 34.7743, 49.306797, 0)
+
+[node name="Sketchfab_Scene" type="Node3D" unique_id=1326877900]
+transform = Transform3D(0.04, 0, 0, 0, 0.04, 0, 0, 0, 0.04, 0, 0, 0)
+
+[node name="Sketchfab_model" type="Node3D" parent="." unique_id=2009567520]
+transform = Transform3D(1, 0, 0, 0, 2.220446e-16, 1, 0, -1, 2.220446e-16, 0, 0, 0)
+
+[node name="2f5ab2ef3d854574a8e2d6cfcae4d281_obj_cleaner_materialmerger_gles" type="Node3D" parent="Sketchfab_model" unique_id=1546739459]
+
+[node name="Object_2" type="MeshInstance3D" parent="Sketchfab_model/2f5ab2ef3d854574a8e2d6cfcae4d281_obj_cleaner_materialmerger_gles" unique_id=1773543735]
+mesh = SubResource("ArrayMesh_tkiv1")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/2f5ab2ef3d854574a8e2d6cfcae4d281_obj_cleaner_materialmerger_gles/Object_2" unique_id=991041952]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/2f5ab2ef3d854574a8e2d6cfcae4d281_obj_cleaner_materialmerger_gles/Object_2/StaticBody3D" unique_id=1455876172]
+shape = SubResource("ConcavePolygonShape3D_athwx")

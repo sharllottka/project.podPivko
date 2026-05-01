@@ -35,6 +35,7 @@ uv1_scale = Vector3(3, 2, 1)
 material = SubResource("StandardMaterial3D_5mrsh")
 
 [node name="level" type="Node3D" unique_id=453926201]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.016626358, 0.052959442, 0)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=923679023]
 environment = SubResource("Environment_5mrsh")
@@ -49,7 +50,7 @@ transform = Transform3D(15, 0, 0, 0, 1, 0, 0, 0, 15, 0, 0, 0)
 mesh = SubResource("BoxMesh_80vhd")
 
 [node name="player" parent="." unique_id=1711829232 instance=ExtResource("2_cwqvt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4306605, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.60083, 1.4306605, 3.7899263)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=307518786]
 transform = Transform3D(0.7431448, 0.55144805, -0.37899977, 0, 0.56640625, 0.8241262, 0.6691306, -0.6124451, 0.42092186, 0, 7.8, 0)

@@ -1,21 +1,22 @@
 extends CharacterBody3D
 
-
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 
+@onready var clue_label = $CanvasLayer/ClueCounter
+@onready var inv_button = $CanvasLayer/InventoryButton
+@onready var note_panel = $CanvasLayer/NotePanel
+
+func _ready():
+	note_panel.visible = false
 
 func _physics_process(delta: float) -> void:
-	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
-	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
 	var input_dir := Input.get_vector("left", "right", "forward", "backward")
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	if direction:
@@ -26,3 +27,31 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+
+func _process(_delta):
+	clue_label.text = "Улик собрано: " + str(Global.clues_count) + "/5"
+	
+	inv_button.visible = Global.has_note
+
+func _on_inventory_button_pressed():
+	note_panel.visible = true
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+
+func _on_close_note_button_pressed():
+	note_panel.visible = false
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED	
+
+func _input(event):
+	if event.is_action_pressed("inventory"):
+		if Global.has_note:
+			toggle_note()
+
+func toggle_note():
+	note_panel.visible = !note_panel.visible
+	
+	if note_panel.visible:
+		set_physics_process(false) 
+		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED 
+	else:
+		set_physics_process(true)
+		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED

@@ -1,7 +1,10 @@
 extends Control
 
-@onready var grid       = $GridContainer
-@onready var wire_layer = $WireLayer
+@onready var grid        = $GridContainer
+@onready var wire_layer  = $WireLayer
+
+@onready var clue_dialog = $ClueDialog
+@onready var win_sound   = $WinSound 
 
 var tile_scene = preload("res://minigame4/scenes/tile.tscn")
 
@@ -23,6 +26,52 @@ var fixed_map = [
 	"line",   "t",      "corner", "line",   "corner", "corner",
 	"corner", "line",   "corner", "t",      "line",   "corner"
 ]
+
+func _ready():
+	if clue_dialog:
+		clue_dialog.visible = false
+
+	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	
+	grid.columns = COLS
+	grid.add_theme_constant_override("h_separation", GAP)
+	grid.add_theme_constant_override("v_separation", GAP)
+
+	wire_layer.mg = self
+	generate_grid()
+
+	await get_tree().process_frame
+	_recenter()
+
+
+func _on_continue_button_pressed():
+	Global.clues_count += 1  
+	close_game()
+
+func close_game():
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	get_tree().change_scene_to_file("res://levels/level.tscn")
+
+
+func _on_win():
+	if win: 
+		print("✅ ЦЕПЬ ЗАМКНУТА!")
+
+		if "has_wire_clue" in Global:
+			Global.has_wire_clue = true
+
+		if win_sound:
+			win_sound.play()
+
+		if clue_dialog:
+			clue_dialog.visible = true
+		else:
+			await get_tree().create_timer(1.5).timeout
+			close_game()
+
+func _input(event):
+	if event.is_action_pressed("ui_cancel"):
+		close_game()
 
 func check_neighbor(tile, x, y, dir, nx, ny):
 	if nx < 0 or nx >= COLS or ny < 0 or ny >= ROWS:
@@ -49,6 +98,8 @@ func spread_power(index: int):
 	check_neighbor(tile, x, y, "down",  x, y + 1)
 
 func update_power():
+	if clue_dialog and clue_dialog.visible: return 
+	
 	win = false
 	for t in tiles:
 		t.is_powered = false
@@ -65,16 +116,6 @@ func update_power():
 		_on_win()
 
 	wire_layer.refresh()
-
-func _on_win():
-	print("✅ ЦЕПЬ ЗАМКНУТА!")
-	if "has_wire_clue" in Global:
-		Global.has_wire_clue = true
-
-	await get_tree().create_timer(1.5).timeout
-
-	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	get_tree().change_scene_to_file("res://levels/level.tscn")
 
 func update_all_tiles():
 	for t in tiles:
@@ -103,18 +144,6 @@ func generate_grid():
 	update_all_tiles()
 	update_power()
 
-func _ready():
-	grid.columns = COLS
-	grid.add_theme_constant_override("h_separation", GAP)
-	grid.add_theme_constant_override("v_separation", GAP)
-
-	wire_layer.mg = self
-
-	generate_grid()
-
-	await get_tree().process_frame
-	_recenter()
-
 func _recenter():
 	var grid_w  = COLS * TILE_SIZE + (COLS - 1) * GAP
 	var grid_h  = ROWS * TILE_SIZE + (ROWS - 1) * GAP
@@ -128,6 +157,6 @@ func tile_edge_pos(col: int, row: int, side: String) -> Vector2:
 	var ty   = grid_offset.y + row * (TILE_SIZE + GAP)
 	var half = TILE_SIZE * 0.5
 	match side:
-		"left":  return Vector2(tx,             ty + half)
+		"left":  return Vector2(tx,              ty + half)
 		"right": return Vector2(tx + TILE_SIZE, ty + half)
 	return Vector2.ZERO

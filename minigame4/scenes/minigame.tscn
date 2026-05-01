@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://bgvsne0bkcrdf" path="res://minigame4/minigame.gd" id="1_5iev5"]
 [ext_resource type="Script" uid="uid://by6y32ufiig3s" path="res://minigame4/wire_layer.gd" id="2_hwsak"]
 [ext_resource type="Script" uid="uid://dsyhs8r5vatli" path="res://minigame4/exit.gd" id="3_uwtn2"]
+[ext_resource type="Script" uid="uid://cfu6gy3iyj623" path="res://minigame2/scenes/clue_dialog.gd" id="4_pxxjs"]
 
 [node name="Minigame" type="Control" unique_id=547567431]
 layout_mode = 3
@@ -52,5 +53,35 @@ offset_bottom = 74.0
 theme_override_font_sizes/font_size = 32
 text = "X"
 script = ExtResource("3_uwtn2")
+
+[node name="ClueDialog" type="Panel" parent="." unique_id=218878887]
+visible = false
+layout_mode = 0
+offset_left = 707.0
+offset_top = 357.0
+offset_right = 1200.0
+offset_bottom = 655.0
+script = ExtResource("4_pxxjs")
+
+[node name="Label" type="Label" parent="ClueDialog" unique_id=1155939986]
+layout_mode = 0
+offset_left = 149.0
+offset_top = 80.0
+offset_right = 350.0
+offset_bottom = 103.0
+theme_override_font_sizes/font_size = 13
+text = "Вы получили улику!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ContinueButton" type="Button" parent="ClueDialog" unique_id=1210477764]
+process_mode = 3
+layout_mode = 0
+offset_left = 190.0
+offset_top = 187.0
+offset_right = 301.0
+offset_bottom = 218.0
+theme_override_font_sizes/font_size = 12
+text = "Продолжить"
 
 [connection signal="pressed" from="UI/Button" to="UI/Button" method="_on_pressed"]

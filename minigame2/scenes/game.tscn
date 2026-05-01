@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://igvnixfr2kux" path="res://minigame2/assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="Texture2D" uid="uid://cocwa8ppj74wi" path="res://minigame2/assets/sprites/Dungeon Tile Set.png" id="4_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://88p575a4305h" path="res://minigame2/scenes/coin.tscn" id="4_lbhrr"]
-[ext_resource type="Script" uid="uid://drxbbffvkh42s" path="res://minigame2/scenes/exit_button.gd" id="5_ik7fb"]
+[ext_resource type="Script" path="res://minigame2/scenes/exit_button.gd" id="5_ik7fb"]
 [ext_resource type="PackedScene" uid="uid://clpwbel6672ue" path="res://minigame2/scenes/killzone.tscn" id="5_iywne"]
 [ext_resource type="PackedScene" uid="uid://ddex2r41633ro" path="res://minigame2/scenes/slime.tscn" id="6_p57ef"]
 [ext_resource type="PackedScene" uid="uid://b371g02hwaab3" path="res://minigame2/scenes/most.tscn" id="6_vtaks"]

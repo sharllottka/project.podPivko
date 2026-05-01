@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cj1e1igf4r62j" path="res://player/player.gd" id="1_rkbax"]
 [ext_resource type="Script" uid="uid://b7g5gfldtv7s3" path="res://player/fp_cam.gd" id="2_g1dw6"]
+[ext_resource type="Texture2D" uid="uid://d2fn8qfmf6hnj" path="res://models/записка-removebg-preview.png" id="3_g1dw6"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sqvos"]
 
@@ -25,3 +26,39 @@ script = ExtResource("2_g1dw6")
 [node name="RayCast3D" type="RayCast3D" parent="head/Camera3D" unique_id=802293557]
 target_position = Vector3(0, 0, -3)
 collide_with_areas = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=108788392]
+
+[node name="InteractLabel" type="Label" parent="CanvasLayer" unique_id=104896014]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -136.5
+offset_top = -11.5
+offset_right = 136.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Нажмите [E] для взаимодействия"
+
+[node name="ClueCounter" type="Label" parent="CanvasLayer" unique_id=1265852286]
+offset_left = 7.0
+offset_top = 12.0
+offset_right = 177.0
+offset_bottom = 50.0
+text = "Улик собрано: 0/5"
+horizontal_alignment = 1
+
+[node name="NotePanel" type="Panel" parent="CanvasLayer" unique_id=1782311088]
+visible = false
+offset_left = 455.0
+offset_top = 197.0
+offset_right = 1479.7668
+offset_bottom = 832.0
+
+[node name="ЗапискаRemovebgPreview" type="Sprite2D" parent="CanvasLayer/NotePanel" unique_id=713736369]
+position = Vector2(508, 313)
+scale = Vector2(0.8333333, 0.8333333)
+texture = ExtResource("3_g1dw6")

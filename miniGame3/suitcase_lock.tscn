@@ -5,6 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://0vplv0ngb1w3" path="res://miniGame3/для замка.wav" id="3_ktbh8"]
 [ext_resource type="AudioStream" uid="uid://bfwou26akl3vb" path="res://miniGame3/открыть чемодан.wav" id="4_2ussq"]
 [ext_resource type="AudioStream" uid="uid://cwh8yolhwosxb" path="res://miniGame3/error.ogg" id="5_y5n2i"]
+[ext_resource type="Script" uid="uid://cfu6gy3iyj623" path="res://minigame2/scenes/clue_dialog.gd" id="6_rs0xw"]
 
 [node name="SuitcaseLock" type="Control" unique_id=485463837]
 layout_mode = 3
@@ -143,6 +144,36 @@ stream = ExtResource("4_2ussq")
 
 [node name="ErrorSound" type="AudioStreamPlayer" parent="." unique_id=1669339931]
 stream = ExtResource("5_y5n2i")
+
+[node name="ClueDialog" type="Panel" parent="." unique_id=691153949]
+visible = false
+layout_mode = 0
+offset_left = 719.0
+offset_top = 396.0
+offset_right = 1212.0
+offset_bottom = 694.0
+script = ExtResource("6_rs0xw")
+
+[node name="Label" type="Label" parent="ClueDialog" unique_id=2103262148]
+layout_mode = 0
+offset_left = 149.0
+offset_top = 80.0
+offset_right = 350.0
+offset_bottom = 103.0
+theme_override_font_sizes/font_size = 13
+text = "Вы получили улику!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ContinueButton" type="Button" parent="ClueDialog" unique_id=74110257]
+process_mode = 3
+layout_mode = 0
+offset_left = 190.0
+offset_top = 187.0
+offset_right = 301.0
+offset_bottom = 218.0
+theme_override_font_sizes/font_size = 12
+text = "Продолжить"
 
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Button" to="." method="change_digit" binds= [0, 1]]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Button2" to="." method="change_digit" binds= [0, -1]]

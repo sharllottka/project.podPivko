@@ -7,6 +7,7 @@ var current_code = [0, 0, 0, 0]
 @onready var open_player = $OpenSound 
 @onready var error_player = $ErrorSound 
 
+@onready var clue_dialog = $ClueDialog
 @onready var labels = [
 	$HBoxContainer/VBoxContainer/Label,
 	$HBoxContainer/VBoxContainer2/Label,
@@ -15,6 +16,8 @@ var current_code = [0, 0, 0, 0]
 ]
 
 func _ready():
+	clue_dialog.visible = false
+	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 	update_ui()
 
 func _input(event):
@@ -26,6 +29,9 @@ func update_ui():
 		labels[i].text = str(current_code[i])
 
 func change_digit(index: int, amount: int):
+	if clue_dialog.visible:
+		return
+		
 	current_code[index] += amount
 	
 	if current_code[index] > 9: current_code[index] = 0
@@ -39,27 +45,24 @@ func change_digit(index: int, amount: int):
 
 func _on_open_button_pressed():
 	if current_code == win_code:
-		print("Код верный! Чемодан открывается...")
 		victory()
 	else:
-		print("Неверный код. Попробуй еще раз.")
 		flash_red_effect()
 
-func _on_button_2_pressed(): 
-	close_menu()
-
 func victory():
-	print("УРА! ОТКРЫТО!")
+	print("Код верный!")
 	if open_player:
 		open_player.play()
 	
-	await get_tree().create_timer(1.5).timeout
+	clue_dialog.visible = true
+
+func _on_continue_button_pressed():
+	Global.clues_count += 1  
 	close_menu()
 
 func close_menu():
-	queue_free() 
-	get_tree().paused = false
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	get_tree().change_scene_to_file("res://levels/level.tscn")
 
 func flash_red_effect():
 	if error_player:
@@ -73,6 +76,5 @@ func flash_red_effect():
 	for label in labels:
 		label.modulate = Color.WHITE
 
-
-func _on_pressed() -> void:
-	pass # Replace with function body.
+func _on_button_2_pressed():
+	close_menu()

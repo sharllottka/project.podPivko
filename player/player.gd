@@ -3,12 +3,14 @@ extends CharacterBody3D
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 
-@onready var clue_label = $CanvasLayer/ClueCounter
-@onready var inv_button = $CanvasLayer/InventoryButton
-@onready var note_panel = $CanvasLayer/NotePanel
+@onready var clue_label = find_child("ClueCounter")
+@onready var note_panel = find_child("NotePanel")
 
 func _ready():
-	note_panel.visible = false
+	if note_panel:
+		note_panel.visible = false
+	else:
+		print("Ошибка: NotePanel не найдена!")
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
@@ -29,17 +31,8 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func _process(_delta):
-	clue_label.text = "Улик собрано: " + str(Global.clues_count) + "/5"
-	
-	inv_button.visible = Global.has_note
-
-func _on_inventory_button_pressed():
-	note_panel.visible = true
-	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
-
-func _on_close_note_button_pressed():
-	note_panel.visible = false
-	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED	
+	if clue_label:
+		clue_label.text = "Улик собрано: " + str(Global.clues_count) + "/5"
 
 func _input(event):
 	if event.is_action_pressed("inventory"):

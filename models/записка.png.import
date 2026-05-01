@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2fn8qfmf6hnj"
-path="res://.godot/imported/записка-removebg-preview.png-cac2be32987ca71d41278d9b49527f77.ctex"
+uid="uid://dsydst6sbx840"
+path="res://.godot/imported/записка.png-933c8910298d21a897331349f4a44cd7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://models/записка-removebg-preview.png"
-dest_files=["res://.godot/imported/записка-removebg-preview.png-cac2be32987ca71d41278d9b49527f77.ctex"]
+source_file="res://models/записка.png"
+dest_files=["res://.godot/imported/записка.png-933c8910298d21a897331349f4a44cd7.ctex"]
 
 [params]
 

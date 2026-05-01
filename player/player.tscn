@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://cj1e1igf4r62j" path="res://player/player.gd" id="1_rkbax"]
 [ext_resource type="Script" uid="uid://b7g5gfldtv7s3" path="res://player/fp_cam.gd" id="2_g1dw6"]
-[ext_resource type="Texture2D" uid="uid://d2fn8qfmf6hnj" path="res://models/записка-removebg-preview.png" id="3_g1dw6"]
+[ext_resource type="Texture2D" uid="uid://dsydst6sbx840" path="res://models/записка.png" id="3_g1dw6"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sqvos"]
 

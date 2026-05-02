@@ -62,3 +62,13 @@ offset_bottom = 832.0
 position = Vector2(508, 313)
 scale = Vector2(0.8333333, 0.8333333)
 texture = ExtResource("3_g1dw6")
+
+[node name="NotificationLabel" type="Label" parent="CanvasLayer" unique_id=1067764482]
+visible = false
+offset_left = 630.0
+offset_top = 398.0
+offset_right = 1302.0
+offset_bottom = 685.0
+text = "Найдена записка! Нажмите [I], чтобы прочитать"
+horizontal_alignment = 1
+vertical_alignment = 1

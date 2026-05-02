@@ -57,7 +57,9 @@ func victory():
 	clue_dialog.visible = true
 
 func _on_continue_button_pressed():
-	Global.clues_count += 1  
+	if not Global.suitcase_done:
+		Global.clues_count += 1  
+		Global.suitcase_done = true 
 	close_menu()
 
 func close_menu():

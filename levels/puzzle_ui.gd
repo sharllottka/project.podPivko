@@ -38,8 +38,10 @@ func win():
 		close_menu()
 
 func _on_continue_button_pressed():
-	Global.clues_count += 1 
-	close_menu()           
+	if not Global.puzzle_done:
+		Global.clues_count += 1 
+		Global.puzzle_done = true 
+	close_menu()         
 
 func close_menu():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED

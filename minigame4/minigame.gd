@@ -45,7 +45,9 @@ func _ready():
 
 
 func _on_continue_button_pressed():
-	Global.clues_count += 1  
+	if not Global.shield_done:
+		Global.clues_count += 1  
+		Global.shield_done = true 
 	close_game()
 
 func close_game():

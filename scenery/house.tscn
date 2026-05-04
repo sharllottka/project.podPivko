@@ -14,12 +14,8 @@
 [ext_resource type="PackedScene" uid="uid://cp2idakkrrk5l" path="res://scenery/table.tscn" id="13_42jcm"]
 [ext_resource type="PackedScene" uid="uid://c3604lqpacrr6" path="res://scenery/kitchen.tscn" id="14_j45mc"]
 [ext_resource type="PackedScene" uid="uid://p14l8x8m3hx7" path="res://scenery/chair2.tscn" id="16_g7vup"]
-[ext_resource type="PackedScene" uid="uid://cpkomkw5mtwbr" path="res://scenery/light_switch.tscn" id="17_41tgb"]
 [ext_resource type="PackedScene" uid="uid://cbxdbu7cqrcv4" path="res://scenery/carpet.tscn" id="17_l63sn"]
-[ext_resource type="PackedScene" uid="uid://csao5mb6wrirl" path="res://scenery/paper1.tscn" id="17_w7og5"]
 [ext_resource type="PackedScene" uid="uid://d2xp7fmkqky1o" path="res://scenery/bed.tscn" id="18_5lq4e"]
-[ext_resource type="PackedScene" uid="uid://swes0xktbyxu" path="res://scenery/paper2.tscn" id="18_41tgb"]
-[ext_resource type="PackedScene" uid="uid://dsjq2c4fey58c" path="res://scenery/suitcase.tscn" id="19_42jcm"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sy2ny"]
 resource_name = "Material.001"
@@ -2335,9 +2331,6 @@ transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, -14.608297, 7.5278883, 
 [node name="Sketchfab_Scene11" parent="1 комната" unique_id=1333810839 instance=ExtResource("18_5lq4e")]
 transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, -23.033329, 7.5278883, 40.97319)
 
-[node name="выключатель" parent="1 комната" unique_id=114405872 instance=ExtResource("17_41tgb")]
-transform = Transform3D(-6.556708e-10, 0, -0.015, 0, 0.015, 0, 0.015, 0, -6.556708e-10, 7.117622, 8.265407, 35.55238)
-
 [node name="Sketchfab_Scene17" parent="." unique_id=1337029323 instance=ExtResource("10_gudfl")]
 transform = Transform3D(0.003, 0, 0, 0, -1.3113416e-10, -0.003, 0, 0.003, -1.3113416e-10, -46.271027, 12.001511, 44.157368)
 
@@ -2464,12 +2457,3 @@ transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, -83.30391, 7.5278883, 4
 
 [node name="Sketchfab_Scene27" parent="6 комната" unique_id=1237012100 instance=ExtResource("18_5lq4e")]
 transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, -92.58551, 7.5278883, 40.97319)
-
-[node name="бумажка2" parent="." unique_id=1167788028 instance=ExtResource("17_w7og5")]
-transform = Transform3D(0.8, 0, 0, 0, 0.8, 0, 0, 0, 0.8, -71.85214, 9.110936, 41.884563)
-
-[node name="бумажка1" parent="." unique_id=1197526547 instance=ExtResource("18_41tgb")]
-transform = Transform3D(0.16920887, 0, -0.10662252, 0, 0.2, 0, 0.10662252, 0, 0.16920887, -71.615585, 9.113482, 41.742184)
-
-[node name="чемодан" parent="." unique_id=443618957 instance=ExtResource("19_42jcm")]
-transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -77.17513, 6.6917844, 39.322166)

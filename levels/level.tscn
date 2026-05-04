@@ -7,6 +7,10 @@
 [ext_resource type="PackedScene" uid="uid://cwpfqk5b815vu" path="res://minigame4/scenes/minigame.tscn" id="5_gjl0y"]
 [ext_resource type="PackedScene" uid="uid://cc3jx6wd8mtud" path="res://hatch/sewage_hatch.tscn" id="6_vnv7o"]
 [ext_resource type="PackedScene" uid="uid://doj6j8wn02h3c" path="res://minigame2/scenes/game.tscn" id="7_d5x7l"]
+[ext_resource type="PackedScene" uid="uid://csao5mb6wrirl" path="res://scenery/paper1.tscn" id="8_rtcij"]
+[ext_resource type="PackedScene" uid="uid://swes0xktbyxu" path="res://scenery/paper2.tscn" id="9_ukwr8"]
+[ext_resource type="PackedScene" uid="uid://cpkomkw5mtwbr" path="res://scenery/light_switch.tscn" id="10_ukwr8"]
+[ext_resource type="PackedScene" uid="uid://dsjq2c4fey58c" path="res://scenery/suitcase.tscn" id="11_pb8y7"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hjsbj"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -66,3 +70,15 @@ minigame_scene = ExtResource("5_gjl0y")
 [node name="SewageHatch" parent="." unique_id=1816285138 instance=ExtResource("6_vnv7o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51.902733, -5, -4.3863115)
 minigame_scene = ExtResource("7_d5x7l")
+
+[node name="бумажка2" parent="." unique_id=1167788028 instance=ExtResource("8_rtcij")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -58.568382, 1.332622, 6.4580903)
+
+[node name="бумажка1" parent="." unique_id=1197526547 instance=ExtResource("9_ukwr8")]
+transform = Transform3D(0.12690666, 0, -0.07996688, 0, 0.15, 0, 0.07996688, 0, 0.12690666, -58.33183, 1.3351684, 6.3157105)
+
+[node name="выключатель" parent="." unique_id=114405872 instance=ExtResource("10_ukwr8")]
+transform = Transform3D(-3.059797e-10, 0, -0.007, 0, 0.007, 0, 0.007, 0, -3.059797e-10, -19.032206, 1.13417, 2.954184)
+
+[node name="чемодан" parent="." unique_id=443618957 instance=ExtResource("11_pb8y7")]
+transform = Transform3D(-6.556708e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.556708e-08, -61.096436, 0.12513375, 4.985884)

@@ -1,5 +1,6 @@
 [gd_scene format=4 uid="uid://dsjq2c4fey58c"]
 
+[ext_resource type="Script" uid="uid://bn3scoaxnpyco" path="res://scenery/suitcase.gd" id="1_315wo"]
 [ext_resource type="Texture2D" uid="uid://jy26fw3flotg" path="res://models/suitcase_with_combination_lock_0.png" id="1_hvuux"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8xcjc"]
@@ -213,7 +214,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.033136833, -0.25279894)
 [node name="Object_6" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/top_001_1" unique_id=486081725]
 mesh = SubResource("ArrayMesh_80mr8")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/top_001_1/Object_6" unique_id=1499076458]
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/top_001_1/Object_6" unique_id=1499076458 groups=["interactable"]]
+script = ExtResource("1_315wo")
+suitcase_game_scene = "uid://cvil2tngoiq4s"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/top_001_1/Object_6/StaticBody3D" unique_id=686660955]
 shape = SubResource("ConcavePolygonShape3D_bm7bg")

@@ -57,7 +57,7 @@ func victory():
 	clue_dialog.visible = true
 
 func _on_continue_button_pressed():
-	if not Global.suitcase_done:
+	if not Global.suitcase_done: 
 		Global.clues_count += 1  
 		Global.suitcase_done = true 
 	close_menu()
@@ -78,5 +78,5 @@ func flash_red_effect():
 	for label in labels:
 		label.modulate = Color.WHITE
 
-func _on_button_2_pressed():
+func _on_button_2_pressed(): 
 	close_menu()

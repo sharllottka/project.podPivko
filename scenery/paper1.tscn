@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://csao5mb6wrirl"]
 
+[ext_resource type="Script" uid="uid://h31ufrib760b" path="res://scenery/paper_2.gd" id="1_0kx12"]
 [ext_resource type="Texture2D" uid="uid://1gasq2m2r21j" path="res://models/paper_0.png" id="1_incdp"]
 [ext_resource type="Texture2D" uid="uid://bw7cn30i7k44q" path="res://models/paper_1.jpg" id="2_0kx12"]
 
@@ -62,7 +63,9 @@ transform = Transform3D(1, 0, 0, 0, 2.220446e-16, -1, 0, 1, 2.220446e-16, 0, 0, 
 [node name="Object_4" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_0" unique_id=212758934]
 mesh = SubResource("ArrayMesh_sahje")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_0/Object_4" unique_id=597108171]
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_0/Object_4" unique_id=597108171 groups=["interactable"]]
+script = ExtResource("1_0kx12")
+target_scene = "uid://bmohpta1g0gfx"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/Plane_0/Object_4/StaticBody3D" unique_id=1059817057]
 shape = SubResource("ConcavePolygonShape3D_myt3h")

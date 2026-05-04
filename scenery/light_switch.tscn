@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://cpkomkw5mtwbr"]
 
 [ext_resource type="Texture2D" uid="uid://bnomkhkjjtq52" path="res://models/light_switch_0.png" id="1_3p06s"]
+[ext_resource type="Script" uid="uid://v61fu7at80nr" path="res://scenery/light_switch.gd" id="1_ilde7"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0thui"]
 resource_name = "07___Default"
@@ -55,7 +56,8 @@ transform = Transform3D(1, 0, 0, 0, 2.220446e-16, 1, 0, -1, 2.220446e-16, 0, 0, 
 [node name="Object_2" type="MeshInstance3D" parent="Sketchfab_model/light switch_obj_cleaner_materialmerger_gles" unique_id=224535779]
 mesh = SubResource("ArrayMesh_vydfc")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/light switch_obj_cleaner_materialmerger_gles/Object_2" unique_id=1174281314]
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/light switch_obj_cleaner_materialmerger_gles/Object_2" unique_id=1174281314 groups=["interactable"]]
+script = ExtResource("1_ilde7")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/light switch_obj_cleaner_materialmerger_gles/Object_2/StaticBody3D" unique_id=1842740359]
 shape = SubResource("ConcavePolygonShape3D_ilde7")

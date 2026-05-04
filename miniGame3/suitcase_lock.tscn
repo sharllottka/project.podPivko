@@ -5,7 +5,7 @@
 [ext_resource type="AudioStream" uid="uid://0vplv0ngb1w3" path="res://miniGame3/для замка.wav" id="3_ktbh8"]
 [ext_resource type="AudioStream" uid="uid://bfwou26akl3vb" path="res://miniGame3/открыть чемодан.wav" id="4_2ussq"]
 [ext_resource type="AudioStream" uid="uid://cwh8yolhwosxb" path="res://miniGame3/error.ogg" id="5_y5n2i"]
-[ext_resource type="Script" uid="uid://cfu6gy3iyj623" path="res://minigame2/scenes/clue_dialog.gd" id="6_rs0xw"]
+[ext_resource type="Script" uid="uid://cn0fic6l3dkob" path="res://miniGame3/clue_dialog23.gd" id="6_rs0xw"]
 
 [node name="SuitcaseLock" type="Control" unique_id=485463837]
 layout_mode = 3

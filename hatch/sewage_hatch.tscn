@@ -6,7 +6,7 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_n402i"]
 size = Vector3(1.4726563, 0.33643913, 1.8052139)
 
-[node name="SewageHatch" type="Area3D" unique_id=1816285138]
+[node name="SewageHatch" type="Area3D" unique_id=1816285138 groups=["interactable"]]
 script = ExtResource("1_71r5r")
 
 [node name="Sketchfab_Scene" parent="." unique_id=1698803318 instance=ExtResource("2_uynyr")]

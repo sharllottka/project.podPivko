@@ -16,7 +16,7 @@ func _process(_delta: float) -> void:
 func _check_interaction_ui() -> void:
 	if interact_ray.is_colliding():
 		var target = interact_ray.get_collider()
-		if target and target.has_method("open_minigame"):
+		if target and (target.has_method("open_minigame") or target.is_in_group("interactable")):
 			interact_label.visible = true
 		else:
 			interact_label.visible = false
@@ -32,6 +32,8 @@ func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("interact"):
 		if interact_ray.is_colliding():
 			var target = interact_ray.get_collider()
-			if target and target.has_method("open_minigame"):
-				interact_label.visible = false
-				target.open_minigame()
+			if target:
+				if target.has_method("open_minigame"):
+					target.open_minigame()
+				elif target.is_in_group("interactable") and target.has_method("interact"):
+					target.interact()

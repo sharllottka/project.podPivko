@@ -56,12 +56,6 @@ func victory():
 	
 	clue_dialog.visible = true
 
-func _on_continue_button_pressed():
-	if not Global.suitcase_done: 
-		Global.clues_count += 1  
-		Global.suitcase_done = true 
-	close_menu()
-
 func close_menu():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	get_tree().change_scene_to_file("res://levels/level.tscn")

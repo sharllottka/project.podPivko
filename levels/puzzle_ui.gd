@@ -35,13 +35,7 @@ func win():
 		clue_dialog.visible = true
 	else:
 		await get_tree().create_timer(2.0).timeout
-		close_menu()
-
-func _on_continue_button_pressed():
-	if not Global.puzzle_done:
-		Global.clues_count += 1 
-		Global.puzzle_done = true 
-	close_menu()         
+		close_menu()       
 
 func close_menu():
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED

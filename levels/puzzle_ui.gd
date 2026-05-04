@@ -3,7 +3,7 @@ extends CanvasLayer
 var pieces_placed = 0 
 
 @onready var pick_sound = $PickSound
-@onready var drop_sound = $DropSound
+#@onready var drop_sound = $DropSound
 @onready var snap_sound = $SnapSound
 @onready var win_sound = $WinSound
 @onready var clue_dialog = $ClueDialog
@@ -59,10 +59,10 @@ func play_pick():
 		pick_sound.pitch_scale = randf_range(0.9, 1.1)
 		pick_sound.play()
 
-func play_drop():
-	if drop_sound:
-		drop_sound.pitch_scale = randf_range(0.8, 1.0)
-		drop_sound.play()
+#func play_drop():
+	#if drop_sound:
+		#drop_sound.pitch_scale = randf_range(0.8, 1.0)
+		#drop_sound.play()
 
 func shuffle_pieces():
 	var screen_size = get_viewport().get_visible_rect().size

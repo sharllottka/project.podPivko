@@ -5,9 +5,10 @@ func _ready():
 		$ContinueButton.pressed.connect(_on_continue)
 
 func _on_continue():
-	if not Global.shield_done:
-		Global.clues_count += 1       
-		Global.shield_done = true  
+	if not Global.glitch_done:
+		Global.clues_count += 1
+		Global.has_note = true     
+		Global.glitch_done = true 
 	
 	visible = false
 	get_tree().paused = false

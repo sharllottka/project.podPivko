@@ -12,7 +12,7 @@
 [ext_resource type="FontFile" uid="uid://cjnx2ykgcjn5s" path="res://minigame2/assets/fonts/PixelOperator8.ttf" id="7_u5sy4"]
 [ext_resource type="PackedScene" uid="uid://bkde3trt1o6lt" path="res://minigame2/scenes/note.tscn" id="11_kvpfn"]
 [ext_resource type="Script" uid="uid://c5njmnokvm15h" path="res://minigame2/scenes/exit_dialog.gd" id="12_2hw8f"]
-[ext_resource type="Script" uid="uid://cfu6gy3iyj623" path="res://minigame2/scenes/clue_dialog.gd" id="13_ktg8q"]
+[ext_resource type="Script" uid="uid://jjv2x1knukhu" path="res://minigame4/scenes/Clue_Sewer.gd" id="13_ktg8q"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")

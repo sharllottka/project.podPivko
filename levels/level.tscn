@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://swes0xktbyxu" path="res://scenery/paper2.tscn" id="9_ukwr8"]
 [ext_resource type="PackedScene" uid="uid://cpkomkw5mtwbr" path="res://scenery/light_switch.tscn" id="10_ukwr8"]
 [ext_resource type="PackedScene" uid="uid://dsjq2c4fey58c" path="res://scenery/suitcase.tscn" id="11_pb8y7"]
+[ext_resource type="PackedScene" uid="uid://csxdqtn41h63w" path="res://scenery/small_pieces_of_paper.tscn" id="12_hy0rb"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hjsbj"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -54,17 +55,17 @@ transform = Transform3D(15, 0, 0, 0, 1, 0, 0, 0, 15, 0, 0, 0)
 mesh = SubResource("BoxMesh_80vhd")
 
 [node name="player" parent="." unique_id=1711829232 instance=ExtResource("2_cwqvt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.619808, 6.094198, -2.491049)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.60083, 1.4306605, 3.7899263)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=307518786]
 transform = Transform3D(0.7431448, 0.55144805, -0.37899977, 0, 0.56640625, 0.8241262, 0.6691306, -0.6124451, 0.42092186, 0, 7.8, 0)
 shadow_enabled = true
 
 [node name="house" parent="." unique_id=1733450414 instance=ExtResource("3_cwqvt")]
-transform = Transform3D(0.49999368, 0.0003501026, 0.0024885791, -0.00033791433, 0.4999939, -0.0024485262, -0.0024902634, 0.002446813, 0.4999878, -23.093039, -2.906191, -13.374719)
+transform = Transform3D(0.49999368, 0.0003501026, 0.0024885791, -0.00033791433, 0.4999939, -0.0024485262, -0.0024902634, 0.002446813, 0.4999878, -22.66168, -3.1453266, -14.916259)
 
 [node name="Area3D" parent="." unique_id=2111399856 instance=ExtResource("4_safpt")]
-transform = Transform3D(0.05358568, 0.0040235138, -0.9985551, 0.00073982694, 0.9999913, 0.0040689986, 0.9985629, -0.00095679826, 0.053582244, -23.604511, -3.6891444, 6.926676)
+transform = Transform3D(0.10717139, 0.008047029, -1.9971102, 0.0014796541, 1.9999828, 0.0081380075, 1.9971259, -0.001913597, 0.10716452, -23.036018, -4.0919294, 6.926676)
 minigame_scene = ExtResource("5_gjl0y")
 
 [node name="SewageHatch" parent="." unique_id=1816285138 instance=ExtResource("6_vnv7o")]
@@ -82,3 +83,6 @@ transform = Transform3D(-3.059797e-10, 0, -0.007, 0, 0.007, 0, 0.007, 0, -3.0597
 
 [node name="чемодан" parent="." unique_id=443618957 instance=ExtResource("11_pb8y7")]
 transform = Transform3D(-6.556708e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.556708e-08, -61.096436, 0.12513375, 4.985884)
+
+[node name="пазл бумажки" parent="." unique_id=2087848957 instance=ExtResource("12_hy0rb")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -54.2919, 5.7564673, 4.7687674)

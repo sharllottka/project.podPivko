@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://0vplv0ngb1w3"
-path="res://.godot/imported/для замка.wav-5393b57c5f0af1b4c9620b068eba39ee.sample"
+path="res://.godot/imported/для замка.wav-067c3867df29002cec3849672e3bcfe5.sample"
 
 [deps]
 
-source_file="res://minigame3/для замка.wav"
-dest_files=["res://.godot/imported/для замка.wav-5393b57c5f0af1b4c9620b068eba39ee.sample"]
+source_file="res://miniGame3/для замка.wav"
+dest_files=["res://.godot/imported/для замка.wav-067c3867df29002cec3849672e3bcfe5.sample"]
 
 [params]
 

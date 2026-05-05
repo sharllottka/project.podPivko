@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://c48k77hn74f75"]
+
+[ext_resource type="Texture2D" uid="uid://4e6xv63in33v" path="res://Document check/Students/Виолетта-.png" id="1_yy0jr"]
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="2_y6b0l"]
+
+[resource]
+script = ExtResource("2_y6b0l")
+name = "Виолетта"
+lastname = "Кубанькова"
+dadname = "Александровна"
+faculty = "Юрфак"
+student_id = "993"
+issue_date = "22.07.2026"
+photo = ExtResource("1_yy0jr")
+metadata/_custom_type_script = "uid://37bor8c7a5qt"

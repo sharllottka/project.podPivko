@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://cnxjadhb40xxe"]
+
+[ext_resource type="Texture2D" uid="uid://dguda4afxyyyy" path="res://Document check/Students/ПолинаСтуд.png" id="1_grmco"]
+[ext_resource type="Texture2D" uid="uid://dno53m5r0bt5f" path="res://Document check/Students/полиниаапвапвап.png" id="2_c5th2"]
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="3_08gnx"]
+
+[resource]
+script = ExtResource("3_08gnx")
+name = "Полина"
+lastname = "Тарасова"
+dadname = "Сергеевна"
+faculty = "ИИК"
+student_id = "14"
+issue_date = "22.05.2026"
+photo = ExtResource("2_c5th2")
+stamp = true
+id_photo = ExtResource("1_grmco")
+metadata/_custom_type_script = "uid://37bor8c7a5qt"

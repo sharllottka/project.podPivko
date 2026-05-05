@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://n4bjtxrvqlcd"]
+
+[ext_resource type="Script" uid="uid://bqjxqq7p8rnr" path="res://Document check/src/student.gd" id="1_vuwxw"]
+[ext_resource type="Texture2D" uid="uid://4e6xv63in33v" path="res://Document check/Students/Виолетта-.png" id="2_j7524"]
+
+[node name="student2" type="Control" unique_id=2005710536]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -664.0
+offset_bottom = -93.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_vuwxw")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=101149599]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 20.0
+offset_right = 565.0
+offset_bottom = 584.0
+texture = ExtResource("2_j7524")
+expand_mode = 1

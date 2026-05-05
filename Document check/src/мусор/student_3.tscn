@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bw3oauxxg55br"]
+
+[ext_resource type="Script" uid="uid://bqjxqq7p8rnr" path="res://Document check/src/student.gd" id="1_hbeyh"]
+[ext_resource type="Texture2D" uid="uid://cnyrfuvyxrrgu" path="res://Document check/Students/Бавтута.png" id="2_w22vd"]
+
+[node name="student3" type="Control" unique_id=687560657]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1271.1111
+offset_bottom = -715.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_hbeyh")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=937782770]
+layout_mode = 0
+offset_top = 19.0
+offset_right = 600.9681
+offset_bottom = 583.0
+texture = ExtResource("2_w22vd")
+expand_mode = 1

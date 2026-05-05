@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://foati8a2uwic"]
+
+[ext_resource type="Texture2D" uid="uid://bf4q8idcnbv6i" path="res://Document check/Students/Трамп-.png" id="1_7g0fc"]
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="2_dov66"]
+
+[resource]
+script = ExtResource("2_dov66")
+name = "Данил"
+lastname = "Тарапенов"
+dadname = "Андреевич"
+faculty = "ИДЭУ"
+student_id = "4547"
+issue_date = "22.05.2026"
+photo = ExtResource("1_7g0fc")
+metadata/_custom_type_script = "uid://37bor8c7a5qt"

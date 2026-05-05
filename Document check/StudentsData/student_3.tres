@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://cqky8xvhlc5oy"]
+
+[ext_resource type="Texture2D" uid="uid://o5vwi2qn5x3i" path="res://Document check/Students/Лолололололо-.png" id="1_gm7ca"]
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="2_1o3c3"]
+
+[resource]
+script = ExtResource("2_1o3c3")
+name = "Роман"
+lastname = "Фильченков"
+dadname = "Михайлович"
+faculty = "ИИК"
+student_id = "6677"
+issue_date = "22.04.26"
+photo = ExtResource("1_gm7ca")
+stamp = true
+metadata/_custom_type_script = "uid://37bor8c7a5qt"

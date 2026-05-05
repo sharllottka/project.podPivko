@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dqg4f53oisgav"]
+
+[ext_resource type="Texture2D" uid="uid://chtgmukbokfnq" path="res://Document check/assets/Desk.png" id="1_tqkcg"]
+
+[node name="desk" type="Node2D" unique_id=2133766978]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=840300808]
+position = Vector2(127.47583, 155.50002)
+scale = Vector2(2.2439446, 3.248848)
+texture = ExtResource("1_tqkcg")

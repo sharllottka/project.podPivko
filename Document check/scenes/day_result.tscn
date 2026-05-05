@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://erdgiskoiiqi"]
+
+[ext_resource type="Script" uid="uid://cooa6usf1eoed" path="res://Document check/src/day_result.gd" id="1_u1orq"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qgksn"]
+
+[node name="Control" type="Control" unique_id=1682724569]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u1orq")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1692699612]
+modulate = Color(0.57272166, 0.6480294, 0.69195884, 1)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = SubResource("CompressedTexture2D_qgksn")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1439940298]
+layout_mode = 0
+offset_left = 497.0
+offset_top = 308.0
+offset_right = 1416.0
+offset_bottom = 588.0
+
+[node name="DayLabel" type="Label" parent="VBoxContainer" unique_id=626891859]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "День X завершон"
+horizontal_alignment = 1
+
+[node name="CorrectLabel" type="Label" parent="VBoxContainer" unique_id=773412463]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Правильно: X"
+horizontal_alignment = 1
+
+[node name="IncorrectLabel" type="Label" parent="VBoxContainer" unique_id=95417893]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Неправильно: X"
+horizontal_alignment = 1
+
+[node name="WarningLabel" type="Label" parent="VBoxContainer" unique_id=1596381088]
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "Выговор! / Отлично"
+horizontal_alignment = 1
+
+[node name="NextButton" type="Button" parent="VBoxContainer" unique_id=769661057]
+layout_mode = 2
+theme_override_constants/h_separation = 4
+theme_override_constants/icon_max_width = 0
+theme_override_font_sizes/font_size = 32
+text = "Следующий день"

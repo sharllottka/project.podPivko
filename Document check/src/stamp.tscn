@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://4ocbtvmyj0ut"]
+
+[ext_resource type="Script" uid="uid://dy566v5oiw3ks" path="res://Document check/src/stamp.gd" id="1_t3wjf"]
+[ext_resource type="Texture2D" uid="uid://cs33pmm4ivud7" path="res://Document check/assets/approved.png" id="2_6of8t"]
+[ext_resource type="Script" uid="uid://bhfy26bc3lce0" path="res://Document check/src/stamp_mark.gd" id="3_754hc"]
+[ext_resource type="Texture2D" uid="uid://bctpoy2iiwbk5" path="res://Document check/assets/i (2)-no-bg-preview (carve.photos).png" id="4_nq0bs"]
+
+[sub_resource type="PackedScene" id="PackedScene_w6lan"]
+_bundled = {
+"conn_count": 0,
+"conns": PackedInt32Array(),
+"editable_instances": [],
+"id_paths": [],
+"names": PackedStringArray("StampMark", "position", "scale", "texture", "script", "stamp_scene", "Sprite2D"),
+"node_count": 1,
+"node_ids": PackedInt32Array(1644407388),
+"node_paths": [],
+"nodes": PackedInt32Array(-1, -1, 6, 0, -1, 5, 1, 0, 2, 1, 3, 2, 4, 3, 5, 4, 0),
+"variants": [Vector2(-0.99999714, -1), Vector2(0.06025644, 0.06025645), ExtResource("2_6of8t"), ExtResource("3_754hc"), null],
+"version": 3
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_i01et"]
+size = Vector2(72, 103)
+
+[node name="stamp" type="Area2D" unique_id=1109213863]
+script = ExtResource("1_t3wjf")
+stamp_mark_scene = SubResource("PackedScene_w6lan")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1341935705]
+position = Vector2(-2.2737368e-13, 9.536743e-07)
+scale = Vector2(0.23937505, 0.23937505)
+texture = ExtResource("4_nq0bs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1269553042]
+position = Vector2(3, -1.5)
+shape = SubResource("RectangleShape2D_i01et")

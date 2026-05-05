@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://igvnixfr2kux" path="res://minigame2/assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="Texture2D" uid="uid://cocwa8ppj74wi" path="res://minigame2/assets/sprites/Dungeon Tile Set.png" id="4_0tnpc"]
 [ext_resource type="PackedScene" uid="uid://88p575a4305h" path="res://minigame2/scenes/coin.tscn" id="4_lbhrr"]
-[ext_resource type="Script" path="res://minigame2/scenes/exit_button.gd" id="5_ik7fb"]
+[ext_resource type="Script" uid="uid://drxbbffvkh42s" path="res://minigame2/scenes/exit_button.gd" id="5_ik7fb"]
 [ext_resource type="PackedScene" uid="uid://clpwbel6672ue" path="res://minigame2/scenes/killzone.tscn" id="5_iywne"]
 [ext_resource type="PackedScene" uid="uid://ddex2r41633ro" path="res://minigame2/scenes/slime.tscn" id="6_p57ef"]
 [ext_resource type="PackedScene" uid="uid://b371g02hwaab3" path="res://minigame2/scenes/most.tscn" id="6_vtaks"]
@@ -13,6 +13,7 @@
 [ext_resource type="PackedScene" uid="uid://bkde3trt1o6lt" path="res://minigame2/scenes/note.tscn" id="11_kvpfn"]
 [ext_resource type="Script" uid="uid://c5njmnokvm15h" path="res://minigame2/scenes/exit_dialog.gd" id="12_2hw8f"]
 [ext_resource type="Script" uid="uid://jjv2x1knukhu" path="res://minigame4/scenes/Clue_Sewer.gd" id="13_ktg8q"]
+[ext_resource type="FontFile" uid="uid://h5is7nt7qxk5" path="res://Fonts/BF_TEXT_REGULAR.otf" id="13_tvuaa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
 texture = ExtResource("2_yqjtg")
@@ -498,13 +499,14 @@ script = ExtResource("12_2hw8f")
 
 [node name="Label" type="Label" parent="UI/ExitDialog" unique_id=984625033]
 layout_mode = 0
-offset_left = -2.0
-offset_top = 43.0
-offset_right = 206.0
-offset_bottom = 64.0
-theme_override_font_sizes/font_size = 13
+offset_top = 53.0
+offset_right = 208.0
+offset_bottom = 74.0
+theme_override_fonts/font = ExtResource("13_tvuaa")
+theme_override_font_sizes/font_size = 14
 text = "Вы хотите выйти из локации"
 horizontal_alignment = 1
+language = "ru"
 
 [node name="YesButton" type="Button" parent="UI/ExitDialog" unique_id=511306274]
 process_mode = 3
@@ -513,7 +515,7 @@ offset_left = 32.0
 offset_top = 99.0
 offset_right = 68.0
 offset_bottom = 130.0
-text = "YES"
+text = "Да"
 
 [node name="NoButton" type="Button" parent="UI/ExitDialog" unique_id=1783785419]
 process_mode = 3
@@ -522,7 +524,7 @@ offset_left = 132.0
 offset_top = 99.0
 offset_right = 163.0
 offset_bottom = 130.0
-text = "No"
+text = "Нет"
 
 [node name="ClueDialog" type="Panel" parent="UI" unique_id=2144469042]
 visible = false
@@ -537,7 +539,8 @@ layout_mode = 0
 offset_top = 47.0
 offset_right = 201.0
 offset_bottom = 70.0
-theme_override_font_sizes/font_size = 13
+theme_override_fonts/font = ExtResource("13_tvuaa")
+theme_override_font_sizes/font_size = 14
 text = "Вы получили улику!"
 horizontal_alignment = 1
 
@@ -548,7 +551,8 @@ offset_left = 42.0
 offset_top = 109.0
 offset_right = 153.0
 offset_bottom = 140.0
-theme_override_font_sizes/font_size = 12
+theme_override_fonts/font = ExtResource("13_tvuaa")
+theme_override_font_sizes/font_size = 14
 text = "Продолжить"
 
 [node name="Slime4" parent="." unique_id=25203811 instance=ExtResource("6_p57ef")]

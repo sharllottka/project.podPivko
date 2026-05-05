@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bv28tm72h17wd"]
+
+[ext_resource type="Texture2D" uid="uid://cncqsr8nqhblp" path="res://Document check/assets/denied2.png" id="1_11775"]
+
+[node name="stamp_markd" type="Sprite2D" unique_id=1721744178]
+position = Vector2(-3.8146973e-06, -1.0000038)
+scale = Vector2(0.05949281, 0.059375)
+texture = ExtResource("1_11775")

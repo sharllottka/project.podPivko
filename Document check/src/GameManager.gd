@@ -1,0 +1,77 @@
+extends Node
+
+# Текущий день (1-5)
+var current_day: int = 1
+
+# Счётчики за текущий день
+var correct_today: int = 0
+var incorrect_today: int = 0
+
+var day_rules: Array[String] = [
+	"Сегодня нельзя пропускать студентов с факультета ИИК",
+	"Сегодня нельзя пропускать студентов без фото",
+	"Сегодня нельзя пропускать студентов с просроченным билетом",
+	"Сегодня нельзя пропускать иностранных студентов",
+    "Финальный день — проверяй всё внимательно"
+]
+
+func get_current_rule() -> String:
+	var idx = current_day - 1
+	if idx < day_rules.size():
+		return day_rules[idx]
+	return ""
+# Выговоры за всю игру
+var warnings: int = 0
+
+# Студентов обработано сегодня
+var students_processed_today: int = 0
+const STUDENTS_PER_DAY: int = 5
+const MAX_DAYS: int = 5
+const MAX_INCORRECT_PER_DAY: int = 2
+const MAX_WARNINGS: int = 3
+
+signal day_ended
+signal game_over
+signal all_days_completed
+
+func process_decision(stamp_result: String, is_monster: bool) -> void:
+	var correct = (stamp_result == "approved") != is_monster
+	if correct:
+		correct_today += 1
+	else:
+		incorrect_today += 1
+
+	students_processed_today += 1
+
+	if students_processed_today >= STUDENTS_PER_DAY:
+		_end_day()
+
+func _end_day() -> void:
+	if incorrect_today > MAX_INCORRECT_PER_DAY:
+		warnings += 1
+
+	if warnings >= MAX_WARNINGS:
+		get_tree().change_scene_to_file("res://Document check/scenes/game_over.tscn")
+		return
+
+	if current_day >= MAX_DAYS:
+		get_tree().change_scene_to_file("res://Document check/scenes/victory.tscn")
+		return
+
+	# Обычный конец дня — показываем статистику
+	get_tree().change_scene_to_file("res://Document check/scenes/day_result.tscn")
+
+func next_day() -> void:
+	current_day += 1
+	correct_today = 0
+	incorrect_today = 0
+	students_processed_today = 0
+
+func get_day_stats() -> Dictionary:
+	return {
+		"day": current_day,
+		"correct": correct_today,
+		"incorrect": incorrect_today,
+		"warnings": warnings,
+		"got_warning": incorrect_today > MAX_INCORRECT_PER_DAY
+	}

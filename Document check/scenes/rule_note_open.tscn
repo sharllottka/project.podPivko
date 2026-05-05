@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://c5rl4wamoy87c"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_37giy"]
+
+[node name="RuleNoteOpen" type="Control" unique_id=1707058284]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 701.0
+offset_top = 270.0
+offset_right = -849.00024
+offset_bottom = -427.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.2, 0.2)
+metadata/_edit_vertical_guides_ = [705.0, 839.0]
+metadata/_edit_horizontal_guides_ = [344.0, 310.0]
+
+[node name="RuleLabel" type="Label" parent="." unique_id=165470813]
+texture_filter = 3
+layout_mode = 0
+offset_left = 195.0
+offset_top = 165.00006
+offset_right = 579.99976
+offset_bottom = 664.99994
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxTexture_37giy")
+text = "Сегодня нельзя пропускать студентов с  факультета ИИК
+"
+autowrap_mode = 2
+justification_flags = 42

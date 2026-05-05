@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://bamxv1kkpujlr"]
+
+[ext_resource type="Texture2D" uid="uid://bo3gex8odnxps" path="res://Document check/Students/Куприлнов-.png" id="1_pv6tk"]
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="2_2vxww"]
+
+[resource]
+script = ExtResource("2_2vxww")
+name = "Купидонов"
+lastname = "Дмитрий"
+dadname = "Иванович"
+faculty = "ИИК"
+student_id = "692"
+issue_date = "22.04.26"
+photo = ExtResource("1_pv6tk")
+metadata/_custom_type_script = "uid://37bor8c7a5qt"

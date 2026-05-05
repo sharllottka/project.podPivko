@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://cgd0r0tcrtc5y"]
+
+[ext_resource type="Texture2D" uid="uid://lwp6gvxndbn2" path="res://Document check/Students/Обама-.png" id="1_kyqsi"]
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="2_qhqgg"]
+
+[resource]
+script = ExtResource("2_qhqgg")
+name = "Виктор"
+lastname = "Кузнецов"
+dadname = "Иванович"
+faculty = "ИЭУ"
+student_id = "44"
+issue_date = "22.05.2026"
+photo = ExtResource("1_kyqsi")
+metadata/_custom_type_script = "uid://37bor8c7a5qt"

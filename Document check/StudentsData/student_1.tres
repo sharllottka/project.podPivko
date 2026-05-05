@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://7usmeupla774"]
+
+[ext_resource type="Texture2D" uid="uid://5d7mq2a63hxd" path="res://Document check/Students/МацукСтуд.png" id="1_ilj1n"]
+[ext_resource type="Texture2D" uid="uid://cs87xd3nmfba0" path="res://Document check/Students/Мацук.png" id="2_u6lao"]
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="3_6k1hd"]
+
+[resource]
+script = ExtResource("3_6k1hd")
+name = "Артем"
+lastname = "Мацук"
+dadname = "Игоревич"
+faculty = "ИИК"
+student_id = "228"
+issue_date = "22.04.26"
+photo = ExtResource("2_u6lao")
+stamp = true
+id_photo = ExtResource("1_ilj1n")
+metadata/_custom_type_script = "uid://37bor8c7a5qt"

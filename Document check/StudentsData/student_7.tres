@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://dydhabl2pw0wi"]
+
+[ext_resource type="Texture2D" uid="uid://dufgkey5ccwtv" path="res://Document check/Students/Салуки-.png" id="1_w5qd1"]
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="2_idrvc"]
+
+[resource]
+script = ExtResource("2_idrvc")
+name = "Семен"
+lastname = "Несатый"
+dadname = "Алексеевич"
+faculty = "ИЭУ"
+student_id = "97"
+issue_date = "22.05.2026"
+photo = ExtResource("1_w5qd1")
+metadata/_custom_type_script = "uid://37bor8c7a5qt"

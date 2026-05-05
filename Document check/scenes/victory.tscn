@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dtcwvu5cnhp7t"]
+
+[ext_resource type="Texture2D" uid="uid://do0t4vmajipa7" path="res://Document check/assets/win.webp" id="1_g81kh"]
+
+[node name="victory" type="Control" unique_id=919678175]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1933837157]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_g81kh")
+expand_mode = 1

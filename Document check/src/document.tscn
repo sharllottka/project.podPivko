@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dpbi8y747yn3n"]
+
+[ext_resource type="Script" uid="uid://ym750vqo7dje" path="res://Document check/src/document.gd" id="1_7lren"]
+[ext_resource type="Texture2D" uid="uid://c3cvdjff5qrcf" path="res://Document check/assets/2026-03-01 20.53.28.jpg" id="2_hv84q"]
+[ext_resource type="Texture2D" uid="uid://cv7olfhwxsvba" path="res://Document check/assets/2026-03-01 21.00.38.jpg" id="3_k4n3e"]
+[ext_resource type="PackedScene" uid="uid://68a4ymjovaf8" path="res://Document check/scenes/document_open.tscn" id="4_g0kck"]
+
+[node name="TextureRect" type="TextureRect" unique_id=1122845812]
+anchors_preset = -1
+anchor_right = 0.21300001
+anchor_bottom = 0.16800001
+offset_left = -3.0
+offset_right = 124.51068
+offset_bottom = 45.559982
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("1_7lren")
+closed_texture = ExtResource("2_hv84q")
+open_texture = ExtResource("3_k4n3e")
+open_overlay_scene = ExtResource("4_g0kck")

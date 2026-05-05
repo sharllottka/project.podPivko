@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="DayRule" format=3 uid="uid://y3kushmvrxej"]
+
+[ext_resource type="Script" uid="uid://cdn8lw5csq71o" path="res://Document check/src/day_rule.gd" id="1_q1g6m"]
+
+[resource]
+script = ExtResource("1_q1g6m")
+rule_text = "ХУЙ ГАВНО ЗАУЛПА"
+metadata/_custom_type_script = "uid://phr1tioe63nf"

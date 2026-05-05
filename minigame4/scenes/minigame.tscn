@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://by6y32ufiig3s" path="res://minigame4/wire_layer.gd" id="2_hwsak"]
 [ext_resource type="Script" uid="uid://dsyhs8r5vatli" path="res://minigame4/exit.gd" id="3_uwtn2"]
 [ext_resource type="Script" uid="uid://cfu6gy3iyj623" path="res://minigame2/scenes/clue_dialog.gd" id="4_pxxjs"]
+[ext_resource type="FontFile" uid="uid://h5is7nt7qxk5" path="res://Fonts/BF_TEXT_REGULAR.otf" id="5_3ofm1"]
 
 [node name="Minigame" type="Control" unique_id=547567431]
 layout_mode = 3
@@ -57,19 +58,20 @@ script = ExtResource("3_uwtn2")
 [node name="ClueDialog" type="Panel" parent="." unique_id=218878887]
 visible = false
 layout_mode = 0
-offset_left = 707.0
-offset_top = 357.0
-offset_right = 1200.0
-offset_bottom = 655.0
+offset_left = 586.0
+offset_top = 304.0
+offset_right = 1310.6107
+offset_bottom = 742.0
 script = ExtResource("4_pxxjs")
 
 [node name="Label" type="Label" parent="ClueDialog" unique_id=1155939986]
 layout_mode = 0
-offset_left = 149.0
-offset_top = 80.0
-offset_right = 350.0
-offset_bottom = 103.0
-theme_override_font_sizes/font_size = 13
+offset_left = 122.0
+offset_top = 76.0
+offset_right = 611.39136
+offset_bottom = 132.0
+theme_override_fonts/font = ExtResource("5_3ofm1")
+theme_override_font_sizes/font_size = 34
 text = "Вы получили улику!"
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -77,11 +79,12 @@ vertical_alignment = 1
 [node name="ContinueButton" type="Button" parent="ClueDialog" unique_id=1210477764]
 process_mode = 3
 layout_mode = 0
-offset_left = 190.0
-offset_top = 187.0
-offset_right = 301.0
-offset_bottom = 218.0
-theme_override_font_sizes/font_size = 12
+offset_left = 212.0
+offset_top = 231.0
+offset_right = 519.0455
+offset_bottom = 301.0
+theme_override_fonts/font = ExtResource("5_3ofm1")
+theme_override_font_sizes/font_size = 34
 text = "Продолжить"
 
 [connection signal="pressed" from="UI/Button" to="UI/Button" method="_on_pressed"]

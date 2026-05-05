@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://dhhurqi5jxaeo"]
+
+[ext_resource type="Texture2D" uid="uid://cv7olfhwxsvba" path="res://Document check/assets/2026-03-01 21.00.38.jpg" id="1_mae4e"]
+[ext_resource type="Texture2D" uid="uid://cs87xd3nmfba0" path="res://Document check/Students/Мацук.png" id="2_vhcvv"]
+
+[node name="Control" type="Control" unique_id=714481857]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1039529860]
+layout_mode = 0
+offset_right = 395.89676
+offset_bottom = 131.0
+texture = ExtResource("1_mae4e")
+expand_mode = 1
+
+[node name="Photo" type="TextureRect" parent="TextureRect" unique_id=1327558846]
+layout_mode = 0
+offset_left = 10.0
+offset_top = 51.0
+offset_right = 55.0
+offset_bottom = 122.151825
+texture = ExtResource("2_vhcvv")
+expand_mode = 1
+
+[node name="Faculcy" type="Label" parent="TextureRect" unique_id=1923810280]
+layout_mode = 0
+offset_left = 87.0
+offset_top = 45.0
+offset_right = 169.0
+offset_bottom = 94.0
+text = "GUNDONE
+"
+
+[node name="Id" type="Label" parent="TextureRect" unique_id=1392598174]
+layout_mode = 0
+offset_left = 195.0
+offset_top = 171.0
+offset_right = 478.0
+offset_bottom = 206.0
+
+[node name="Date" type="Label" parent="TextureRect" unique_id=434991882]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.245
+anchor_bottom = 0.18400002
+offset_left = 179.0
+offset_top = 59.0
+offset_right = -82.350006
+offset_bottom = 7.111992

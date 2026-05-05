@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bry1381y2jauw"]
+
+[ext_resource type="Script" uid="uid://cft0ypxfstfrh" path="res://Document check/rules_note.gd" id="1_w7vfj"]
+[ext_resource type="Texture2D" uid="uid://ci6c2jpo0cysw" path="res://Document check/assets/ЗакрытыеПравила-.png" id="2_ilki8"]
+[ext_resource type="PackedScene" uid="uid://c5rl4wamoy87c" path="res://Document check/scenes/rule_note_open.tscn" id="3_70nxg"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cr6cf"]
+
+[node name="RulesNote" type="TextureRect" unique_id=164920856]
+anchors_preset = -1
+anchor_right = 0.637
+anchor_bottom = 0.754
+offset_top = -7.0
+offset_right = 250.95996
+offset_bottom = 247.68
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("1_w7vfj")
+closed_texture = ExtResource("2_ilki8")
+open_texture = SubResource("CompressedTexture2D_cr6cf")
+open_overlay_scene = ExtResource("3_70nxg")

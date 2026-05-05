@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://b1b258e0ku0md"]
+
+[ext_resource type="Texture2D" uid="uid://b161qqp81uslw" path="res://Document check/assets/Безымянный 2.png" id="1_qpt35"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pfi0k"]
+atlas = ExtResource("1_qpt35")
+region = Rect2(17, 33, 15, 21)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_qpt35"]
+load_path = "res://.godot/imported/Безымянный 2.png-4e51dc8135677053ff968fb449122a01.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w3jde"]
+atlas = SubResource("CompressedTexture2D_qpt35")
+region = Rect2(17, 33, 15, 21)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ah7w"]
+atlas = ExtResource("1_qpt35")
+region = Rect2(16.186024, 55.19013, 16.661228, 22.89767)
+
+[node name="Bell2" type="Control" unique_id=1286426067]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = 4.0
+offset_right = -1067.0
+offset_bottom = -536.07355
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=47148312]
+layout_mode = 0
+offset_left = -1.0
+offset_top = -2.0
+offset_right = 81.0
+offset_bottom = 98.368
+texture_normal = SubResource("AtlasTexture_pfi0k")
+texture_pressed = SubResource("AtlasTexture_w3jde")
+texture_hover = SubResource("AtlasTexture_2ah7w")
+stretch_mode = 0

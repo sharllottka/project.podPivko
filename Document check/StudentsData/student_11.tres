@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://cin74ui6o2lnp"]
+
+[ext_resource type="Texture2D" uid="uid://gja3xmheda18" path="res://Document check/Students/ВикаСтуд.png" id="1_omxul"]
+[ext_resource type="Texture2D" uid="uid://d3bwj7nuljxsl" path="res://Document check/Students/Вика.png" id="2_r4w6s"]
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="3_11toc"]
+
+[resource]
+script = ExtResource("3_11toc")
+name = "Виктория"
+lastname = "Горбунова"
+dadname = "Игоревна"
+faculty = "ИЭУ"
+student_id = "53"
+issue_date = "22.06.2026"
+photo = ExtResource("2_r4w6s")
+stamp = true
+id_photo = ExtResource("1_omxul")
+metadata/_custom_type_script = "uid://37bor8c7a5qt"

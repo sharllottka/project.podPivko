@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://0cdfg45puj6x"]
+
+[ext_resource type="Texture2D" uid="uid://dwnqr3pxrn5hu" path="res://Document check/Students/ЕгорКрид-.png" id="1_as5h7"]
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="2_1h6hi"]
+
+[resource]
+script = ExtResource("2_1h6hi")
+name = "Егор"
+lastname = "Булаткин"
+dadname = "Сергеевич"
+faculty = "Юрфак"
+student_id = "1422"
+issue_date = "22.04.26"
+photo = ExtResource("1_as5h7")
+metadata/_custom_type_script = "uid://37bor8c7a5qt"

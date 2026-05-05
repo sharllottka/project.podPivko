@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://cto3hm76juwld"]
+
+[ext_resource type="Texture2D" uid="uid://cp22hlvaqf4d5" path="res://Document check/assets/колокол-edited-free (carve.photos) (2)-fotor-202603022012.png" id="1_ypdk3"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_kv1yt"]
+
+[node name="BellButton" type="TextureButton" unique_id=1935993581]
+anchors_preset = -1
+anchor_left = -0.252
+anchor_top = -0.432
+anchor_right = 0.277
+anchor_bottom = 0.512
+offset_left = -2.695984
+offset_top = -0.06399536
+offset_right = -0.104003906
+offset_bottom = 0.22399902
+texture_normal = SubResource("CompressedTexture2D_kv1yt")
+texture_pressed = ExtResource("1_ypdk3")
+ignore_texture_size = true
+stretch_mode = 1

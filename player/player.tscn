@@ -72,3 +72,13 @@ offset_bottom = 685.0
 text = "Найдена записка! Нажмите [I], чтобы прочитать"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="StairsAheadRayCast3D" type="RayCast3D" parent="." unique_id=631928490]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.46724087, -0.9874667)
+target_position = Vector3(0, -0.55, 0)
+
+[node name="RayCast3D" type="RayCast3D" parent="." unique_id=1746510323]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.98471713, 0.01358223)
+target_position = Vector3(0, -0.75, 0)

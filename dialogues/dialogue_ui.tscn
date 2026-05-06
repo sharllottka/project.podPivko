@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://37eppmr10wbj"]
+
+[sub_resource type="Animation" id="Animation_uqroq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("dialogue_text:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_cvu8u"]
+resource_name = "new_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("dialogue_text:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.98),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_iu5ac"]
+_data = {
+&"RESET": SubResource("Animation_uqroq"),
+&"new_animation": SubResource("Animation_cvu8u")
+}
+
+[node name="dialogue_ui" type="Control" unique_id=866463881]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Canvas" type="CanvasLayer" parent="." unique_id=468518295]
+visible = false
+
+[node name="ColorRect" type="ColorRect" parent="Canvas" unique_id=1653347050]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 744.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="speaker_name" type="RichTextLabel" parent="Canvas" unique_id=1251894812]
+offset_left = 28.0
+offset_top = 762.0
+offset_right = 370.0
+offset_bottom = 822.0
+theme_override_font_sizes/normal_font_size = 42
+text = "Speaker name
+"
+
+[node name="dialogue_text" type="RichTextLabel" parent="Canvas" unique_id=449119109]
+offset_left = 28.0
+offset_top = 826.0
+offset_right = 1510.0
+offset_bottom = 1038.0
+theme_override_font_sizes/normal_font_size = 33
+text = "This is a dialogue here...
+"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Canvas" unique_id=1944771483]
+libraries/ = SubResource("AnimationLibrary_iu5ac")
+
+[node name="continue" type="Button" parent="Canvas" unique_id=923027015]
+offset_left = 1595.0
+offset_top = 958.0
+offset_right = 1887.0
+offset_bottom = 1057.0
+theme_override_font_sizes/font_size = 28
+text = "Continue"

@@ -1,8 +1,9 @@
-extends StaticBody3D
+extends Node3D
+
+@export var chandeliers: Array[NodePath] = []
 
 func interact():
-	# Код находит все объекты в группе "house_lights" и меняет им видимость
-	var all_lights = get_tree().get_nodes_in_group("house_lights")
-	for light in all_lights:
-		if light is Light3D:
-			light.visible = !light.visible
+	for path in chandeliers:
+		var chandelier = get_node_or_null(path)
+		if chandelier and chandelier.has_method("toggle"):
+			chandelier.toggle()

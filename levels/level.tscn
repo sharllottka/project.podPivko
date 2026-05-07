@@ -9,12 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://doj6j8wn02h3c" path="res://minigame2/scenes/game.tscn" id="7_d5x7l"]
 [ext_resource type="PackedScene" uid="uid://csao5mb6wrirl" path="res://scenery/paper1.tscn" id="8_rtcij"]
 [ext_resource type="PackedScene" uid="uid://swes0xktbyxu" path="res://scenery/paper2.tscn" id="9_ukwr8"]
-[ext_resource type="PackedScene" uid="uid://cpkomkw5mtwbr" path="res://scenery/light_switch.tscn" id="10_ukwr8"]
 [ext_resource type="PackedScene" uid="uid://dsjq2c4fey58c" path="res://scenery/suitcase.tscn" id="11_pb8y7"]
 [ext_resource type="PackedScene" uid="uid://bld5unfmqqtsi" path="res://scenery/small_pieces_of_paper.tscn" id="12_hy0rb"]
-[ext_resource type="PackedScene" uid="uid://c46plj7wn7qby" path="res://dialogues/shadow.tscn" id="13_0qmeg"]
-[ext_resource type="PackedScene" uid="uid://pw7yenedrbcb" path="res://dialogues/dialogue_trigger.tscn" id="14_ta7ci"]
-[ext_resource type="PackedScene" uid="uid://37eppmr10wbj" path="res://dialogues/dialogue_ui.tscn" id="15_lh335"]
+[ext_resource type="PackedScene" path="res://scenery/old_plaid_sofa.tscn" id="12_mxp4k"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hjsbj"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -81,22 +78,11 @@ transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -58.568382, 1.332622, 6
 [node name="бумажка1" parent="." unique_id=1197526547 instance=ExtResource("9_ukwr8")]
 transform = Transform3D(0.12690666, 0, -0.07996688, 0, 0.15, 0, 0.07996688, 0, 0.12690666, -58.33183, 1.3351684, 6.3157105)
 
-[node name="выключатель" parent="." unique_id=114405872 instance=ExtResource("10_ukwr8")]
-transform = Transform3D(-3.059797e-10, 0, -0.007, 0, 0.007, 0, 0.007, 0, -3.059797e-10, -19.032206, 1.13417, 2.954184)
-
 [node name="чемодан" parent="." unique_id=443618957 instance=ExtResource("11_pb8y7")]
 transform = Transform3D(-6.556708e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.556708e-08, -61.096436, 0.12513375, 4.985884)
 
 [node name="пазл бумажки" parent="." unique_id=2087848957 instance=ExtResource("12_hy0rb")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -50.60544, 6.403815, 3.9037595)
+transform = Transform3D(0.499992, 0, -0.0028274078, 0, 0.5, 0, 0.0028274078, 0, 0.499992, -50.60665, 6.406865, 3.5044556)
 
-[node name="Shadow" parent="." unique_id=1364018208 instance=ExtResource("13_0qmeg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.008841, -3.9834461, -0.18932809)
-
-[node name="dialogue_trigger" parent="." unique_id=562309269 node_paths=PackedStringArray("speaker") instance=ExtResource("14_ta7ci")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.222078, -4.0584054, 0.12682629)
-dialogues = Array[String](["Здарова", "Ну здарова", "Как жизнь?", "Норм, у тебя как", "Да и у меня норм"])
-speaker_names = Array[String](["Тень", "Охранник", "Тень", "Охранник", "Тень"])
-speaker = NodePath("../Shadow")
-
-[node name="dialogue_ui" parent="." unique_id=866463881 instance=ExtResource("15_lh335")]
+[node name="Sketchfab_Scene" parent="." unique_id=520664454 instance=ExtResource("12_mxp4k")]
+transform = Transform3D(-1.3113416e-06, 0, 30, 0, 30, 0, -30, 0, -1.3113416e-06, -27.66794, 0.021218061, 5.6220202)

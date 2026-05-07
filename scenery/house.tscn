@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://cyfmdqox465h0" path="res://scenery/окно.tscn" id="7_6pbla"]
 [ext_resource type="PackedScene" uid="uid://dm2icw2bxuvey" path="res://models/retro_light_-_oldclean_model.glb" id="7_h4qed"]
 [ext_resource type="PackedScene" uid="uid://ctijagmvllwo0" path="res://models/fluorescent_lamplight_-_4096px2.glb" id="9_ccgrf"]
-[ext_resource type="PackedScene" uid="uid://i4i1bmphvreo" path="res://models/worn_overlead_light.glb" id="9_ehtd8"]
 [ext_resource type="PackedScene" uid="uid://bpj4cxyk2v3tx" path="res://scenery/фонарь_большой.tscn" id="9_gudfl"]
 [ext_resource type="PackedScene" uid="uid://b27jbye7sfmka" path="res://scenery/window.tscn" id="10_gudfl"]
 [ext_resource type="PackedScene" uid="uid://dmghwlhrac2c1" path="res://scenery/подвальная_тумбочка.tscn" id="10_w7og5"]
@@ -24,6 +23,10 @@
 [ext_resource type="PackedScene" uid="uid://je8gpv3msefq" path="res://scenery/окно_широкое.tscn" id="20_j45mc"]
 [ext_resource type="PackedScene" uid="uid://b2dudjwoeujln" path="res://scenery/стол.tscn" id="23_6pbla"]
 [ext_resource type="PackedScene" uid="uid://d0rotuodfmyfe" path="res://scenery/wardrobe.tscn" id="24_g7vup"]
+[ext_resource type="PackedScene" uid="uid://dcsntyntp2non" path="res://models/low_poly_ps2_potted_plant.glb" id="25_l63sn"]
+[ext_resource type="PackedScene" uid="uid://cpkomkw5mtwbr" path="res://scenery/light_switch.tscn" id="26_2f6be"]
+[ext_resource type="Script" uid="uid://v61fu7at80nr" path="res://scenery/light_switch.gd" id="27_lk2c8"]
+[ext_resource type="PackedScene" uid="uid://vwmisd6wstk3" path="res://scenery/chandelier.tscn" id="28_egufs"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sy2ny"]
 resource_name = "Material.001"
@@ -1957,341 +1960,61 @@ mesh = SubResource("ArrayMesh_th8ar")
 transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.9999999, -3.980896, 0, 0)
 shape = SubResource("ConcavePolygonShape3D_ipmbr")
 
-[node name="коридорные лампочки" type="Node3D" parent="." unique_id=2017664352]
-
-[node name="OmniLight3D" type="OmniLight3D" parent="коридорные лампочки" unique_id=2065706502]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.146988, 14.010614, 34.486237)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light2" parent="коридорные лампочки" unique_id=424945929 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, 23.121204, 14.407194, 34.528854)
-
-[node name="OmniLight3D2" type="OmniLight3D" parent="коридорные лампочки" unique_id=2053764602]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.146988, 14.010614, 23.208508)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light3" parent="коридорные лампочки" unique_id=722113022 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, 23.121204, 14.407194, 23.251125)
-
-[node name="OmniLight3D3" type="OmniLight3D" parent="коридорные лампочки" unique_id=97003974]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.9163876, 14.010614, 23.208508)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light4" parent="коридорные лампочки" unique_id=894677356 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, 5.890604, 14.407194, 23.251125)
-
-[node name="OmniLight3D4" type="OmniLight3D" parent="коридорные лампочки" unique_id=1117525423]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9004068, 14.010614, 39.03697)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light5" parent="коридорные лампочки" unique_id=175833777 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -2.9261904, 14.407194, 39.079586)
-
-[node name="OmniLight3D5" type="OmniLight3D" parent="коридорные лампочки" unique_id=646354744]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.830034, 14.010614, 23.208508)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light6" parent="коридорные лампочки" unique_id=482686558 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -19.855818, 14.407194, 23.251125)
-
-[node name="OmniLight3D6" type="OmniLight3D" parent="коридорные лампочки" unique_id=1278153046]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.664545, 14.010614, 27.914444)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light7" parent="коридорные лампочки" unique_id=248972053 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -27.690329, 14.407194, 27.957062)
-
-[node name="OmniLight3D7" type="OmniLight3D" parent="коридорные лампочки" unique_id=2048283171]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.213997, 14.010614, 27.914444)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light8" parent="коридорные лампочки" unique_id=554689415 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -38.23978, 14.407194, 27.957062)
-
-[node name="OmniLight3D8" type="OmniLight3D" parent="коридорные лампочки" unique_id=1630539120]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.19441, 14.010614, 27.914444)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light9" parent="коридорные лампочки" unique_id=1762436855 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -48.220192, 14.407194, 27.957062)
-
-[node name="OmniLight3D9" type="OmniLight3D" parent="коридорные лампочки" unique_id=18666462]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.3158, 14.010614, 27.914444)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light10" parent="коридорные лампочки" unique_id=1184497689 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -60.341583, 14.407194, 27.957062)
-
-[node name="OmniLight3D11" type="OmniLight3D" parent="коридорные лампочки" unique_id=1010784657]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.38758, 14.010614, 27.914444)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light12" parent="коридорные лампочки" unique_id=494140769 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -74.41337, 14.407194, 27.957062)
-
-[node name="OmniLight3D12" type="OmniLight3D" parent="коридорные лампочки" unique_id=556796133]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.042305, 14.010614, 27.914444)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light13" parent="коридорные лампочки" unique_id=78930139 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -89.06809, 14.407194, 27.957062)
-
-[node name="OmniLight3D13" type="OmniLight3D" parent="коридорные лампочки" unique_id=295373224]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -63.612415, 14.010614, 22.309069)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light14" parent="коридорные лампочки" unique_id=991560433 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -63.638203, 14.407194, 22.351686)
-
-[node name="OmniLight3D10" type="OmniLight3D" parent="коридорные лампочки" unique_id=1716719067]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.146988, 23.74657, 34.486237)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light11" parent="коридорные лампочки" unique_id=699816853 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, 23.121204, 24.14315, 34.528854)
-
-[node name="OmniLight3D14" type="OmniLight3D" parent="коридорные лампочки" unique_id=369209322]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 23.146988, 23.74657, 23.208508)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light15" parent="коридорные лампочки" unique_id=328700440 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, 23.121204, 24.14315, 23.251125)
-
-[node name="OmniLight3D15" type="OmniLight3D" parent="коридорные лампочки" unique_id=1885085083]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30568123, 23.74657, 34.486237)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light16" parent="коридорные лампочки" unique_id=196208496 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -0.33146477, 24.14315, 34.528854)
-
-[node name="OmniLight3D16" type="OmniLight3D" parent="коридорные лампочки" unique_id=225809082]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.30568123, 23.74657, 23.208508)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light17" parent="коридорные лампочки" unique_id=1177938253 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -0.33146477, 24.14315, 23.251125)
-
-[node name="OmniLight3D17" type="OmniLight3D" parent="коридорные лампочки" unique_id=1360075503]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -19.830034, 23.631283, 23.208508)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light18" parent="коридорные лампочки" unique_id=162635688 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -19.855818, 24.027863, 23.251125)
-
-[node name="OmniLight3D18" type="OmniLight3D" parent="коридорные лампочки" unique_id=562333236]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -27.664545, 23.631283, 27.914444)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light19" parent="коридорные лампочки" unique_id=1934909404 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -27.690329, 24.027863, 27.957062)
-
-[node name="OmniLight3D19" type="OmniLight3D" parent="коридорные лампочки" unique_id=600775928]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -38.213997, 23.631283, 27.914444)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light20" parent="коридорные лампочки" unique_id=1883114447 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -38.23978, 24.027863, 27.957062)
-
-[node name="OmniLight3D20" type="OmniLight3D" parent="коридорные лампочки" unique_id=1429184199]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.19441, 23.631283, 27.914444)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light21" parent="коридорные лампочки" unique_id=554220835 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -48.220192, 24.027863, 27.957062)
-
-[node name="OmniLight3D21" type="OmniLight3D" parent="коридорные лампочки" unique_id=1505012209]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.3158, 23.631283, 27.914444)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light22" parent="коридорные лампочки" unique_id=145364899 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -60.341583, 24.027863, 27.957062)
-
-[node name="OmniLight3D22" type="OmniLight3D" parent="коридорные лампочки" unique_id=1402342193]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -74.38758, 23.631283, 27.914444)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light23" parent="коридорные лампочки" unique_id=948266460 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -74.41337, 24.027863, 27.957062)
-
-[node name="OmniLight3D23" type="OmniLight3D" parent="коридорные лампочки" unique_id=301434882]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -89.042305, 23.631283, 27.914444)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light24" parent="коридорные лампочки" unique_id=656834440 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -89.06809, 24.027863, 27.957062)
-
-[node name="OmniLight3D24" type="OmniLight3D" parent="коридорные лампочки" unique_id=467646485]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -62.547443, 23.631283, 21.927805)
-light_bake_mode = 1
-omni_range = 8.636383
-
-[node name="worn_overlead_light25" parent="коридорные лампочки" unique_id=1226713604 instance=ExtResource("9_ehtd8")]
-transform = Transform3D(-3.059797e-09, 0, 0.07, 0, 0.07, 0, -0.07, 0, -3.059797e-09, -62.573227, 24.027863, 21.970423)
-
 [node name="комнатные лампочки" type="Node3D" parent="." unique_id=315313011]
-
-[node name="Sketchfab_Scene" parent="комнатные лампочки" unique_id=1321790170 instance=ExtResource("7_h4qed")]
-transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -19.001123, 12.38239, 38.048794)
-
-[node name="OmniLight3D" type="OmniLight3D" parent="комнатные лампочки" unique_id=1510556767]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.711496, 11.919964, 38.127586)
-light_bake_mode = 1
-
-[node name="Sketchfab_Scene2" parent="комнатные лампочки" unique_id=1218674113 instance=ExtResource("7_h4qed")]
-transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -32.25545, 12.38239, 38.048794)
-
-[node name="OmniLight3D2" type="OmniLight3D" parent="комнатные лампочки" unique_id=99445140]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.965824, 11.919964, 38.127586)
-light_bake_mode = 1
-
-[node name="Sketchfab_Scene3" parent="комнатные лампочки" unique_id=1315564502 instance=ExtResource("7_h4qed")]
-transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -46.63868, 12.38239, 38.048794)
-
-[node name="OmniLight3D3" type="OmniLight3D" parent="комнатные лампочки" unique_id=1903246243]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.349052, 11.919964, 38.127586)
-light_bake_mode = 1
-
-[node name="Sketchfab_Scene4" parent="комнатные лампочки" unique_id=1954955477 instance=ExtResource("7_h4qed")]
-transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -60.995926, 12.38239, 38.048794)
-
-[node name="OmniLight3D4" type="OmniLight3D" parent="комнатные лампочки" unique_id=1279106242]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.7063, 11.919964, 38.127586)
-light_bake_mode = 1
-
-[node name="Sketchfab_Scene5" parent="комнатные лампочки" unique_id=623937140 instance=ExtResource("7_h4qed")]
-transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -73.76273, 12.38239, 38.048794)
 
 [node name="OmniLight3D5" type="OmniLight3D" parent="комнатные лампочки" unique_id=1436664107]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -73.47311, 11.919964, 38.127586)
-light_bake_mode = 1
 
-[node name="Sketchfab_Scene6" parent="комнатные лампочки" unique_id=1711266588 instance=ExtResource("7_h4qed")]
-transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -87.92374, 12.38239, 38.048794)
-
-[node name="OmniLight3D6" type="OmniLight3D" parent="комнатные лампочки" unique_id=2079156410]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -87.63411, 11.919964, 38.127586)
-light_bake_mode = 1
+[node name="OmniLight3D14" type="OmniLight3D" parent="комнатные лампочки" unique_id=505999784]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.7063, 22.083023, 38.127586)
 
 [node name="Sketchfab_Scene7" parent="комнатные лампочки" unique_id=1207611327 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -89.11236, 12.38239, 20.836306)
 
 [node name="OmniLight3D7" type="OmniLight3D" parent="комнатные лампочки" unique_id=794362037]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -88.82273, 11.919964, 20.915098)
-light_bake_mode = 1
 
 [node name="Sketchfab_Scene8" parent="комнатные лампочки" unique_id=1942306826 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -77.72445, 12.38239, 20.836306)
 
 [node name="OmniLight3D8" type="OmniLight3D" parent="комнатные лампочки" unique_id=1921642423]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.43482, 11.919964, 20.915098)
-light_bake_mode = 1
 
 [node name="Sketchfab_Scene9" parent="комнатные лампочки" unique_id=534530473 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -47.39142, 12.38239, 20.836306)
 
 [node name="OmniLight3D9" type="OmniLight3D" parent="комнатные лампочки" unique_id=1376518774]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.10179, 11.919964, 20.915098)
-light_bake_mode = 1
 
 [node name="Sketchfab_Scene10" parent="комнатные лампочки" unique_id=56699604 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -35.556202, 12.38239, 20.836306)
 
 [node name="OmniLight3D10" type="OmniLight3D" parent="комнатные лампочки" unique_id=1702332328]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.266575, 11.919964, 20.915098)
-light_bake_mode = 1
-
-[node name="Sketchfab_Scene11" parent="комнатные лампочки" unique_id=1315724013 instance=ExtResource("7_h4qed")]
-transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -19.001123, 22.545448, 38.048794)
-
-[node name="OmniLight3D11" type="OmniLight3D" parent="комнатные лампочки" unique_id=383673754]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -18.711496, 22.083023, 38.127586)
-light_bake_mode = 1
-
-[node name="Sketchfab_Scene12" parent="комнатные лампочки" unique_id=1710001777 instance=ExtResource("7_h4qed")]
-transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -32.25545, 22.545448, 38.048794)
-
-[node name="OmniLight3D12" type="OmniLight3D" parent="комнатные лампочки" unique_id=2083951903]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31.965824, 22.083023, 38.127586)
-light_bake_mode = 1
-
-[node name="Sketchfab_Scene13" parent="комнатные лампочки" unique_id=797803866 instance=ExtResource("7_h4qed")]
-transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -46.63868, 22.545448, 38.048794)
-
-[node name="OmniLight3D13" type="OmniLight3D" parent="комнатные лампочки" unique_id=10585489]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -46.349052, 22.083023, 38.127586)
-light_bake_mode = 1
-
-[node name="Sketchfab_Scene14" parent="комнатные лампочки" unique_id=1905734644 instance=ExtResource("7_h4qed")]
-transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -60.995926, 22.545448, 38.048794)
-
-[node name="OmniLight3D14" type="OmniLight3D" parent="комнатные лампочки" unique_id=505999784]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60.7063, 22.083023, 38.127586)
-light_bake_mode = 1
-
-[node name="Sketchfab_Scene15" parent="комнатные лампочки" unique_id=1324694169 instance=ExtResource("7_h4qed")]
-transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -73.76273, 22.545448, 38.048794)
-
-[node name="OmniLight3D15" type="OmniLight3D" parent="комнатные лампочки" unique_id=292519046]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -73.47311, 22.083023, 38.127586)
-light_bake_mode = 1
-
-[node name="Sketchfab_Scene16" parent="комнатные лампочки" unique_id=370626304 instance=ExtResource("7_h4qed")]
-transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -87.92374, 22.545448, 38.048794)
-
-[node name="OmniLight3D16" type="OmniLight3D" parent="комнатные лампочки" unique_id=1090018483]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -87.63411, 22.083023, 38.127586)
-light_bake_mode = 1
 
 [node name="Sketchfab_Scene17" parent="комнатные лампочки" unique_id=1132036387 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -89.11236, 22.545448, 20.836306)
 
 [node name="OmniLight3D17" type="OmniLight3D" parent="комнатные лампочки" unique_id=1347875498]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -88.82273, 22.083023, 20.915098)
-light_bake_mode = 1
 
 [node name="Sketchfab_Scene18" parent="комнатные лампочки" unique_id=1261062697 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -77.72445, 22.545448, 20.836306)
 
 [node name="OmniLight3D18" type="OmniLight3D" parent="комнатные лампочки" unique_id=1059855942]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -77.43482, 22.083023, 20.915098)
-light_bake_mode = 1
 
 [node name="Sketchfab_Scene19" parent="комнатные лампочки" unique_id=1644987231 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -47.39142, 22.545448, 20.836306)
 
 [node name="OmniLight3D19" type="OmniLight3D" parent="комнатные лампочки" unique_id=221185802]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -47.10179, 22.083023, 20.915098)
-light_bake_mode = 1
 
 [node name="Sketchfab_Scene20" parent="комнатные лампочки" unique_id=533069205 instance=ExtResource("7_h4qed")]
 transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -35.556202, 22.545448, 20.836306)
 
 [node name="OmniLight3D20" type="OmniLight3D" parent="комнатные лампочки" unique_id=5999365]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35.266575, 22.083023, 20.915098)
-light_bake_mode = 1
 
 [node name="подвальные лампочки" type="Node3D" parent="." unique_id=1671919142]
 
@@ -2342,6 +2065,12 @@ omni_range = 1.7049901
 
 [node name="5 комната" type="Node3D" parent="." unique_id=456163891]
 
+[node name="Sketchfab_Scene6" parent="5 комната" unique_id=623937140 instance=ExtResource("7_h4qed")]
+transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -73.76273, 12.38239, 38.048794)
+
+[node name="Sketchfab_Scene19" parent="5 комната" unique_id=882504373 instance=ExtResource("10_gudfl")]
+transform = Transform3D(0.003, 0, 0, 0, -1.3113416e-10, -0.003, 0, 0.003, -1.3113416e-10, -72.54141, 12.001511, 44.031822)
+
 [node name="Sketchfab_Scene20" parent="5 комната" unique_id=663497987 instance=ExtResource("12_41tgb")]
 transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, -78.33373, 7.300376, 33.85246)
 
@@ -2363,41 +2092,148 @@ transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, -69.14255, 7.5278883, 4
 [node name="Sketchfab_Scene26" parent="5 комната" unique_id=1908254075 instance=ExtResource("18_5lq4e")]
 transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, -78.12058, 7.5278883, 40.97319)
 
-[node name="Sketchfab_Scene8" parent="." unique_id=782615746 instance=ExtResource("6_j45mc")]
-transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, -63.795696, 16.441502, 40.601124)
-
-[node name="Sketchfab_Scene9" parent="." unique_id=532342693 instance=ExtResource("7_6pbla")]
-transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, -60.760662, 20.174534, 44.76127)
-
-[node name="Sketchfab_Scene2" parent="." unique_id=1923478851 instance=ExtResource("10_gudfl")]
-transform = Transform3D(0.003, 0, 0, 0, -1.3113416e-10, -0.003, 0, 0.003, -1.3113416e-10, -32.674057, 12.001511, 44.157368)
-
-[node name="Sketchfab_Scene4" parent="." unique_id=1424122498 instance=ExtResource("12_42jcm")]
-transform = Transform3D(-0.18804276, 0, -1.9911404, 0, 2, 0, 1.9911404, 0, -0.18804276, -15.291237, -3.5434563, 38.451645)
-
-[node name="Sketchfab_Scene3" parent="." unique_id=185431974 instance=ExtResource("12_42jcm")]
-transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, -46.660336, -3.5724514, 42.649906)
-
-[node name="Sketchfab_Scene19" parent="." unique_id=882504373 instance=ExtResource("10_gudfl")]
-transform = Transform3D(0.003, 0, 0, 0, -1.3113416e-10, -0.003, 0, 0.003, -1.3113416e-10, -72.54141, 12.001511, 44.031822)
-
-[node name="Sketchfab_Scene5" parent="." unique_id=1635150423 instance=ExtResource("19_42jcm")]
+[node name="Sketchfab_Scene5" parent="5 комната" unique_id=1635150423 instance=ExtResource("19_42jcm")]
 transform = Transform3D(-0.19696943, 0, 0.3481423, 0, 0.4, 0, -0.3481423, 0, -0.19696943, -75.06582, 9.132516, 42.128178)
 
-[node name="Sketchfab_Scene6" parent="." unique_id=453967401 instance=ExtResource("20_j45mc")]
+[node name="Sketchfab_Scene" parent="5 комната" unique_id=87314829 instance=ExtResource("25_l63sn")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -78.90413, 12.079791, 41.82138)
+
+[node name="4 комната" type="Node3D" parent="." unique_id=1453348307]
+
+[node name="Sketchfab_Scene8" parent="4 комната" unique_id=782615746 instance=ExtResource("6_j45mc")]
+transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, -63.795696, 16.441502, 40.601124)
+
+[node name="Sketchfab_Scene9" parent="4 комната" unique_id=532342693 instance=ExtResource("7_6pbla")]
+transform = Transform3D(1.8, 0, 0, 0, 1.8, 0, 0, 0, 1.8, -60.760662, 20.174534, 44.76127)
+
+[node name="Sketchfab_Scene14" parent="4 комната" unique_id=1905734644 instance=ExtResource("7_h4qed")]
+transform = Transform3D(-4.3711387e-10, 0, 0.01, 0, 0.01, 0, -0.01, 0, -4.3711387e-10, -60.995926, 22.545448, 38.048794)
+
+[node name="Sketchfab_Scene6" parent="4 комната" unique_id=453967401 instance=ExtResource("20_j45mc")]
 transform = Transform3D(-2.5352605e-07, 0, 5.8, 0, 5.8, 0, -5.8, 0, -2.5352605e-07, 6.7925377, 32.250683, 22.62309)
 
-[node name="Sketchfab_Scene7" parent="." unique_id=1660681430 instance=ExtResource("16_g7vup")]
+[node name="Sketchfab_Scene7" parent="4 комната" unique_id=1660681430 instance=ExtResource("16_g7vup")]
 transform = Transform3D(1.2428744, 0, -3.2718897, 0, 3.5, 0, 3.2718897, 0, 1.2428744, -57.50278, 16.461485, 42.662422)
 
-[node name="Sketchfab_Scene10" parent="." unique_id=799107090 instance=ExtResource("23_6pbla")]
+[node name="Sketchfab_Scene10" parent="4 комната" unique_id=799107090 instance=ExtResource("23_6pbla")]
 transform = Transform3D(-1.5298986e-07, 0, -3.5, 0, 3.5, 0, 3.5, 0, -1.5298986e-07, -56.04074, 16.442104, 41.716602)
 
-[node name="Sketchfab_Scene11" parent="." unique_id=1721494739 instance=ExtResource("16_g7vup")]
+[node name="Sketchfab_Scene11" parent="4 комната" unique_id=1721494739 instance=ExtResource("16_g7vup")]
 transform = Transform3D(-1.1047716, 0, -3.3210661, 0, 3.5, 0, 3.3210661, 0, -1.1047716, -57.78838, 16.46, 36.61599)
 
-[node name="Sketchfab_Scene12" parent="." unique_id=1161964631 instance=ExtResource("23_6pbla")]
+[node name="Sketchfab_Scene12" parent="4 комната" unique_id=1161964631 instance=ExtResource("23_6pbla")]
 transform = Transform3D(-1.5298986e-07, 0, -3.5, 0, 3.5, 0, 3.5, 0, -1.5298986e-07, -56.06218, 16.44, 37.188)
 
-[node name="Sketchfab_Scene" parent="." unique_id=923378846 instance=ExtResource("24_g7vup")]
+[node name="Sketchfab_Scene" parent="4 комната" unique_id=923378846 instance=ExtResource("24_g7vup")]
 transform = Transform3D(0.013, 0, 0, 0, 0.013, 0, 0, 0, 0.013, -65.53451, 18.639082, 33.94726)
+
+[node name="подвал" type="Node3D" parent="." unique_id=748547518]
+
+[node name="Sketchfab_Scene4" parent="подвал" unique_id=1424122498 instance=ExtResource("12_42jcm")]
+transform = Transform3D(-0.18804276, 0, -1.9911404, 0, 2, 0, 1.9911404, 0, -0.18804276, -15.291237, -3.5434563, 38.451645)
+
+[node name="Sketchfab_Scene3" parent="подвал" unique_id=185431974 instance=ExtResource("12_42jcm")]
+transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, -46.660336, -3.5724514, 42.649906)
+
+[node name="комната охранника" type="Node3D" parent="." unique_id=759648218]
+
+[node name="выключатель охранника" parent="комната охранника" unique_id=114405872 instance=ExtResource("26_2f6be")]
+transform = Transform3D(-8.7422775e-10, 0, -0.02, 0, 0.02, 0, 0.02, 0, -8.7422775e-10, 7.1500564, 8.642724, 35.594376)
+script = ExtResource("27_lk2c8")
+chandeliers = Array[NodePath]([NodePath("../люстра охранника")])
+
+[node name="люстра охранника" parent="комната охранника" unique_id=120114686 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09, -2.0023403, 13.262431, 38.368702)
+
+[node name="холл 1 эт" type="Node3D" parent="." unique_id=1885553486]
+
+[node name="выключатель" parent="холл 1 эт" unique_id=696437928 instance=ExtResource("26_2f6be")]
+transform = Transform3D(-8.7422775e-10, 0, 0.02, 0, 0.02, 0, -0.02, 0, -8.7422775e-10, 7.8707075, 8.642724, 35.594376)
+script = ExtResource("27_lk2c8")
+chandeliers = Array[NodePath]([NodePath("../люстра"), NodePath("../люстра2"), NodePath("../люстра3")])
+
+[node name="люстра" parent="холл 1 эт" unique_id=722113022 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09, 19.229967, 13.262431, 36.606686)
+
+[node name="люстра2" parent="холл 1 эт" unique_id=203491450 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09, 19.229967, 13.262431, 26.030052)
+
+[node name="люстра3" parent="холл 1 эт" unique_id=1186660174 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09, 2.6542182, 13.262431, 26.030052)
+
+[node name="коридор 1 эт" type="Node3D" parent="." unique_id=1785450484]
+
+[node name="выключатель" parent="коридор 1 эт" unique_id=245507987 instance=ExtResource("26_2f6be")]
+transform = Transform3D(-8.7422775e-10, 0, -0.02, 0, 0.02, 0, 0.02, 0, -8.7422775e-10, -12.262136, 8.0873165, 22.254152)
+script = ExtResource("27_lk2c8")
+chandeliers = Array[NodePath]([NodePath("../люстра"), NodePath("../люстра2"), NodePath("../люстра3"), NodePath("../люстра4"), NodePath("../люстра5"), NodePath("../люстра6"), NodePath("../люстра7")])
+
+[node name="люстра7" parent="коридор 1 эт" unique_id=298457915 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.3711386e-09, 0, 0.099999994, 0, 0.099999994, 0, -0.099999994, 0, -4.3711386e-09, -62.025093, 13.262432, 20.788744)
+
+[node name="люстра6" parent="коридор 1 эт" unique_id=2085656945 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.3711386e-09, 0, 0.099999994, 0, 0.099999994, 0, -0.099999994, 0, -4.3711386e-09, -88.60973, 13.262432, 27.94215)
+
+[node name="люстра5" parent="коридор 1 эт" unique_id=561593489 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.3711386e-09, 0, 0.099999994, 0, 0.099999994, 0, -0.099999994, 0, -4.3711386e-09, -74.40946, 13.262432, 27.94215)
+
+[node name="люстра4" parent="коридор 1 эт" unique_id=925262975 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.3711386e-09, 0, 0.099999994, 0, 0.099999994, 0, -0.099999994, 0, -4.3711386e-09, -60.766438, 13.262432, 27.94215)
+
+[node name="люстра3" parent="коридор 1 эт" unique_id=1887644407 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.3711386e-09, 0, 0.099999994, 0, 0.099999994, 0, -0.099999994, 0, -4.3711386e-09, -45.597458, 13.262432, 27.94215)
+
+[node name="люстра2" parent="коридор 1 эт" unique_id=1171672039 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.3711386e-09, 0, 0.099999994, 0, 0.099999994, 0, -0.099999994, 0, -4.3711386e-09, -33.147877, 13.262432, 27.94215)
+
+[node name="люстра" parent="коридор 1 эт" unique_id=2032984097 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09, -20.242624, 13.262431, 23.59777)
+
+[node name="коридор 2 эт" type="Node3D" parent="." unique_id=1651846535]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.153059, 0)
+
+[node name="выключатель" parent="коридор 2 эт" unique_id=563301686 instance=ExtResource("26_2f6be")]
+transform = Transform3D(-8.7422775e-10, 0, -0.02, 0, 0.02, 0, 0.02, 0, -8.7422775e-10, -12.306312, 8.0873165, 28.516134)
+script = ExtResource("27_lk2c8")
+chandeliers = Array[NodePath]([NodePath("../люстра"), NodePath("../люстра2"), NodePath("../люстра3"), NodePath("../люстра4"), NodePath("../люстра5"), NodePath("../люстра6"), NodePath("../люстра7")])
+
+[node name="люстра7" parent="коридор 2 эт" unique_id=1815992427 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.3711386e-09, 0, 0.099999994, 0, 0.099999994, 0, -0.099999994, 0, -4.3711386e-09, -62.025093, 13.262432, 20.788744)
+
+[node name="люстра6" parent="коридор 2 эт" unique_id=935601344 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.3711386e-09, 0, 0.099999994, 0, 0.099999994, 0, -0.099999994, 0, -4.3711386e-09, -88.60973, 13.262432, 27.94215)
+
+[node name="люстра5" parent="коридор 2 эт" unique_id=1498538708 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.3711386e-09, 0, 0.099999994, 0, 0.099999994, 0, -0.099999994, 0, -4.3711386e-09, -74.40946, 13.262432, 27.94215)
+
+[node name="люстра4" parent="коридор 2 эт" unique_id=1120914405 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.3711386e-09, 0, 0.099999994, 0, 0.099999994, 0, -0.099999994, 0, -4.3711386e-09, -60.766438, 13.262432, 27.94215)
+
+[node name="люстра3" parent="коридор 2 эт" unique_id=1367431172 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.3711386e-09, 0, 0.099999994, 0, 0.099999994, 0, -0.099999994, 0, -4.3711386e-09, -45.597458, 13.262432, 27.94215)
+
+[node name="люстра2" parent="коридор 2 эт" unique_id=1828980581 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.3711386e-09, 0, 0.099999994, 0, 0.099999994, 0, -0.099999994, 0, -4.3711386e-09, -33.147877, 13.262432, 27.94215)
+
+[node name="люстра" parent="коридор 2 эт" unique_id=843902067 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09, -20.242624, 13.262431, 23.59777)
+
+[node name="холл 2 эт" type="Node3D" parent="." unique_id=1083493577]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.255597, 0)
+
+[node name="выключатель" parent="холл 2 эт" unique_id=1554568384 instance=ExtResource("26_2f6be")]
+transform = Transform3D(-8.7422775e-10, 0, 0.02, 0, 0.02, 0, -0.02, 0, -8.7422775e-10, -10.623536, 7.9024076, 28.347702)
+script = ExtResource("27_lk2c8")
+chandeliers = Array[NodePath]([NodePath("../люстра"), NodePath("../люстра2"), NodePath("../люстра3"), NodePath("../люстра4")])
+
+[node name="люстра" parent="холл 2 эт" unique_id=1692797120 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09, 19.229967, 13.262431, 36.606686)
+
+[node name="люстра2" parent="холл 2 эт" unique_id=577747468 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09, 19.229967, 13.262431, 26.030052)
+
+[node name="люстра3" parent="холл 2 эт" unique_id=1745116341 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09, 2.6542182, 13.262431, 26.030052)
+
+[node name="люстра4" parent="холл 2 эт" unique_id=220903207 instance=ExtResource("28_egufs")]
+transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09, 1.9291058, 13.262431, 36.606686)

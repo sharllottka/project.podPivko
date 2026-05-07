@@ -1,4 +1,6 @@
-[gd_scene format=4 uid="uid://csxdqtn41h63w"]
+[gd_scene format=4 uid="uid://bld5unfmqqtsi"]
+
+[ext_resource type="Script" uid="uid://c5jaqiyfgryds" path="res://scenery/PiecesPazl.gd" id="1_y314p"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lkcpm"]
 resource_name = "material_0"
@@ -52,7 +54,9 @@ transform = Transform3D(1, 0, 0, 0, 2.220446e-16, 1, 0, -1, 2.220446e-16, 0, 0, 
 [node name="Object_2" type="MeshInstance3D" parent="Sketchfab_model/9569528ff065445cbeed7bec4a78ca5d_obj_cleaner_materialmerger_gles" unique_id=1315785365]
 mesh = SubResource("ArrayMesh_f82p8")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/9569528ff065445cbeed7bec4a78ca5d_obj_cleaner_materialmerger_gles/Object_2" unique_id=798026383]
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/9569528ff065445cbeed7bec4a78ca5d_obj_cleaner_materialmerger_gles/Object_2" unique_id=798026383 groups=["interactable"]]
+script = ExtResource("1_y314p")
+puzzle_scene = "uid://dd1oyum2uyw28"
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/9569528ff065445cbeed7bec4a78ca5d_obj_cleaner_materialmerger_gles/Object_2/StaticBody3D" unique_id=1427916557]
 shape = SubResource("ConvexPolygonShape3D_knrxf")

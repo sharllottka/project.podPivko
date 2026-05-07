@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dd1oyum2uyw28"]
 
-[ext_resource type="Script" uid="uid://b74tntted5qis" path="res://minigame1/puzzle_ui.gd" id="1_nxssh"]
+[ext_resource type="Script" path="res://minigame1/puzzle_ui.gd" id="1_t6amn"]
 [ext_resource type="Texture2D" uid="uid://cnjqhe60fj3yp" path="res://minigame1/pazzels/стол.jpg" id="2_0fpsw"]
 [ext_resource type="PackedScene" uid="uid://cfda0kjmi5l74" path="res://minigame1/pazls/piece.tscn" id="2_vewrl"]
 [ext_resource type="Texture2D" uid="uid://ddsl4uqxrg27h" path="res://minigame1/pazzels/image-part-2.png" id="3_0fpsw"]
@@ -52,7 +52,7 @@
 [ext_resource type="FontFile" uid="uid://h5is7nt7qxk5" path="res://Fonts/BF_TEXT_REGULAR.otf" id="50_t6amn"]
 
 [node name="PuzzleUI" type="CanvasLayer" unique_id=1276889938]
-script = ExtResource("1_nxssh")
+script = ExtResource("1_t6amn")
 
 [node name="Background" type="TextureRect" parent="." unique_id=1663703249]
 anchors_preset = 15
@@ -343,6 +343,7 @@ stream = ExtResource("47_80dot")
 stream = ExtResource("48_hdh2n")
 
 [node name="ClueDialog" type="Panel" parent="." unique_id=1010440022]
+visible = false
 offset_left = 508.0
 offset_top = 232.0
 offset_right = 1398.0469

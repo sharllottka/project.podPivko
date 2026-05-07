@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://swes0xktbyxu" path="res://scenery/paper2.tscn" id="9_ukwr8"]
 [ext_resource type="PackedScene" uid="uid://cpkomkw5mtwbr" path="res://scenery/light_switch.tscn" id="10_ukwr8"]
 [ext_resource type="PackedScene" uid="uid://dsjq2c4fey58c" path="res://scenery/suitcase.tscn" id="11_pb8y7"]
-[ext_resource type="PackedScene" uid="uid://csxdqtn41h63w" path="res://scenery/small_pieces_of_paper.tscn" id="12_hy0rb"]
+[ext_resource type="PackedScene" uid="uid://bld5unfmqqtsi" path="res://scenery/small_pieces_of_paper.tscn" id="12_hy0rb"]
 [ext_resource type="PackedScene" uid="uid://c46plj7wn7qby" path="res://dialogues/shadow.tscn" id="13_0qmeg"]
 [ext_resource type="PackedScene" uid="uid://pw7yenedrbcb" path="res://dialogues/dialogue_trigger.tscn" id="14_ta7ci"]
 [ext_resource type="PackedScene" uid="uid://37eppmr10wbj" path="res://dialogues/dialogue_ui.tscn" id="15_lh335"]
@@ -88,7 +88,7 @@ transform = Transform3D(-3.059797e-10, 0, -0.007, 0, 0.007, 0, 0.007, 0, -3.0597
 transform = Transform3D(-6.556708e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.556708e-08, -61.096436, 0.12513375, 4.985884)
 
 [node name="пазл бумажки" parent="." unique_id=2087848957 instance=ExtResource("12_hy0rb")]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -54.2919, 5.7564673, 4.7687674)
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -50.60544, 6.403815, 3.9037595)
 
 [node name="Shadow" parent="." unique_id=1364018208 instance=ExtResource("13_0qmeg")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.008841, -3.9834461, -0.18932809)

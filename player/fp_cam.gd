@@ -29,7 +29,7 @@ func _input(event: InputEvent) -> void:
 		rotate_x(deg_to_rad(-event.relative.y * sensitivity))
 		rotation.x = clamp(rotation.x, deg_to_rad(-90), deg_to_rad(90))
 
-	if event.is_action_pressed("interact"):
+	if event.is_action_pressed("interact") or (event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed):
 		if interact_ray.is_colliding():
 			var target = interact_ray.get_collider()
 			if target:

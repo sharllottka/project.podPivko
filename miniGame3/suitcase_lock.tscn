@@ -1,14 +1,15 @@
 [gd_scene format=3 uid="uid://cvil2tngoiq4s"]
 
-[ext_resource type="Script" uid="uid://c004rp6pqtkg" path="res://minigame3/suitcase_lock.gd" id="1_dqavt"]
-[ext_resource type="Texture2D" uid="uid://c1n70ithjb6a0" path="res://minigame3/замок.png" id="1_m6bos"]
-[ext_resource type="AudioStream" uid="uid://0vplv0ngb1w3" path="res://minigame3/для замка.wav" id="3_ktbh8"]
-[ext_resource type="AudioStream" uid="uid://bfwou26akl3vb" path="res://minigame3/открыть чемодан.wav" id="4_2ussq"]
-[ext_resource type="AudioStream" uid="uid://cwh8yolhwosxb" path="res://minigame3/error.ogg" id="5_y5n2i"]
-[ext_resource type="Script" uid="uid://cn0fic6l3dkob" path="res://minigame3/clue_dialog23.gd" id="6_rs0xw"]
+[ext_resource type="Script" uid="uid://c004rp6pqtkg" path="res://miniGame3/suitcase_lock.gd" id="1_dqavt"]
+[ext_resource type="Texture2D" uid="uid://c1n70ithjb6a0" path="res://miniGame3/замок.png" id="1_m6bos"]
+[ext_resource type="AudioStream" uid="uid://0vplv0ngb1w3" path="res://miniGame3/для замка.wav" id="3_ktbh8"]
+[ext_resource type="AudioStream" uid="uid://bfwou26akl3vb" path="res://miniGame3/открыть чемодан.wav" id="4_2ussq"]
+[ext_resource type="AudioStream" uid="uid://cwh8yolhwosxb" path="res://miniGame3/error.ogg" id="5_y5n2i"]
+[ext_resource type="Script" uid="uid://cn0fic6l3dkob" path="res://miniGame3/clue_dialog23.gd" id="6_rs0xw"]
 [ext_resource type="FontFile" uid="uid://h5is7nt7qxk5" path="res://Fonts/BF_TEXT_REGULAR.otf" id="7_shqye"]
 
 [node name="SuitcaseLock" type="Control" unique_id=485463837]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -21,7 +22,7 @@ script = ExtResource("1_dqavt")
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
-color = Color(0, 0, 0, 0.41960785)
+color = Color(0, 0, 0, 0.39215687)
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1646167848]
 layout_mode = 0
@@ -138,6 +139,7 @@ theme_override_font_sizes/font_size = 32
 text = "X"
 
 [node name="ClueDialog" type="Panel" parent="." unique_id=691153949]
+visible = false
 layout_mode = 0
 offset_left = 618.0
 offset_top = 351.0

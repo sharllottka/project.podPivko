@@ -33,7 +33,13 @@ func _input(event: InputEvent) -> void:
 		if interact_ray.is_colliding():
 			var target = interact_ray.get_collider()
 			if target:
-				if target.has_method("open_minigame"):
-					target.open_minigame()
-				elif target.is_in_group("interactable") and target.has_method("interact"):
-					target.interact()
+				interact_label.visible = false
+				var node = target
+				while node:
+					if node.has_method("open_minigame"):
+						node.open_minigame()
+						break
+					elif node.is_in_group("interactable") and node.has_method("interact"):
+						node.interact()
+						break
+				node = node.get_parent()

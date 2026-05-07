@@ -203,7 +203,8 @@ transform = Transform3D(1, 0, 0, 0, 2.220446e-16, -1, 0, 1, 2.220446e-16, 0, 0, 
 [node name="Object_4" type="MeshInstance3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/bottom_001_0" unique_id=1544424833]
 mesh = SubResource("ArrayMesh_7qott")
 
-[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/bottom_001_0/Object_4" unique_id=53966717]
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/bottom_001_0/Object_4" unique_id=53966717 groups=["interactable"]]
+script = ExtResource("1_315wo")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/root/GLTF_SceneRootNode/bottom_001_0/Object_4/StaticBody3D" unique_id=959717658]
 shape = SubResource("ConcavePolygonShape3D_315wo")

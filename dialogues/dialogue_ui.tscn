@@ -68,7 +68,7 @@ text = "Speaker name
 [node name="dialogue_text" type="RichTextLabel" parent="Canvas" unique_id=449119109]
 offset_left = 28.0
 offset_top = 826.0
-offset_right = 1510.0
+offset_right = 1347.0
 offset_bottom = 1038.0
 theme_override_font_sizes/normal_font_size = 33
 text = "This is a dialogue here...
@@ -86,3 +86,26 @@ offset_right = 1887.0
 offset_bottom = 1057.0
 theme_override_font_sizes/font_size = 28
 text = "Continue"
+
+[node name="answers_container" type="VBoxContainer" parent="Canvas" unique_id=141846856]
+offset_left = 1617.0
+offset_top = 782.0
+offset_right = 1862.0
+offset_bottom = 922.0
+
+[node name="AnswerA" type="Button" parent="Canvas/answers_container" unique_id=1078281467]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+text = "ОТвет А"
+
+[node name="AnswerB" type="Button" parent="Canvas/answers_container" unique_id=768458300]
+layout_mode = 2
+text = "Ответ Б"
+
+[node name="AnswerC" type="Button" parent="Canvas/answers_container" unique_id=482971498]
+layout_mode = 2
+text = "Отвеб С"
+
+[node name="AnswerD" type="Button" parent="Canvas/answers_container" unique_id=1981066677]
+layout_mode = 2
+text = "Ответ Д"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://mlh7gp6tj2qd"]
+
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="1_s8fwv"]
+[ext_resource type="Texture2D" uid="uid://b2mvmdi62xubc" path="res://Document check/Students/ромочка_студак-removebg-preview.png" id="1_tpc3p"]
+[ext_resource type="Texture2D" uid="uid://dybshhj5ae76o" path="res://Document check/Students/ромочка_пришёл-removebg-preview.png" id="2_dj63y"]
+
+[resource]
+script = ExtResource("1_s8fwv")
+name = "Роман"
+lastname = "Серый"
+dadname = "Алексеевич"
+faculty = "ИДЭУ"
+student_id = "22"
+issue_date = "22.06.2026"
+photo = ExtResource("2_dj63y")
+stamp = true
+id_photo = ExtResource("1_tpc3p")
+metadata/_custom_type_script = "uid://bjw3khieg3bv7"

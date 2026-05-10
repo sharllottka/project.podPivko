@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://mvrfcqtfa326"]
+
+[ext_resource type="Texture2D" uid="uid://co2di1wpl7me1" path="res://Document check/Students/глеб_студак-removebg-preview.png" id="1_ktunx"]
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="1_ptdd7"]
+[ext_resource type="Texture2D" uid="uid://c7tsexv7t2pqr" path="res://Document check/Students/глеб_пришёл-removebg-preview.png" id="2_58omr"]
+
+[resource]
+script = ExtResource("1_ptdd7")
+name = "Глеб"
+lastname = "Куров"
+dadname = "Клубничкович"
+faculty = "ФилФак"
+student_id = "566"
+issue_date = "22.07.2026"
+photo = ExtResource("2_58omr")
+stamp = true
+id_photo = ExtResource("1_ktunx")
+metadata/_custom_type_script = "uid://bjw3khieg3bv7"

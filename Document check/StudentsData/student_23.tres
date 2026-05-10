@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://b471qi0f7a2t"]
+
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="1_2mp3d"]
+[ext_resource type="Texture2D" uid="uid://bx1dboucglmip" path="res://Document check/Students/фарид_студак-removebg-preview.png" id="1_ox7gr"]
+[ext_resource type="Texture2D" uid="uid://umpk35ao6mpg" path="res://Document check/Students/фарид_пришёл-removebg-preview.png" id="2_12gbr"]
+
+[resource]
+script = ExtResource("1_2mp3d")
+name = "Фарид"
+lastname = "Бикмурзин"
+dadname = "Адельевич"
+faculty = "ФФЖ"
+student_id = "344"
+issue_date = "22.05.2026"
+photo = ExtResource("2_12gbr")
+stamp = true
+id_photo = ExtResource("1_ox7gr")
+metadata/_custom_type_script = "uid://bjw3khieg3bv7"

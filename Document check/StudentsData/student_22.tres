@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://dcfgwq7rtkqss"]
+
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="1_iqyqf"]
+[ext_resource type="Texture2D" uid="uid://cr0k3keo6jh16" path="res://Document check/Students/стасик_студак-removebg-preview.png" id="1_t5voa"]
+[ext_resource type="Texture2D" uid="uid://ci2eyiawv4i63" path="res://Document check/Students/стасик_пришёл-removebg-preview.png" id="2_pg2ck"]
+
+[resource]
+script = ExtResource("1_iqyqf")
+name = "Стас"
+lastname = "Куропаткин"
+dadname = "Константинович"
+faculty = "ИАРКТ"
+student_id = "834"
+issue_date = "22.07.2025"
+photo = ExtResource("2_pg2ck")
+stamp = true
+id_photo = ExtResource("1_t5voa")
+metadata/_custom_type_script = "uid://bjw3khieg3bv7"

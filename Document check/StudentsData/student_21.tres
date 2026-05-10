@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://bdjlo6vm8vsd7"]
+
+[ext_resource type="Texture2D" uid="uid://dy4rvqteceg4i" path="res://Document check/Students/цой_студак-removebg-preview.png" id="1_o4k5w"]
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="1_yk18v"]
+[ext_resource type="Texture2D" uid="uid://bshjrbd1fn005" path="res://Document check/Students/цой_пришёл-removebg-preview.png" id="2_a4wnu"]
+
+[resource]
+script = ExtResource("1_yk18v")
+name = "Виктор"
+lastname = "Цой"
+dadname = "Робертович"
+faculty = "ИИК"
+student_id = "908"
+issue_date = "22.07.2026"
+photo = ExtResource("2_a4wnu")
+stamp = true
+id_photo = ExtResource("1_o4k5w")
+metadata/_custom_type_script = "uid://bjw3khieg3bv7"

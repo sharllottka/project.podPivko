@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://dt2hquj1uuot1"]
+
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="1_1k5l5"]
+[ext_resource type="Texture2D" uid="uid://cfgq6xgtsi67i" path="res://Document check/Students/димочка студак.png" id="1_yj78c"]
+[ext_resource type="Texture2D" uid="uid://t1d70gkjhn88" path="res://Document check/Students/димочка пришёл.png" id="2_1jeh4"]
+
+[resource]
+script = ExtResource("1_1k5l5")
+name = "Дмитрий"
+lastname = "Беляев"
+dadname = "Михайлович"
+faculty = "ИИК"
+student_id = "54"
+issue_date = "22.06.2025"
+photo = ExtResource("2_1jeh4")
+stamp = true
+id_photo = ExtResource("1_yj78c")
+metadata/_custom_type_script = "uid://bjw3khieg3bv7"

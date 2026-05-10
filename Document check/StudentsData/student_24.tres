@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://b4ajqqf2888x7"]
+
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="1_gyrkb"]
+[ext_resource type="Texture2D" uid="uid://ce1n5kewq18lb" path="res://Document check/Students/чунгук-removebg-preview.png" id="1_wu8rl"]
+
+[resource]
+script = ExtResource("1_gyrkb")
+name = "Чунгук"
+lastname = "Кукурузов"
+dadname = "Калымович"
+faculty = "СоцГум"
+student_id = "763"
+issue_date = "22.06.2025"
+photo = ExtResource("1_wu8rl")
+stamp = true
+id_photo = ExtResource("1_wu8rl")
+metadata/_custom_type_script = "uid://bjw3khieg3bv7"

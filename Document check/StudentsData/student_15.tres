@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://dqhhnrv7e7gvw"]
+
+[ext_resource type="Texture2D" uid="uid://bjfjdasvlm4s7" path="res://Document check/Students/алина_студак-removebg-preview.png" id="1_qjj85"]
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="1_xt5lf"]
+[ext_resource type="Texture2D" uid="uid://dmx8pphh453xc" path="res://Document check/Students/алина_пришла-removebg-preview.png" id="2_p08xx"]
+
+[resource]
+script = ExtResource("1_xt5lf")
+name = "Алина"
+lastname = "Аксёнова"
+dadname = "Витальевна"
+faculty = "ИЭУ"
+student_id = "677"
+issue_date = "22.07.2024"
+photo = ExtResource("2_p08xx")
+stamp = true
+id_photo = ExtResource("1_qjj85")
+metadata/_custom_type_script = "uid://bjw3khieg3bv7"

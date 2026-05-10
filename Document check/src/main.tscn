@@ -23,10 +23,24 @@
 [ext_resource type="Resource" uid="uid://c48k77hn74f75" path="res://Document check/StudentsData/student_9.tres" id="21_m1367"]
 [ext_resource type="Resource" uid="uid://cnxjadhb40xxe" path="res://Document check/StudentsData/student_10.tres" id="22_tjerr"]
 [ext_resource type="Script" uid="uid://cpgjcqubxode1" path="res://Document check/src/document_spawner.gd" id="23_ivgsp"]
+[ext_resource type="Resource" uid="uid://bx6eya1i4w33v" path="res://Document check/StudentsData/student_12.tres" id="23_w31kt"]
 [ext_resource type="PackedScene" uid="uid://dpbi8y747yn3n" path="res://Document check/src/document.tscn" id="24_enh16"]
+[ext_resource type="Resource" uid="uid://dt2hquj1uuot1" path="res://Document check/StudentsData/student_13.tres" id="24_k6m8n"]
+[ext_resource type="Resource" uid="uid://b3poewb1tvb1w" path="res://Document check/StudentsData/student_14.tres" id="25_6wfgj"]
 [ext_resource type="Script" uid="uid://43xacpiu2fs3" path="res://Document check/src/bell_2.gd" id="25_apfta"]
+[ext_resource type="Resource" uid="uid://dqhhnrv7e7gvw" path="res://Document check/StudentsData/student_15.tres" id="26_8caro"]
 [ext_resource type="Texture2D" uid="uid://b161qqp81uslw" path="res://Document check/assets/Безымянный 2.png" id="26_53x45"]
 [ext_resource type="PackedScene" uid="uid://bry1381y2jauw" path="res://Document check/scenes/rules_note.tscn" id="27_0d0ay"]
+[ext_resource type="Resource" uid="uid://bvt7posjv31xp" path="res://Document check/StudentsData/student_16.tres" id="27_74djx"]
+[ext_resource type="Resource" uid="uid://mlh7gp6tj2qd" path="res://Document check/StudentsData/student_17.tres" id="28_4xdjh"]
+[ext_resource type="Resource" uid="uid://mvrfcqtfa326" path="res://Document check/StudentsData/student_18.tres" id="29_8wdka"]
+[ext_resource type="Resource" uid="uid://cx1kj6gaoedda" path="res://Document check/StudentsData/student_19.tres" id="30_1xssg"]
+[ext_resource type="Resource" uid="uid://dh16ppor108k3" path="res://Document check/StudentsData/student_20.tres" id="31_4rct6"]
+[ext_resource type="Resource" uid="uid://bdjlo6vm8vsd7" path="res://Document check/StudentsData/student_21.tres" id="32_ygfu4"]
+[ext_resource type="Resource" uid="uid://dcfgwq7rtkqss" path="res://Document check/StudentsData/student_22.tres" id="33_bgbvy"]
+[ext_resource type="Resource" uid="uid://b471qi0f7a2t" path="res://Document check/StudentsData/student_23.tres" id="34_r6fi3"]
+[ext_resource type="Resource" uid="uid://djbfynlb5mrtq" path="res://Document check/StudentsData/student_25.tres" id="35_ncgrg"]
+[ext_resource type="Resource" uid="uid://b4ajqqf2888x7" path="res://Document check/StudentsData/student_24.tres" id="36_m1367"]
 
 [sub_resource type="Resource" id="Resource_n36qx"]
 script = ExtResource("10_4xdjh")
@@ -39,7 +53,6 @@ issue_date = "22.04.26"
 photo = ExtResource("12_2e5xg")
 stamp = true
 id_photo = ExtResource("11_8wdka")
-metadata/_custom_type_script = "uid://37bor8c7a5qt"
 
 [sub_resource type="Resource" id="Resource_nnhyx"]
 script = ExtResource("10_4xdjh")
@@ -51,7 +64,6 @@ student_id = "10"
 issue_date = "22.04.26"
 photo = ExtResource("13_rwgqu")
 stamp = true
-metadata/_custom_type_script = "uid://37bor8c7a5qt"
 
 [sub_resource type="Resource" id="Resource_16cua"]
 script = ExtResource("10_4xdjh")
@@ -64,7 +76,6 @@ issue_date = "22.05.2026"
 photo = ExtResource("15_1xssg")
 stamp = true
 id_photo = ExtResource("14_ud386")
-metadata/_custom_type_script = "uid://37bor8c7a5qt"
 
 [sub_resource type="Resource" id="Resource_cy3es"]
 script = ExtResource("10_4xdjh")
@@ -75,7 +86,6 @@ faculty = "ИДЭУ"
 student_id = "4547"
 issue_date = "22.05.2026"
 photo = ExtResource("16_4rct6")
-metadata/_custom_type_script = "uid://37bor8c7a5qt"
 
 [sub_resource type="Resource" id="Resource_2466g"]
 script = ExtResource("10_4xdjh")
@@ -86,7 +96,6 @@ faculty = "Юрфак"
 student_id = "1422"
 issue_date = "22.04.26"
 photo = ExtResource("17_ygfu4")
-metadata/_custom_type_script = "uid://37bor8c7a5qt"
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k5h2y"]
 atlas = ExtResource("26_53x45")
@@ -201,6 +210,9 @@ script = ExtResource("8_8caro")
 student_scene = ExtResource("9_74djx")
 day_1_students = Array[ExtResource("10_4xdjh")]([SubResource("Resource_n36qx"), SubResource("Resource_nnhyx"), SubResource("Resource_16cua"), SubResource("Resource_cy3es"), SubResource("Resource_2466g")])
 day_2_students = Array[ExtResource("10_4xdjh")]([ExtResource("18_bgbvy"), ExtResource("19_r6fi3"), ExtResource("20_ncgrg"), ExtResource("21_m1367"), ExtResource("22_tjerr")])
+day_3_students = Array[ExtResource("10_4xdjh")]([ExtResource("23_w31kt"), ExtResource("24_k6m8n"), ExtResource("25_6wfgj"), ExtResource("26_8caro"), ExtResource("27_74djx")])
+day_4_students = Array[ExtResource("10_4xdjh")]([ExtResource("28_4xdjh"), ExtResource("29_8wdka"), ExtResource("30_1xssg"), ExtResource("31_4rct6"), ExtResource("32_ygfu4")])
+day_5_students = Array[ExtResource("10_4xdjh")]([ExtResource("33_bgbvy"), ExtResource("34_r6fi3"), ExtResource("35_ncgrg"), ExtResource("36_m1367"), ExtResource("22_tjerr")])
 spawn_position = Vector2(20, 60)
 move_duration = 1.0
 

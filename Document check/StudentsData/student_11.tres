@@ -7,12 +7,11 @@
 [resource]
 script = ExtResource("3_11toc")
 name = "Виктория"
-lastname = "Горбунова"
-dadname = "Игоревна"
+lastname = "Собянина"
+dadname = "Алексеевна"
 faculty = "ИЭУ"
 student_id = "53"
 issue_date = "22.06.2026"
 photo = ExtResource("2_r4w6s")
 stamp = true
 id_photo = ExtResource("1_omxul")
-metadata/_custom_type_script = "uid://37bor8c7a5qt"

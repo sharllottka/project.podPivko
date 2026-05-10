@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://cx1kj6gaoedda"]
+
+[ext_resource type="Texture2D" uid="uid://bdvllne62ffn5" path="res://Document check/Students/антоша_студак-removebg-preview.png" id="1_qnu5w"]
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="1_yu6dp"]
+[ext_resource type="Texture2D" uid="uid://c3g382x7nxdio" path="res://Document check/Students/антоша_пришёл-removebg-preview.png" id="2_ks4qo"]
+
+[resource]
+script = ExtResource("1_yu6dp")
+name = "Антон"
+lastname = "Гапанюк"
+dadname = "Андреевич"
+faculty = "СоцГум"
+student_id = "34"
+issue_date = "22.05.2025"
+photo = ExtResource("2_ks4qo")
+stamp = true
+id_photo = ExtResource("1_qnu5w")
+metadata/_custom_type_script = "uid://bjw3khieg3bv7"

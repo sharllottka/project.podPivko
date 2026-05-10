@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://b3poewb1tvb1w"]
+
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="1_4otw5"]
+[ext_resource type="Texture2D" uid="uid://bxl2f3wqtobs3" path="res://Document check/Students/максимка студак.png" id="1_gt1aa"]
+[ext_resource type="Texture2D" uid="uid://cp2nnnj88u0gr" path="res://Document check/Students/максимка пришёл.png" id="2_hg0pn"]
+
+[resource]
+script = ExtResource("1_4otw5")
+name = "Максим"
+lastname = "Батуров"
+dadname = "Семёнович"
+faculty = "ИИК"
+student_id = "899"
+issue_date = "22.06.2025"
+photo = ExtResource("2_hg0pn")
+stamp = true
+id_photo = ExtResource("1_gt1aa")
+metadata/_custom_type_script = "uid://bjw3khieg3bv7"

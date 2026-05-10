@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StudentData" format=3 uid="uid://bx6eya1i4w33v"]
+
+[ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="1_md6re"]
+[ext_resource type="Texture2D" uid="uid://b014mu5kge6x1" path="res://Document check/Students/маша студак.png" id="1_qntpd"]
+[ext_resource type="Texture2D" uid="uid://bkqnkucnfmj03" path="res://Document check/Students/маша пришла.png" id="2_56mko"]
+
+[resource]
+script = ExtResource("1_md6re")
+name = "Маша"
+lastname = "Андреяшкина"
+dadname = "Максимовна"
+faculty = "ИИК"
+student_id = "47"
+issue_date = "22.05.2025"
+photo = ExtResource("2_56mko")
+stamp = true
+id_photo = ExtResource("1_qntpd")
+metadata/_custom_type_script = "uid://bjw3khieg3bv7"

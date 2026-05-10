@@ -51,6 +51,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_re0pd")
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_qdp1l"]
+points = PackedVector3Array(-59.435894, 21.7137, -84.92155, 73.79144, 34.381954, 88.25102, -80.98213, 34.381954, 88.25102, -55.65114, 56.885933, 76.98595, 62.612877, 45.350597, -88.28961, -61.698513, 45.350597, -88.28961, 54.081142, 20.306671, -52.43019, 45.64253, 56.885933, 85.43034, -76.22614, 29.3582, 82.716774, 60.034634, 21.7137, -84.92155, -80.98213, 34.381954, -66.498314, 69.03545, 29.3582, 82.716774, -58.46906, 20.306671, -52.43019, 73.79144, 34.381954, -66.498314, -55.65114, 56.885933, 85.43034, -65.79123, 47.857098, -52.05422, 45.64253, 56.885933, 76.98595, -76.22614, 29.3582, -62.522064, 58.600544, 47.857098, 72.298706, 69.03545, 29.3582, -62.522064)
+
 [sub_resource type="ArrayMesh" id="ArrayMesh_grder"]
 _surfaces = [{
 "aabb": AABB(-66.316986, -2.3510456, -142.7163, 135.00903, 9.021166, 145.18831),
@@ -85,6 +88,9 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_grder")
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_tp633"]
+points = PackedVector3Array(-2.9339418, -3.5032883, -143.86858, 70.805275, 8.019592, -3.2912521, 70.805275, -3.5032883, -3.2912521, -67.46929, 8.019592, -3.2912521, 70.805275, 8.019592, -139.2486, -67.46929, -3.5032883, -3.2912521, -67.46929, 8.019592, -139.2486, 70.805275, -3.5032883, -139.2486, -67.46929, -3.5032883, -139.2486, 52.3434, -3.5032883, 3.6242828, -53.63642, -3.5032883, 3.6242828, 6.269925, 8.019592, -143.86858, 6.269925, -3.5032883, -143.86858, -2.9339418, 8.019592, -143.86858)
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_10gwi"]
 size = Vector3(1.6777344, 1, 1.797699)
 
@@ -103,11 +109,21 @@ transform = Transform3D(0.01, 0, 0, 0, 0, -0.01, 0, 0.01, 0, 0, 0, 0)
 [node name="Hatch_Hatch_0" type="MeshInstance3D" parent="Sketchfab_model/Hatch_fbx/RootNode/Hatch" unique_id=1141444560]
 mesh = SubResource("ArrayMesh_fro4n")
 
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/Hatch_fbx/RootNode/Hatch/Hatch_Hatch_0" unique_id=1211704063]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/Hatch_fbx/RootNode/Hatch/Hatch_Hatch_0/StaticBody3D" unique_id=55992167]
+shape = SubResource("ConvexPolygonShape3D_qdp1l")
+
 [node name="HatchDoor" type="Node3D" parent="Sketchfab_model/Hatch_fbx/RootNode" unique_id=2014398676]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.2234206, 49.329887, 80.96418)
 
 [node name="HatchDoor_Hatch_0" type="MeshInstance3D" parent="Sketchfab_model/Hatch_fbx/RootNode/HatchDoor" unique_id=477461156]
 mesh = SubResource("ArrayMesh_tdmed")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/Hatch_fbx/RootNode/HatchDoor/HatchDoor_Hatch_0" unique_id=51971165]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/Hatch_fbx/RootNode/HatchDoor/HatchDoor_Hatch_0/StaticBody3D" unique_id=1525688504]
+shape = SubResource("ConvexPolygonShape3D_tp633")
 
 [node name="InteractionArea" type="Area3D" parent="." unique_id=1819768372]
 

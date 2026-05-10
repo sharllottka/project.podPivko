@@ -9,10 +9,11 @@ func _ready():
 	_toggle_emission()
 
 func _process(_delta):
-	if player and $OmniLight3D:
+	if player and is_on:
 		var dist = global_position.distance_to(player.global_position)
-		if is_on:
-			$OmniLight3D.visible = dist < 8.0
+		var lights = find_children("*", "Light3D", true, false)
+		for light in lights:
+			light.visible = dist < 8.0
 
 func _toggle_lights():
 	var lights = find_children("*", "Light3D", true, false)
@@ -22,11 +23,13 @@ func _toggle_lights():
 func _toggle_emission():
 	var meshes = find_children("*", "MeshInstance3D", true, false)
 	for mesh in meshes:
+		if not mesh.mesh:
+			continue
 		var mat = mesh.get_surface_override_material(0)
 		if not mat:
-			mat = mesh.mesh.surface_get_material(0)
-			if mat:
-				mat = mat.duplicate()
+			var base_mat = mesh.mesh.surface_get_material(0)
+			if base_mat and base_mat is StandardMaterial3D:
+				mat = base_mat.duplicate()
 				mesh.set_surface_override_material(0, mat)
 		if mat and mat is StandardMaterial3D:
 			mat.emission_enabled = is_on

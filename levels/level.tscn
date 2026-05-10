@@ -10,8 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://csao5mb6wrirl" path="res://scenery/paper1.tscn" id="8_rtcij"]
 [ext_resource type="PackedScene" uid="uid://swes0xktbyxu" path="res://scenery/paper2.tscn" id="9_ukwr8"]
 [ext_resource type="PackedScene" uid="uid://dsjq2c4fey58c" path="res://scenery/suitcase.tscn" id="11_pb8y7"]
-[ext_resource type="PackedScene" uid="uid://bld5unfmqqtsi" path="res://scenery/small_pieces_of_paper.tscn" id="12_hy0rb"]
-[ext_resource type="PackedScene" path="res://scenery/old_plaid_sofa.tscn" id="12_mxp4k"]
+[ext_resource type="PackedScene" uid="uid://csxdqtn41h63w" path="res://scenery/small_pieces_of_paper.tscn" id="12_hy0rb"]
+[ext_resource type="PackedScene" uid="uid://cec3ypmt5bfkm" path="res://scenery/old_plaid_sofa.tscn" id="12_mxp4k"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hjsbj"]
 sky_top_color = Color(0, 0, 0, 1)

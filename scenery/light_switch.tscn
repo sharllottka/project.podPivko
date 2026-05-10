@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://cpkomkw5mtwbr"]
 
 [ext_resource type="Texture2D" uid="uid://bnomkhkjjtq52" path="res://models/light_switch_0.png" id="1_3p06s"]
+[ext_resource type="Script" uid="uid://v61fu7at80nr" path="res://scenery/light_switch.gd" id="1_b7x4s"]
 [ext_resource type="Script" uid="uid://ddvpkxa5kic7h" path="res://scenery/static_body_3d.gd" id="2_ilde7"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0thui"]
@@ -47,6 +48,7 @@ data = PackedVector3Array(-14.379399, -10.168099, 7.674, -16.3353, -9.649, 5.797
 
 [node name="Sketchfab_Scene" type="Node3D" unique_id=114405872]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 0, 0, 0)
+script = ExtResource("1_b7x4s")
 
 [node name="Sketchfab_model" type="Node3D" parent="." unique_id=416586097]
 transform = Transform3D(1, 0, 0, 0, 2.220446e-16, 1, 0, -1, 2.220446e-16, 0, 0, 0)

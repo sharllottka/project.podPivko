@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://dfvop2fhhpkql"]
 
 [ext_resource type="Texture2D" uid="uid://dpedpix1u1lll" path="res://models/fluorescent_lamplight_-_4096px2_0.png" id="1_k038q"]
+[ext_resource type="Script" uid="uid://1n15154y3cfh" path="res://scenery/chandelier.gd" id="1_s8r0u"]
 [ext_resource type="Texture2D" uid="uid://cbkx4qg0y1m8x" path="res://models/fluorescent_lamplight_-_4096px2_2.png" id="2_s8r0u"]
 [ext_resource type="Texture2D" uid="uid://bglxyic58h76w" path="res://models/fluorescent_lamplight_-_4096px2_1.png" id="3_41gif"]
 [ext_resource type="Texture2D" uid="uid://cqlvru0ctvxts" path="res://models/fluorescent_lamplight_-_4096px2_3.png" id="4_834kd"]
@@ -59,6 +60,8 @@ shadow_mesh = SubResource("ArrayMesh_iq75o")
 points = PackedVector3Array(0.79603803, 0.024442216, -0.65079343, -0.59702855, -0.14962296, -0.8996381, -0.646742, -0.17450401, -0.82494867, -0.5223805, 0.024442216, 0.020780921, -0.646742, 0.17369449, -0.82494867, 0.646742, -0.17450401, -0.82494867, 0.5223805, -0.025251737, 0.020780921, 0.646742, 0.17369449, -0.82494867, 0.59702855, 0.14881344, -0.8996381, -0.79603803, -0.025251737, -0.65079343, -0.5223805, -0.025251737, 0.020780921, 0.5223805, 0.024442216, 0.020780921, -0.59702855, 0.14881344, -0.8996381, 0.59702855, -0.14962296, -0.8996381, -0.79603803, 0.024442216, -0.7502592, 0.79603803, -0.025251737, -0.7502592, 0.646742, -0.17450401, -0.7999921, -0.646742, 0.17369449, -0.7999921, -0.646742, -0.17450401, -0.7999921, 0.646742, 0.17369449, -0.7999921, -0.79603803, 0.024442216, -0.65079343, 0.79603803, -0.025251737, -0.65079343, 0.646742, -0.14962296, -0.6756599, -0.646742, 0.14881344, -0.6756599, -0.646742, -0.14962296, -0.6756599, 0.646742, 0.14881344, -0.6756599, 0.79603803, 0.024442216, -0.7502592, -0.79603803, -0.025251737, -0.7502592)
 
 [node name="Sketchfab_Scene" type="Node3D" unique_id=1744015479]
+transform = Transform3D(2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0, 0, 0)
+script = ExtResource("1_s8r0u")
 
 [node name="Sketchfab_model" type="Node3D" parent="." unique_id=103538235]
 transform = Transform3D(1, 0, 0, 0, 2.220446e-16, 1, 0, -1, 2.220446e-16, 0, 0, 0)
@@ -78,3 +81,7 @@ mesh = SubResource("ArrayMesh_b2fnu")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Sketchfab_model/0f72e476f04142acab1765fc34275474_fbx/RootNode/Fluorescent Lamp/Fluorescent Lamp_FluorescentLamp_MTL_0/StaticBody3D" unique_id=1759368387]
 shape = SubResource("ConvexPolygonShape3D_01fgq")
+
+[node name="OmniLight3D4" type="OmniLight3D" parent="." unique_id=761708652]
+transform = Transform3D(0.4, 0, 0, 0, 0.4, 0, 0, 0, 0.4, 0.0019184112, -1.0360326, -0.005566168)
+omni_range = 6.717688

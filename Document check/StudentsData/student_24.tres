@@ -13,5 +13,4 @@ student_id = "763"
 issue_date = "22.06.2025"
 photo = ExtResource("1_wu8rl")
 stamp = true
-id_photo = ExtResource("1_wu8rl")
 metadata/_custom_type_script = "uid://bjw3khieg3bv7"

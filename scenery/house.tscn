@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://cbxdbu7cqrcv4" path="res://scenery/carpet.tscn" id="17_l63sn"]
 [ext_resource type="PackedScene" uid="uid://d2xp7fmkqky1o" path="res://scenery/bed.tscn" id="18_5lq4e"]
 [ext_resource type="PackedScene" uid="uid://bqy1yvumylc7k" path="res://scenery/laptop.tscn" id="19_42jcm"]
+[ext_resource type="PackedScene" uid="uid://djr8eum8hdof2" path="res://scenery/door1.3.tscn" id="19_jslb4"]
 [ext_resource type="PackedScene" uid="uid://je8gpv3msefq" path="res://scenery/окно_широкое.tscn" id="20_j45mc"]
 [ext_resource type="PackedScene" uid="uid://b2dudjwoeujln" path="res://scenery/стол.tscn" id="23_6pbla"]
 [ext_resource type="PackedScene" uid="uid://d0rotuodfmyfe" path="res://scenery/wardrobe.tscn" id="24_g7vup"]
@@ -30,6 +31,7 @@
 [ext_resource type="PackedScene" uid="uid://cnbre3dst4yto" path="res://scenery/старая_кровать.tscn" id="28_lk2c8"]
 [ext_resource type="PackedScene" uid="uid://1qarodwbxiwl" path="res://scenery/мусор.tscn" id="29_lk2c8"]
 [ext_resource type="PackedScene" uid="uid://vussllkwg24l" path="res://scenery/сундук_старый.tscn" id="30_egufs"]
+[ext_resource type="PackedScene" uid="uid://b3ksrspq4dwxj" path="res://scenery/door1.tscn" id="31_mm0sa"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sy2ny"]
 resource_name = "Material.001"
@@ -2045,7 +2047,7 @@ transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, -78.12058, 7.5278883, 4
 [node name="Sketchfab_Scene5" parent="1 этаж/5 комната" unique_id=1635150423 instance=ExtResource("19_42jcm")]
 transform = Transform3D(-0.19696943, 0, 0.3481423, 0, 0.4, 0, -0.3481423, 0, -0.19696943, -75.06582, 9.132516, 42.128178)
 
-[node name="Sketchfab_Scene" parent="1 этаж/5 комната" unique_id=87314829 instance=ExtResource("25_l63sn")]
+[node name="Sketchfab_Scene" parent="1 этаж/5 комната" unique_id=369601896 instance=ExtResource("25_l63sn")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -78.90413, 12.079791, 41.82138)
 
 [node name="Sketchfab_Scene3" parent="1 этаж/5 комната" unique_id=50925136 instance=ExtResource("26_2f6be")]
@@ -2078,6 +2080,39 @@ transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09
 
 [node name="люстра3" parent="1 этаж/холл 1 эт" unique_id=1186660174 instance=ExtResource("28_egufs")]
 transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09, 2.6542182, 13.262431, 26.030052)
+
+[node name="Sketchfab_Scene" parent="1 этаж" unique_id=1852128204 instance=ExtResource("31_mm0sa")]
+transform = Transform3D(2.3, 0, 0, 0, 2.3, 0, 0, 0, 2.3, -18.376072, 6.411457, 30.949604)
+
+[node name="Sketchfab_Scene2" parent="1 этаж" unique_id=631237503 instance=ExtResource("19_jslb4")]
+transform = Transform3D(-1.0053619e-07, 0, 2.3, 0, 2.3, 0, -2.3, 0, -1.0053619e-07, -11.887288, 6.2337966, 25.158548)
+
+[node name="Sketchfab_Scene3" parent="1 этаж" unique_id=614611759 instance=ExtResource("31_mm0sa")]
+transform = Transform3D(2.3, 0, 0, 0, 2.3, 0, 0, 0, 2.3, -32.363377, 6.411457, 30.949604)
+
+[node name="Sketchfab_Scene4" parent="1 этаж" unique_id=909138334 instance=ExtResource("31_mm0sa")]
+transform = Transform3D(2.3, 0, 0, 0, 2.3, 0, 0, 0, 2.3, -46.586124, 6.411457, 30.949604)
+
+[node name="Sketchfab_Scene5" parent="1 этаж" unique_id=1637223997 instance=ExtResource("31_mm0sa")]
+transform = Transform3D(2.3, 0, 0, 0, 2.3, 0, 0, 0, 2.3, -60.907486, 6.411457, 31.012066)
+
+[node name="Sketchfab_Scene6" parent="1 этаж" unique_id=138214846 instance=ExtResource("31_mm0sa")]
+transform = Transform3D(2.3, 0, 0, 0, 2.3, 0, 0, 0, 2.3, -88.440056, 6.411457, 30.949604)
+
+[node name="Sketchfab_Scene7" parent="1 этаж" unique_id=1390874561 instance=ExtResource("19_jslb4")]
+transform = Transform3D(-2.3, 0, -2.0107238e-07, 0, 2.3, 0, 2.0107238e-07, 0, -2.3, -73.93978, 6.2735906, 31.20715)
+
+[node name="Sketchfab_Scene8" parent="1 этаж" unique_id=1021020989 instance=ExtResource("31_mm0sa")]
+transform = Transform3D(-2.3, 0, -2.0107238e-07, 0, 2.3, 0, 2.0107238e-07, 0, -2.3, -77.896255, 6.411457, 25.002047)
+
+[node name="Sketchfab_Scene9" parent="1 этаж" unique_id=1680401483 instance=ExtResource("19_jslb4")]
+transform = Transform3D(2.3, 0, 0, 0, 2.3, 0, 0, 0, 2.3, -89.89577, 6.343062, 25.012146)
+
+[node name="Sketchfab_Scene10" parent="1 этаж" unique_id=342800818 instance=ExtResource("19_jslb4")]
+transform = Transform3D(2.3, 0, 0, 0, 2.3, 0, 0, 0, 2.3, -48.391647, 6.343062, 24.95161)
+
+[node name="Sketchfab_Scene11" parent="1 этаж" unique_id=978145785 instance=ExtResource("19_jslb4")]
+transform = Transform3D(2.3, 0, 0, 0, 2.3, 0, 0, 0, 2.3, -35.55608, 6.343062, 25.012146)
 
 [node name="2 этаж" type="Node3D" parent="." unique_id=915358761]
 

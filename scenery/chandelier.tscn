@@ -1155,4 +1155,7 @@ shape = SubResource("ConvexPolygonShape3D_70lic")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="." unique_id=807955979]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0.31888485, -5.629592, 0.19752264)
+distance_fade_enabled = true
+distance_fade_begin = 20.0
+distance_fade_shadow = 20.0
 omni_range = 8.636383

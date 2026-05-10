@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://csao5mb6wrirl" path="res://scenery/paper1.tscn" id="8_rtcij"]
 [ext_resource type="PackedScene" uid="uid://swes0xktbyxu" path="res://scenery/paper2.tscn" id="9_ukwr8"]
 [ext_resource type="PackedScene" uid="uid://dsjq2c4fey58c" path="res://scenery/suitcase.tscn" id="11_pb8y7"]
-[ext_resource type="PackedScene" uid="uid://csxdqtn41h63w" path="res://scenery/small_pieces_of_paper.tscn" id="12_hy0rb"]
+[ext_resource type="PackedScene" uid="uid://bld5unfmqqtsi" path="res://scenery/small_pieces_of_paper.tscn" id="12_hy0rb"]
 [ext_resource type="PackedScene" uid="uid://cec3ypmt5bfkm" path="res://scenery/old_plaid_sofa.tscn" id="12_mxp4k"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hjsbj"]
@@ -38,6 +38,9 @@ uv1_scale = Vector3(3, 2, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_80vhd"]
 material = SubResource("StandardMaterial3D_5mrsh")
+
+[sub_resource type="BoxOccluder3D" id="BoxOccluder3D_hy0rb"]
+size = Vector3(8.546252, 6.663297, 0.2967956)
 
 [node name="level" type="Node3D" unique_id=453926201]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.016626358, 0.052959442, 0)
@@ -86,3 +89,7 @@ transform = Transform3D(0.499992, 0, -0.0028274078, 0, 0.5, 0, 0.0028274078, 0, 
 
 [node name="Sketchfab_Scene" parent="." unique_id=520664454 instance=ExtResource("12_mxp4k")]
 transform = Transform3D(-1.3113416e-06, 0, 30, 0, 30, 0, -30, 0, -1.3113416e-06, -27.66794, 0.021218061, 5.6220202)
+
+[node name="OccluderInstance3D" type="OccluderInstance3D" parent="." unique_id=960805941]
+transform = Transform3D(0.016544968, 0, -0.9998631, 0, 1, 0, 0.9998631, 0, 0.016544968, -3.0844584, 2.0453098, -2.8368123)
+occluder = SubResource("BoxOccluder3D_hy0rb")

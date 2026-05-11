@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://b8plhjpixjnje"]
 
+[ext_resource type="Script" uid="uid://d4gk8nehkydq" path="res://levels/level.gd" id="1_368ro"]
 [ext_resource type="Texture2D" uid="uid://bsceqdx35mug8" path="res://icon.svg" id="1_hjsbj"]
 [ext_resource type="PackedScene" uid="uid://dvgsbanb3g0ir" path="res://player/player.tscn" id="2_cwqvt"]
 [ext_resource type="PackedScene" uid="uid://bekjmyl4aash6" path="res://scenery/house.tscn" id="3_cwqvt"]
@@ -8,14 +9,14 @@
 [ext_resource type="PackedScene" uid="uid://cc3jx6wd8mtud" path="res://hatch/sewage_hatch.tscn" id="6_vnv7o"]
 [ext_resource type="PackedScene" uid="uid://doj6j8wn02h3c" path="res://minigame2/scenes/game.tscn" id="7_d5x7l"]
 [ext_resource type="PackedScene" uid="uid://csao5mb6wrirl" path="res://scenery/paper1.tscn" id="8_rtcij"]
-[ext_resource type="Script" path="res://scenery/night_4.gd" id="9_u6cys"]
+[ext_resource type="Script" uid="uid://dwvtw1ajuh3rl" path="res://scenery/night_4.gd" id="9_u6cys"]
 [ext_resource type="PackedScene" uid="uid://swes0xktbyxu" path="res://scenery/paper2.tscn" id="9_ukwr8"]
 [ext_resource type="PackedScene" uid="uid://dsjq2c4fey58c" path="res://scenery/suitcase.tscn" id="11_pb8y7"]
 [ext_resource type="PackedScene" uid="uid://bld5unfmqqtsi" path="res://scenery/small_pieces_of_paper.tscn" id="12_hy0rb"]
 [ext_resource type="PackedScene" uid="uid://cec3ypmt5bfkm" path="res://scenery/old_plaid_sofa.tscn" id="12_mxp4k"]
 [ext_resource type="PackedScene" uid="uid://c46plj7wn7qby" path="res://dialogues/shadow.tscn" id="13_0qmeg"]
-[ext_resource type="Script" path="res://scenery/night_1.gd" id="13_368ro"]
-[ext_resource type="Script" path="res://dialogues/shadow.gd" id="14_lh335"]
+[ext_resource type="Script" uid="uid://bu3rj5qge1j6p" path="res://scenery/night_1.gd" id="13_368ro"]
+[ext_resource type="Script" uid="uid://r1wubi0gylkg" path="res://dialogues/shadow.gd" id="14_lh335"]
 [ext_resource type="PackedScene" uid="uid://37eppmr10wbj" path="res://dialogues/dialogue_ui.tscn" id="14_ta7ci"]
 [ext_resource type="PackedScene" uid="uid://pw7yenedrbcb" path="res://dialogues/dialogue_trigger.tscn" id="15_lh335"]
 
@@ -47,6 +48,7 @@ material = SubResource("StandardMaterial3D_5mrsh")
 
 [node name="level" type="Node3D" unique_id=453926201]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.016626358, 0.052959442, 0)
+script = ExtResource("1_368ro")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=923679023]
 environment = SubResource("Environment_5mrsh")

@@ -1,6 +1,7 @@
 extends Panel
 
 func _ready():
+	process_mode = Node.PROCESS_MODE_ALWAYS
 	if not $ContinueButton.pressed.is_connected(_on_continue):
 		$ContinueButton.pressed.connect(_on_continue)
 

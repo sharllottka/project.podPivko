@@ -2,6 +2,7 @@ extends Node
 
 var player_pos: Vector3 = Vector3.ZERO
 var clues_count: int = 0
+var last_scene: String = "day"  # "day" или "night"
 
 var has_note: bool = false
 var note_notification_shown: bool = false

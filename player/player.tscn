@@ -104,3 +104,4 @@ target_position = Vector3(0, -0.75, 0)
 
 [node name="stepSound" type="AudioStreamPlayer" parent="." unique_id=508986709]
 stream = ExtResource("5_qjkh3")
+bus = &"SFX"

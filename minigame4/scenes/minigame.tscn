@@ -88,11 +88,14 @@ text = "Продолжить"
 
 [node name="WinSound" type="AudioStreamPlayer" parent="." unique_id=1680543414]
 stream = SubResource("AudioStreamMP3_3ofm1")
+bus = &"SFX"
 
 [node name="pieceSound" type="AudioStreamPlayer" parent="." unique_id=104438883]
 stream = ExtResource("6_t5s0r")
+bus = &"SFX"
 
 [node name="background" type="AudioStreamPlayer" parent="." unique_id=282204824]
 stream = ExtResource("7_ss8nw")
+bus = &"Music"
 
 [connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

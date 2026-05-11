@@ -14,7 +14,6 @@
 [ext_resource type="Script" uid="uid://c5njmnokvm15h" path="res://minigame2/scenes/exit_dialog.gd" id="12_2hw8f"]
 [ext_resource type="Script" uid="uid://jjv2x1knukhu" path="res://minigame4/scenes/Clue_Sewer.gd" id="13_ktg8q"]
 [ext_resource type="FontFile" uid="uid://h5is7nt7qxk5" path="res://Fonts/BF_TEXT_REGULAR.otf" id="13_tvuaa"]
-[ext_resource type="AudioStream" uid="uid://edqp3soisaka" path="res://minigame2/assets/sounds/hurt.wav" id="16_50nbx"]
 [ext_resource type="AudioStream" uid="uid://dkstqtmmaj0dr" path="res://minigame2/assets/sounds/jump.wav" id="17_whupq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
@@ -429,9 +428,6 @@ position = Vector2(-17, 149)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone" unique_id=569908801]
 shape = SubResource("WorldBoundaryShape2D_p57ef")
 
-[node name="HurtSound" type="AudioStreamPlayer" parent="Killzone" unique_id=1310959130]
-stream = ExtResource("16_50nbx")
-
 [node name="Slime" parent="." unique_id=778270435 instance=ExtResource("6_p57ef")]
 position = Vector2(380, 46)
 
@@ -569,9 +565,11 @@ position = Vector2(1123, 110)
 
 [node name="WinSound" type="AudioStreamPlayer" parent="." unique_id=639966489]
 stream = SubResource("AudioStreamMP3_tvuaa")
+bus = &"SFX"
 
 [node name="JumpSound" type="AudioStreamPlayer" parent="." unique_id=747907998]
 stream = ExtResource("17_whupq")
+bus = &"SFX"
 
 [connection signal="pressed" from="UI/ClueDialog/ContinueButton" to="UI/ClueDialog" method="_on_continue_button_pressed"]
 [connection signal="pressed" from="UI/ClueDialog/ContinueButton" to="UI/ClueDialog" method="_on_continue"]

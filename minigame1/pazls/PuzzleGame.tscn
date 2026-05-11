@@ -386,15 +386,19 @@ text = "X"
 
 [node name="PickSound" type="AudioStreamPlayer" parent="." unique_id=1562216867]
 stream = ExtResource("45_5cc2f")
+bus = &"SFX"
 
 [node name="DropSound" type="AudioStreamPlayer" parent="." unique_id=1158167393]
 stream = ExtResource("46_gnbhc")
+bus = &"SFX"
 
 [node name="SnapSound" type="AudioStreamPlayer" parent="." unique_id=1532829004]
 stream = ExtResource("47_80dot")
+bus = &"SFX"
 
 [node name="WinSound" type="AudioStreamPlayer" parent="." unique_id=1345983986]
 stream = SubResource("AudioStreamMP3_t6amn")
+bus = &"SFX"
 
 [node name="ClueDialog" type="Panel" parent="." unique_id=1010440022]
 visible = false

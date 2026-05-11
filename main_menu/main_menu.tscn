@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://4yctseraofh3" path="res://main_menu/main_menu.gd" id="1_3shxk"]
 [ext_resource type="Texture2D" uid="uid://bh82q62swqi01" path="res://main_menu/backgraund.webp" id="1_7vrkn"]
 [ext_resource type="FontFile" uid="uid://cxswcsdbqjj8u" path="res://main_menu/Jorick-Regular.ttf" id="2_fu7sn"]
+[ext_resource type="AudioStream" uid="uid://iwjtu6whiv5e" path="res://sounds/фон меню.wav" id="4_bws42"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jix8l"]
 texture = ExtResource("1_7vrkn")
@@ -127,3 +128,7 @@ theme_override_font_sizes/font_size = 51
 text = "Тени общаги"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Sound" type="AudioStreamPlayer" parent="." unique_id=2143525134]
+stream = ExtResource("4_bws42")
+bus = &"Music"

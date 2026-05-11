@@ -1,7 +1,12 @@
 extends Control
 
+@onready var bg_music = $Sound
+
 func _ready():
 	Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+	bg_music.volume_db = -30
+	bg_music.finished.connect(bg_music.play)
+	bg_music.play()
 	$VBoxContainer/Button4.pressed.connect(_on_continue)
 	$VBoxContainer/Button.pressed.connect(_on_start)
 	$VBoxContainer/Button2.pressed.connect(_on_options)
@@ -20,6 +25,7 @@ func _on_continue():
 		$VBoxContainer/Button4.text = "Продолжить"
 
 func _on_start():
+	bg_music.stop()
 	$VBoxContainer/Button.text = "Загрузка..."
 	$VBoxContainer/Button.disabled = true
 	await get_tree().process_frame

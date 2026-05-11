@@ -172,12 +172,15 @@ text = "Продолжить"
 
 [node name="ClickSound" type="AudioStreamPlayer" parent="." unique_id=619801433]
 stream = ExtResource("3_ktbh8")
+bus = &"SFX"
 
 [node name="OpenSound" type="AudioStreamPlayer" parent="." unique_id=157843937]
 stream = ExtResource("4_2ussq")
+bus = &"SFX"
 
 [node name="ErrorSound" type="AudioStreamPlayer" parent="." unique_id=1669339931]
 stream = ExtResource("5_y5n2i")
+bus = &"SFX"
 
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Button" to="." method="change_digit" binds= [0, 1]]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Button2" to="." method="change_digit" binds= [0, -1]]

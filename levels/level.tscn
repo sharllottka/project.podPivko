@@ -8,10 +8,16 @@
 [ext_resource type="PackedScene" uid="uid://cc3jx6wd8mtud" path="res://hatch/sewage_hatch.tscn" id="6_vnv7o"]
 [ext_resource type="PackedScene" uid="uid://doj6j8wn02h3c" path="res://minigame2/scenes/game.tscn" id="7_d5x7l"]
 [ext_resource type="PackedScene" uid="uid://csao5mb6wrirl" path="res://scenery/paper1.tscn" id="8_rtcij"]
+[ext_resource type="Script" uid="uid://dwvtw1ajuh3rl" path="res://scenery/night_4.gd" id="9_u6cys"]
 [ext_resource type="PackedScene" uid="uid://swes0xktbyxu" path="res://scenery/paper2.tscn" id="9_ukwr8"]
 [ext_resource type="PackedScene" uid="uid://dsjq2c4fey58c" path="res://scenery/suitcase.tscn" id="11_pb8y7"]
 [ext_resource type="PackedScene" uid="uid://bld5unfmqqtsi" path="res://scenery/small_pieces_of_paper.tscn" id="12_hy0rb"]
 [ext_resource type="PackedScene" uid="uid://cec3ypmt5bfkm" path="res://scenery/old_plaid_sofa.tscn" id="12_mxp4k"]
+[ext_resource type="PackedScene" uid="uid://c46plj7wn7qby" path="res://dialogues/shadow.tscn" id="13_0qmeg"]
+[ext_resource type="Script" uid="uid://bu3rj5qge1j6p" path="res://scenery/night_1.gd" id="13_368ro"]
+[ext_resource type="Script" uid="uid://r1wubi0gylkg" path="res://dialogues/shadow.gd" id="14_lh335"]
+[ext_resource type="PackedScene" uid="uid://37eppmr10wbj" path="res://dialogues/dialogue_ui.tscn" id="14_ta7ci"]
+[ext_resource type="PackedScene" uid="uid://pw7yenedrbcb" path="res://dialogues/dialogue_trigger.tscn" id="15_lh335"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hjsbj"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -38,9 +44,6 @@ uv1_scale = Vector3(3, 2, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_80vhd"]
 material = SubResource("StandardMaterial3D_5mrsh")
-
-[sub_resource type="BoxOccluder3D" id="BoxOccluder3D_hy0rb"]
-size = Vector3(8.546252, 6.663297, 0.2967956)
 
 [node name="level" type="Node3D" unique_id=453926201]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.016626358, 0.052959442, 0)
@@ -77,19 +80,32 @@ minigame_scene = ExtResource("7_d5x7l")
 
 [node name="бумажка2" parent="." unique_id=1167788028 instance=ExtResource("8_rtcij")]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -58.568382, 1.332622, 6.4580903)
+script = ExtResource("9_u6cys")
 
 [node name="бумажка1" parent="." unique_id=1197526547 instance=ExtResource("9_ukwr8")]
 transform = Transform3D(0.12690666, 0, -0.07996688, 0, 0.15, 0, 0.07996688, 0, 0.12690666, -58.33183, 1.3351684, 6.3157105)
+script = ExtResource("9_u6cys")
 
 [node name="чемодан" parent="." unique_id=443618957 instance=ExtResource("11_pb8y7")]
 transform = Transform3D(-6.556708e-08, 0, 1.5, 0, 1.5, 0, -1.5, 0, -6.556708e-08, -61.096436, 0.12513375, 4.985884)
+script = ExtResource("9_u6cys")
 
 [node name="пазл бумажки" parent="." unique_id=2087848957 instance=ExtResource("12_hy0rb")]
 transform = Transform3D(0.499992, 0, -0.0028274078, 0, 0.5, 0, 0.0028274078, 0, 0.499992, -50.60665, 6.406865, 3.5044556)
+script = ExtResource("13_368ro")
 
-[node name="Sketchfab_Scene" parent="." unique_id=520664454 instance=ExtResource("12_mxp4k")]
-transform = Transform3D(-1.3113416e-06, 0, 30, 0, 30, 0, -30, 0, -1.3113416e-06, -27.66794, 0.021218061, 5.6220202)
+[node name="диван" parent="." unique_id=520664454 instance=ExtResource("12_mxp4k")]
+transform = Transform3D(-1.3113416e-06, 0, 30, 0, 30, 0, -30, 0, -1.3113416e-06, -27.66794, 0.014474392, 5.6220202)
 
-[node name="OccluderInstance3D" type="OccluderInstance3D" parent="." unique_id=960805941]
-transform = Transform3D(0.016544968, 0, -0.9998631, 0, 1, 0, 0.9998631, 0, 0.016544968, -3.0844584, 2.0453098, -2.8368123)
-occluder = SubResource("BoxOccluder3D_hy0rb")
+[node name="Shadow" parent="." unique_id=1364018208 instance=ExtResource("13_0qmeg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.944092, -3.9832764, 0.33902073)
+script = ExtResource("14_lh335")
+
+[node name="dialogue_trigger" parent="." unique_id=562309269 node_paths=PackedStringArray("speaker") instance=ExtResource("15_lh335")]
+transform = Transform3D(-0.9985326, 0, 0, 0, 1.4344083, 0, 0, 0, 1.9518067, -18.228277, -3.8011372, 0.3077578)
+dialogues = Array[String](["Ты пришёл.", "Я ждал тебя все эти ночи.", "Ты искал правду. Это похвально.", "Но сначала... сыграем в игру.", "Я буду задавать вопросы. Ты будешь отвечать.", "Посмотрим, насколько ты умён."])
+speaker_names = Array[String](["Тень", "Тень", "Тень", "Тень", "Тень", "Тень"])
+speaker = NodePath("../Shadow")
+is_shadow_dialogue = true
+
+[node name="dialogue_ui" parent="." unique_id=866463881 instance=ExtResource("14_ta7ci")]

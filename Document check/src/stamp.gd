@@ -41,6 +41,9 @@ func _place_stamp() -> void:
 					mark.set_stamp_type(stamp_type)
 				doc.add_child(mark)
 			# ★ Записываем результат в документ
+			for bell in get_tree().get_nodes_in_group("bell"):
+				bell.get_node("TextureButton").disabled = false
+				
 			doc.stamp_result = stamp_type
 			_release_stamp()
 			return

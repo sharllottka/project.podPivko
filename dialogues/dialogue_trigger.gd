@@ -51,7 +51,7 @@ var questions = [
 var final_question = {
 	"text": "Последний вопрос, охранник...\n\nТы не думал, что всё это —\nтолько у тебя в голове?",
 	"answers": [
-		"Нет. Я видел всё своими глазами.",
+		"Нет.",
 		"Иногда я сомневался.",
 		"Не знаю.",
 		"Может быть..."
@@ -162,7 +162,7 @@ func _on_final_answer(_index: int):
 	if correct_answers >= 3:
 		dialogue_text.text = "...\n\nТы умнее чем я думал.\n\nЗапомни то, что узнал.\nЭто пригодится."
 	else:
-		dialogue_text.text = "...\n\nНедостаточно.\n\nМожет в следующий раз."
+		dialogue_text.text = "...\nНедостаточно.\nМожет в следующий раз."
 
 	_play_animation()
 

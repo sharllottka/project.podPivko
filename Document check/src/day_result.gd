@@ -24,4 +24,5 @@ func _ready() -> void:
 
 func _on_next_pressed() -> void:
 	GameManager.next_day()
-	get_tree().change_scene_to_file("res://levels/level.tscn")  # ← название твоей главной сцены
+	Global.current_night = GameManager.current_day - 1  # ночь = новый день
+	get_tree().change_scene_to_file("res://levels/level.tscn") # главной сцены

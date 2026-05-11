@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://5wxir0aoyots"]
+
+[ext_resource type="Script" uid="uid://48r7i4auewj1" path="res://levels/sleepmenu.gd" id="1_lv22s"]
+
+[node name="sleepmenu" type="Control" unique_id=848682734]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lv22s")
+
+[node name="Panel" type="Panel" parent="." unique_id=399297972]
+layout_mode = 0
+offset_left = 586.0
+offset_top = 236.0
+offset_right = 1376.0
+offset_bottom = 722.0
+
+[node name="Label" type="Label" parent="." unique_id=1986594513]
+layout_mode = 0
+offset_left = 646.0
+offset_top = 302.0
+offset_right = 1308.0
+offset_bottom = 380.0
+theme_override_font_sizes/font_size = 40
+text = "Вы точно хотите лечь спать?"
+horizontal_alignment = 1
+
+[node name="NoButton" type="Button" parent="." unique_id=590561986]
+process_mode = 3
+layout_mode = 0
+offset_left = 1005.0
+offset_top = 499.0
+offset_right = 1178.9368
+offset_bottom = 580.0
+theme_override_font_sizes/font_size = 30
+text = "Нет"
+
+[node name="YesButton" type="Button" parent="." unique_id=1982973498]
+process_mode = 3
+layout_mode = 0
+offset_left = 744.0
+offset_top = 499.0
+offset_right = 917.9368
+offset_bottom = 580.0
+theme_override_font_sizes/font_size = 30
+text = "Да"

@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cj1e1igf4r62j" path="res://player/player.gd" id="1_rkbax"]
 [ext_resource type="Script" uid="uid://b7g5gfldtv7s3" path="res://player/fp_cam.gd" id="2_g1dw6"]
 [ext_resource type="Texture2D" uid="uid://dsydst6sbx840" path="res://models/записка.png" id="3_g1dw6"]
+[ext_resource type="Script" uid="uid://c2nmhiksucyxk" path="res://player/flashlight.gd" id="3_yw30f"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sqvos"]
 
@@ -26,6 +27,9 @@ script = ExtResource("2_g1dw6")
 [node name="RayCast3D" type="RayCast3D" parent="head/Camera3D" unique_id=802293557]
 target_position = Vector3(0, 0, -3)
 collide_with_areas = true
+
+[node name="SpotLight3D" type="SpotLight3D" parent="head/Camera3D" unique_id=1405723256]
+script = ExtResource("3_yw30f")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=108788392]
 

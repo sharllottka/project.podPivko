@@ -19,15 +19,22 @@ metadata/_edit_horizontal_guides_ = [344.0, 310.0]
 
 [node name="RuleLabel" type="Label" parent="." unique_id=165470813]
 texture_filter = 3
-layout_mode = 0
-offset_left = 195.0
-offset_top = 165.00006
-offset_right = 579.99976
-offset_bottom = 664.99994
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.95300007
+offset_left = 235.0
+offset_top = 205.0
+offset_right = 525.0
+offset_bottom = 285.00085
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 32
+theme_override_constants/line_spacing = -7
+theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxTexture_37giy")
 text = "Сегодня нельзя пропускать студентов с  факультета ИИК
 "
 autowrap_mode = 2
 justification_flags = 42
+paragraph_separator = "."

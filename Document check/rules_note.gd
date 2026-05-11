@@ -10,7 +10,7 @@ var dragging = false
 var offset = Vector2.ZERO
 var current_tween: Tween = null
 var normal_scale = Vector2(2, 2)
-var inspect_scale = Vector2(5, 5)
+var inspect_scale = Vector2(4, 4)
 var _overlay: Control = null
 
 func _ready() -> void:

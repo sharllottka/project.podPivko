@@ -8,9 +8,9 @@ var correct_today: int = 0
 var incorrect_today: int = 0
 
 var day_rules: Array[String] = [
+	"Сегодня нельзя пропускать студентов с Юрфака",
+	"Сегодня нельзя пропускать студентов без печати",
 	"Сегодня нельзя пропускать студентов с факультета ИИК",
-	"Сегодня нельзя пропускать студентов без фото",
-	"Сегодня нельзя пропускать студентов с просроченным билетом",
 	"Сегодня нельзя пропускать иностранных студентов",
     "Финальный день — проверяй всё внимательно"
 ]
@@ -52,10 +52,6 @@ func _end_day() -> void:
 
 	if warnings >= MAX_WARNINGS:
 		get_tree().change_scene_to_file("res://Document check/scenes/game_over.tscn")
-		return
-
-	if current_day >= MAX_DAYS:
-		get_tree().change_scene_to_file("res://Document check/scenes/victory.tscn")
 		return
 
 	# Обычный конец дня — показываем статистику

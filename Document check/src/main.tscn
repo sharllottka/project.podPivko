@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://crgc1k4p64wtn"]
 
+[ext_resource type="Script" uid="uid://djqyogs8esetr" path="res://Document check/src/main.gd" id="1_bgbvy"]
 [ext_resource type="PackedScene" uid="uid://d4lylb30ynl3i" path="res://Document check/scenes/stamp_denied.tscn" id="1_k5h2y"]
 [ext_resource type="PackedScene" uid="uid://bv28tm72h17wd" path="res://Document check/src/stamp_markd.tscn" id="2_w31kt"]
 [ext_resource type="PackedScene" uid="uid://4ocbtvmyj0ut" path="res://Document check/src/stamp.tscn" id="3_k6m8n"]
@@ -41,6 +42,8 @@
 [ext_resource type="Resource" uid="uid://b471qi0f7a2t" path="res://Document check/StudentsData/student_23.tres" id="34_r6fi3"]
 [ext_resource type="Resource" uid="uid://djbfynlb5mrtq" path="res://Document check/StudentsData/student_25.tres" id="35_ncgrg"]
 [ext_resource type="Resource" uid="uid://b4ajqqf2888x7" path="res://Document check/StudentsData/student_24.tres" id="36_m1367"]
+[ext_resource type="Texture2D" uid="uid://nx6i0641ott" path="res://Document check/закрытый блакнот.png" id="42_ygfu4"]
+[ext_resource type="Texture2D" uid="uid://bab5vh2gxg1fa" path="res://Document check/открытый блакнот.png" id="43_bgbvy"]
 
 [sub_resource type="Resource" id="Resource_n36qx"]
 script = ExtResource("10_4xdjh")
@@ -121,6 +124,7 @@ anchors_preset = 0
 offset_left = -1.0
 offset_right = 1144.0
 offset_bottom = 647.0
+script = ExtResource("1_bgbvy")
 metadata/_edit_vertical_guides_ = [-665.0, -593.0, -612.0]
 metadata/_edit_horizontal_guides_ = [765.0]
 
@@ -232,10 +236,10 @@ document_scene = ExtResource("24_enh16")
 drag_zone_path = NodePath("../Dragzone")
 inspect_zone_path = NodePath("../InspectZone")
 student_spawner_path = NodePath("../StudentSpawner")
-spawn_point = Vector2(-185, 130)
+spawn_point = Vector2(-350, 130)
 move_duration = 1.0
 
-[node name="Bell2" type="Control" parent="." unique_id=1286426067]
+[node name="Bell2" type="Control" parent="." unique_id=1286426067 groups=["bell"]]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -277,3 +281,5 @@ offset_right = 195.0
 offset_bottom = 901.0
 drag_zone = NodePath("../Dragzone")
 inspect_zone = NodePath("../InspectZone")
+closed_texture = ExtResource("42_ygfu4")
+open_texture = ExtResource("43_bgbvy")

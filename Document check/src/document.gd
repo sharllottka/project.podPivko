@@ -99,12 +99,19 @@ func update_hover_scale() -> void:
 func update_scale_after_release() -> void:
 	var doc_rect = get_global_rect()
 
-	# ★ Документ брошен на студента — реагируем по штампу
 	if student_zone != null and doc_rect.intersects(student_zone.get_global_rect()):
+		# блокируем если штамп не поставлен
+		if stamp_result == "":
+			scale_to(normal_scale)
+			if closed_texture:
+				texture = closed_texture
+			if _overlay:
+				_overlay.visible = false
+			return
+		
 		queue_free()
 		if student_spawner != null:
-			# ★ Передаём решение в GameManager
-			if stamp_result != "" and data != null:
+			if data != null:
 				GameManager.process_decision(stamp_result, data.is_monster)
 			
 			if stamp_result == "approved":
@@ -114,6 +121,21 @@ func update_scale_after_release() -> void:
 			else:
 				student_spawner.remove_current_student()
 		return
+
+	# остальной код без изменений
+	if inspect_zone != null and doc_rect.intersects(inspect_zone.get_global_rect()):
+		scale_to(inspect_scale)
+		if open_texture:
+			texture = open_texture
+		if _overlay:
+			_overlay.visible = true
+		return
+
+	scale_to(normal_scale)
+	if closed_texture:
+		texture = closed_texture
+	if _overlay:
+		_overlay.visible = false
 
 	if inspect_zone != null and doc_rect.intersects(inspect_zone.get_global_rect()):
 		scale_to(inspect_scale)
@@ -132,8 +154,20 @@ func update_scale_after_release() -> void:
 func scale_to(target: Vector2) -> void:
 	if current_tween:
 		current_tween.kill()
+	
+	# запоминаем глобальный центр документа до масштабирования
+	var center = global_position + (size * scale) / 2
+	
 	current_tween = create_tween()
-	current_tween.tween_property(self, "scale", target, 0.15)
+	current_tween.tween_method(
+		func(s: Vector2):
+			scale = s
+			# держим центр на месте
+			global_position = center - (size * s) / 2,
+		scale,
+		target,
+		0.15
+	)
 
 func is_opened() -> bool:
 	return scale == inspect_scale

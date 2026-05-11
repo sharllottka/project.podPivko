@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bwiplv5p72t1s"]
+
+[ext_resource type="Texture2D" uid="uid://b3v585fjeqgsq" path="res://Document check/scenes/pngtree-open-spiral-bound-notebook-with-grid-paper-edited-free (carve.photos).png" id="1_5o8ix"]
+
+[node name="PngtreeOpenSpiralBoundNotebookWithGridPaperEditedFree(carve_photos)" type="Sprite2D" unique_id=751128121]
+scale = Vector2(2.2676473, 2.2676473)
+texture = ExtResource("1_5o8ix")

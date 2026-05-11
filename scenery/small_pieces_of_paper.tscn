@@ -55,6 +55,7 @@ transform = Transform3D(1, 0, 0, 0, 2.220446e-16, 1, 0, -1, 2.220446e-16, 0, 0, 
 mesh = SubResource("ArrayMesh_f82p8")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="Sketchfab_model/9569528ff065445cbeed7bec4a78ca5d_obj_cleaner_materialmerger_gles/Object_2" unique_id=798026383 groups=["interactable"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2.3113412e-18, -0.010409355)
 script = ExtResource("1_y314p")
 puzzle_scene = "uid://dd1oyum2uyw28"
 

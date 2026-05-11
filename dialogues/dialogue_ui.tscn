@@ -68,7 +68,7 @@ text = "Speaker name
 [node name="dialogue_text" type="RichTextLabel" parent="Canvas" unique_id=449119109]
 offset_left = 28.0
 offset_top = 826.0
-offset_right = 1347.0
+offset_right = 1566.0
 offset_bottom = 1038.0
 theme_override_font_sizes/normal_font_size = 33
 text = "This is a dialogue here...
@@ -87,25 +87,33 @@ offset_bottom = 1057.0
 theme_override_font_sizes/font_size = 28
 text = "Continue"
 
-[node name="answers_container" type="VBoxContainer" parent="Canvas" unique_id=141846856]
-offset_left = 1617.0
-offset_top = 782.0
-offset_right = 1862.0
-offset_bottom = 922.0
+[node name="answers_container" type="GridContainer" parent="Canvas" unique_id=963431115]
+offset_left = 906.0
+offset_top = 822.00006
+offset_right = 1181.0
+offset_bottom = 932.00006
+scale = Vector2(1.5, 1.5)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+columns = 2
 
 [node name="AnswerA" type="Button" parent="Canvas/answers_container" unique_id=1078281467]
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 26
 text = "ОТвет А"
 
 [node name="AnswerB" type="Button" parent="Canvas/answers_container" unique_id=768458300]
 layout_mode = 2
+theme_override_font_sizes/font_size = 26
 text = "Ответ Б"
 
 [node name="AnswerC" type="Button" parent="Canvas/answers_container" unique_id=482971498]
 layout_mode = 2
+theme_override_font_sizes/font_size = 26
 text = "Отвеб С"
 
 [node name="AnswerD" type="Button" parent="Canvas/answers_container" unique_id=1981066677]
 layout_mode = 2
+theme_override_font_sizes/font_size = 26
 text = "Ответ Д"

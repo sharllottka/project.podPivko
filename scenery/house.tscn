@@ -2003,25 +2003,25 @@ transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -90.31041, 12.895737
 transform = Transform3D(0.015, 0, 0, 0, 0.015, 0, 0, 0, 0.015, -90.73104, 7.585594, 19.132278)
 
 [node name="Sketchfab_Scene4" parent="1 этаж/санузел1_3" unique_id=500381867 instance=ExtResource("8_0cqm8")]
-transform = Transform3D(0.015, 0, 0, 0, -6.556708e-10, -0.015, 0, 0.015, -6.556708e-10, -90.73104, 7.585594, 17.758635)
+transform = Transform3D(0.015, 0, 0, 0, -6.556708e-10, -0.0072036423, 0, 0.015, -3.148812e-10, -90.741104, 9.080322, 17.75465)
 
 [node name="Sketchfab_Scene5" parent="1 этаж/санузел1_3" unique_id=71727138 instance=ExtResource("8_0cqm8")]
-transform = Transform3D(-6.556708e-10, 0.015, -6.556708e-10, 0, -6.556708e-10, -0.015, -0.015, -6.556708e-10, 2.8660283e-17, -93.48922, 7.585594, 20.446875)
+transform = Transform3D(-6.556708e-10, 0.015, -3.148812e-10, 0, -6.556708e-10, -0.0072036423, -0.015, -6.556708e-10, 1.3763896e-17, -93.49928, 9.080322, 20.44289)
 
 [node name="Sketchfab_Scene6" parent="1 этаж/санузел1_3" unique_id=1079223169 instance=ExtResource("8_0cqm8")]
-transform = Transform3D(-6.556708e-10, -0.015, 6.556708e-10, 0, -6.556708e-10, -0.015, 0.015, -6.556708e-10, 2.8660283e-17, -85.42607, 7.585594, 17.781641)
+transform = Transform3D(-6.556708e-10, -0.015, 3.148812e-10, 0, -6.556708e-10, -0.0072036423, 0.015, -6.556708e-10, 1.3763896e-17, -85.436134, 9.080322, 17.777657)
 
 [node name="Sketchfab_Scene7" parent="1 этаж/санузел1_3" unique_id=1827930975 instance=ExtResource("8_0cqm8")]
-transform = Transform3D(-0.015, -1.3113416e-09, 5.7320566e-17, 0, -6.556708e-10, -0.015, 1.3113416e-09, -0.015, 6.556708e-10, -81.158035, 7.585594, 23.66308)
+transform = Transform3D(-0.015, -1.3113416e-09, 2.7527792e-17, 0, -6.556708e-10, -0.0072036423, 1.3113416e-09, -0.015, 3.148812e-10, -81.1681, 9.080322, 23.653967)
 
 [node name="Sketchfab_Scene8" parent="1 этаж/санузел1_3" unique_id=2036357456 instance=ExtResource("8_0cqm8")]
-transform = Transform3D(-0.015, -1.3113416e-09, 5.7320566e-17, 0, -6.556708e-10, -0.015, 1.3113416e-09, -0.015, 6.556708e-10, -96.16581, 7.585594, 23.66308)
+transform = Transform3D(-0.015, -1.3113416e-09, 2.7527792e-17, 0, -6.556708e-10, -0.0072036423, 1.3113416e-09, -0.015, 3.148812e-10, -96.17587, 9.080322, 23.659096)
 
 [node name="Sketchfab_Scene9" parent="1 этаж/санузел1_3" unique_id=90369520 instance=ExtResource("9_d3sub")]
 transform = Transform3D(0.16, 0, 0, 0, 0.16, 0, 0, 0, 0.16, -92.8754, 10.61767, 16.210777)
 
 [node name="Sketchfab_Scene10" parent="1 этаж/санузел1_3" unique_id=606723109 instance=ExtResource("8_0cqm8")]
-transform = Transform3D(-6.556708e-10, -0.015, 6.556708e-10, 0, -6.556708e-10, -0.015, 0.015, -6.556708e-10, 2.8660283e-17, -90.56813, 7.585594, 13.600343)
+transform = Transform3D(-6.556708e-10, -0.015, 3.148812e-10, 0, -6.556708e-10, -0.0072036423, 0.015, -6.556708e-10, 1.3763896e-17, -90.57819, 9.080322, 13.596358)
 
 [node name="Sketchfab_Scene11" parent="1 этаж/санузел1_3" unique_id=485158654 instance=ExtResource("9_d3sub")]
 transform = Transform3D(0.16, 0, 0, 0, 0.16, 0, 0, 0, 0.16, -85.60291, 10.61767, 16.210777)
@@ -2038,9 +2038,6 @@ transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -48.449387, 12.89573
 [node name="Sketchfab_Scene" parent="1 этаж/санузел1_2" unique_id=1384008237 instance=ExtResource("8_0cqm8")]
 transform = Transform3D(0.015, 0, 0, 0, 0.015, 0, 0, 0, 0.015, -48.898926, 7.585594, 19.132278)
 
-[node name="Sketchfab_Scene4" parent="1 этаж/санузел1_2" unique_id=1998150297 instance=ExtResource("8_0cqm8")]
-transform = Transform3D(0.015, 0, 0, 0, -6.556708e-10, -0.015, 0, 0.015, -6.556708e-10, -48.898926, 7.585594, 17.758635)
-
 [node name="Sketchfab_Scene5" parent="1 этаж/санузел1_2" unique_id=739305423 instance=ExtResource("47_71lm2")]
 transform = Transform3D(-1.7484555e-07, 0, -4, 0, 4, 0, 4, 0, -1.7484555e-07, -42.229725, 6.450701, 23.532162)
 
@@ -2048,25 +2045,66 @@ transform = Transform3D(-1.7484555e-07, 0, -4, 0, 4, 0, 4, 0, -1.7484555e-07, -4
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -44.588696, 8.804946, 16.194078)
 
 [node name="Sketchfab_Scene7" parent="1 этаж/санузел1_2" unique_id=455009550 instance=ExtResource("49_i70bl")]
-transform = Transform3D(-0.03, 0, -4.529874e-09, 0, 0.03, 0, 4.529874e-09, 0, -0.03, -50.310844, 6.3455896, 18.145998)
+transform = Transform3D(-0.03, 0, -4.529874e-09, 0, 0.03, 0, 4.529874e-09, 0, -0.03, -50.104397, 6.3455896, 18.145998)
 
 [node name="Sketchfab_Scene8" parent="1 этаж/санузел1_2" unique_id=1436357193 instance=ExtResource("9_d3sub")]
 transform = Transform3D(0.16, 0, 0, 0, 0.16, 0, 0, 0, 0.16, -51.990517, 11.399627, 16.222034)
+
+[node name="Sketchfab_Scene4" parent="1 этаж/санузел1_2" unique_id=887975706 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(0.015, 0, 0, 0, -6.556708e-10, -0.0072036423, 0, 0.015, -3.148812e-10, -49.233425, 9.080322, 17.75465)
+
+[node name="Sketchfab_Scene9" parent="1 этаж/санузел1_2" unique_id=1613684060 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(-6.556708e-10, 0.015, -3.148812e-10, 0, -6.556708e-10, -0.0072036423, -0.015, -6.556708e-10, 1.3763896e-17, -51.991604, 9.080322, 20.44289)
+
+[node name="Sketchfab_Scene10" parent="1 этаж/санузел1_2" unique_id=419158435 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(-6.556708e-10, -0.015, 3.148812e-10, 0, -6.556708e-10, -0.0072036423, 0.015, -6.556708e-10, 1.3763896e-17, -43.406254, 9.080322, 17.777657)
+
+[node name="Sketchfab_Scene12" parent="1 этаж/санузел1_2" unique_id=527701217 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(-6.556708e-10, -0.015, 3.148812e-10, 0, -6.556708e-10, -0.0072036423, 0.015, -6.556708e-10, 1.3763896e-17, -53.975872, 9.080322, 17.777657)
+
+[node name="Sketchfab_Scene11" parent="1 этаж/санузел1_2" unique_id=718034578 instance=ExtResource("25_hco8t")]
+transform = Transform3D(-0.004, 0, -6.0398325e-10, 0, 0.004, 0, 6.0398325e-10, 0, -0.004, -42.782524, 8.265335, 21.874655)
 
 [node name="санузел1_1" type="Node3D" parent="1 этаж" unique_id=1820991519]
 
 [node name="Sketchfab_Scene3" parent="1 этаж/санузел1_1" unique_id=895346694 instance=ExtResource("26_2f6be")]
 transform = Transform3D(-0.02, 0, -1.7484555e-09, 0, 0.02, 0, 1.7484555e-09, 0, -0.02, -32.785446, 8.102, 24.896107)
-chandeliers = Array[NodePath]([NodePath("../Sketchfab_Scene2")])
+chandeliers = Array[NodePath]([NodePath("../Sketchfab_Scene5")])
 
-[node name="Sketchfab_Scene2" parent="1 этаж/санузел1_1" unique_id=957379219 instance=ExtResource("28_2f6be")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -34.567566, 12.895737, 21.214138)
+[node name="Sketchfab_Scene5" parent="1 этаж/санузел1_1" unique_id=1043695491 instance=ExtResource("28_2f6be")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -36.330704, 12.895737, 21.214138)
+
+[node name="Sketchfab_Scene" parent="1 этаж/санузел1_1" unique_id=803703538 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(0.015, 0, 0, 0, 0.015, 0, 0, 0, 0.015, -36.780243, 7.585594, 19.132278)
+
+[node name="Sketchfab_Scene6" parent="1 этаж/санузел1_1" unique_id=1058412086 instance=ExtResource("47_71lm2")]
+transform = Transform3D(-1.7484555e-07, 0, -4, 0, 4, 0, 4, 0, -1.7484555e-07, -30.120176, 6.450701, 23.532162)
+
+[node name="Sketchfab_Scene7" parent="1 этаж/санузел1_1" unique_id=1886473217 instance=ExtResource("48_7t47p")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -32.470013, 8.804946, 16.194078)
+
+[node name="Sketchfab_Scene8" parent="1 этаж/санузел1_1" unique_id=368563505 instance=ExtResource("49_i70bl")]
+transform = Transform3D(-0.03, 0, -4.529874e-09, 0, 0.03, 0, 4.529874e-09, 0, -0.03, -37.985714, 6.3455896, 18.145998)
+
+[node name="Sketchfab_Scene9" parent="1 этаж/санузел1_1" unique_id=664838953 instance=ExtResource("9_d3sub")]
+transform = Transform3D(0.16, 0, 0, 0, 0.16, 0, 0, 0, 0.16, -39.871834, 11.399627, 16.222034)
+
+[node name="Sketchfab_Scene10" parent="1 этаж/санузел1_1" unique_id=860848646 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(0.015, 0, 0, 0, -6.556708e-10, -0.0072036423, 0, 0.015, -3.148812e-10, -37.114742, 9.080322, 17.75465)
+
+[node name="Sketchfab_Scene11" parent="1 этаж/санузел1_1" unique_id=633833223 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(-6.556708e-10, 0.015, -3.148812e-10, 0, -6.556708e-10, -0.0072036423, -0.015, -6.556708e-10, 1.3763896e-17, -39.87292, 9.080322, 20.44289)
+
+[node name="Sketchfab_Scene12" parent="1 этаж/санузел1_1" unique_id=929177659 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(-6.556708e-10, -0.015, 3.148812e-10, 0, -6.556708e-10, -0.0072036423, 0.015, -6.556708e-10, 1.3763896e-17, -31.303875, 9.080322, 17.777657)
+
+[node name="Sketchfab_Scene13" parent="1 этаж/санузел1_1" unique_id=837337023 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(-6.556708e-10, -0.015, 3.148812e-10, 0, -6.556708e-10, -0.0072036423, 0.015, -6.556708e-10, 1.3763896e-17, -41.85719, 9.080322, 17.777657)
+
+[node name="Sketchfab_Scene14" parent="1 этаж/санузел1_1" unique_id=777760911 instance=ExtResource("25_hco8t")]
+transform = Transform3D(-0.004, 0, -6.0398325e-10, 0, 0.004, 0, 6.0398325e-10, 0, -0.004, -30.733337, 8.265335, 21.874655)
 
 [node name="коридор 1 эт" type="Node3D" parent="1 этаж" unique_id=1785450484]
-
-[node name="выключатель" parent="1 этаж/коридор 1 эт" unique_id=245507987 instance=ExtResource("26_2f6be")]
-transform = Transform3D(-8.7422775e-10, 0, -0.02, 0, 0.02, 0, 0.02, 0, -8.7422775e-10, -12.262136, 8.0873165, 22.254152)
-chandeliers = Array[NodePath]([NodePath("../люстра"), NodePath("../люстра2"), NodePath("../люстра3"), NodePath("../люстра4"), NodePath("../люстра5"), NodePath("../люстра6"), NodePath("../люстра7")])
 
 [node name="люстра7" parent="1 этаж/коридор 1 эт" unique_id=298457915 instance=ExtResource("28_egufs")]
 transform = Transform3D(-4.3711386e-09, 0, 0.099999994, 0, 0.099999994, 0, -0.099999994, 0, -4.3711386e-09, -62.025093, 13.262432, 20.788744)
@@ -2220,9 +2258,6 @@ transform = Transform3D(2.44084, 0, 0, 0, 2.3, 0, 0, 0, 1.8634495, -90.019844, 6
 [node name="Sketchfab_Scene18" parent="1 этаж" unique_id=1487965726 instance=ExtResource("19_jslb4")]
 transform = Transform3D(2.44084, 0, 0, 0, 2.3, 0, 0, 0, 1.8634495, -48.561035, 6.343062, 25.04746)
 
-[node name="Sketchfab_Scene9" parent="1 этаж" unique_id=718034578 instance=ExtResource("25_hco8t")]
-transform = Transform3D(-0.004, 0, -6.0398325e-10, 0, 0.004, 0, 6.0398325e-10, 0, -0.004, -42.782524, 8.265335, 21.874655)
-
 [node name="Sketchfab_Scene19" parent="1 этаж" unique_id=1011084173 instance=ExtResource("22_ipmbr")]
 transform = Transform3D(-3, 0, -2.6226832e-07, 0, 3, 0, 2.6226832e-07, 0, -3, 10.98808, 6.4058237, 43.254383)
 
@@ -2300,10 +2335,6 @@ transform = Transform3D(-1.3113416e-07, 0, -3, 0, 3, 0, 3, 0, -1.3113416e-07, -5
 [node name="коридор 2 эт" type="Node3D" parent="2 этаж" unique_id=1651846535]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.153059, 0)
 
-[node name="выключатель" parent="2 этаж/коридор 2 эт" unique_id=563301686 instance=ExtResource("26_2f6be")]
-transform = Transform3D(-8.7422775e-10, 0, -0.02, 0, 0.02, 0, 0.02, 0, -8.7422775e-10, -12.306312, 8.0873165, 28.516134)
-chandeliers = Array[NodePath]([NodePath("../люстра"), NodePath("../люстра2"), NodePath("../люстра3"), NodePath("../люстра4"), NodePath("../люстра5"), NodePath("../люстра6"), NodePath("../люстра7")])
-
 [node name="люстра7" parent="2 этаж/коридор 2 эт" unique_id=1815992427 instance=ExtResource("28_egufs")]
 transform = Transform3D(-4.3711386e-09, 0, 0.099999994, 0, 0.099999994, 0, -0.099999994, 0, -4.3711386e-09, -62.025093, 13.262432, 20.788744)
 
@@ -2328,10 +2359,6 @@ transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09
 [node name="холл 2 эт" type="Node3D" parent="2 этаж" unique_id=1083493577]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.255597, 0)
 
-[node name="выключатель" parent="2 этаж/холл 2 эт" unique_id=1554568384 instance=ExtResource("26_2f6be")]
-transform = Transform3D(-8.7422775e-10, 0, 0.02, 0, 0.02, 0, -0.02, 0, -8.7422775e-10, -10.623536, 7.9024076, 28.347702)
-chandeliers = Array[NodePath]([NodePath("../люстра"), NodePath("../люстра2"), NodePath("../люстра3"), NodePath("../люстра4")])
-
 [node name="люстра" parent="2 этаж/холл 2 эт" unique_id=1692797120 instance=ExtResource("28_egufs")]
 transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09, 19.229967, 13.262431, 36.606686)
 
@@ -2343,36 +2370,6 @@ transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09
 
 [node name="люстра4" parent="2 этаж/холл 2 эт" unique_id=220903207 instance=ExtResource("28_egufs")]
 transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09, 1.9291058, 13.262431, 36.606686)
-
-[node name="санузел1_3" type="Node3D" parent="2 этаж" unique_id=1112818267]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.724129, 0)
-
-[node name="Sketchfab_Scene3" parent="2 этаж/санузел1_3" unique_id=479671888 instance=ExtResource("26_2f6be")]
-transform = Transform3D(-0.02, 0, -1.7484555e-09, 0, 0.02, 0, 1.7484555e-09, 0, -0.02, -87.09486, 8.102001, 24.888351)
-chandeliers = Array[NodePath]([NodePath("../Sketchfab_Scene2")])
-
-[node name="Sketchfab_Scene2" parent="2 этаж/санузел1_3" unique_id=1286046894 instance=ExtResource("28_2f6be")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -88.99087, 12.895737, 21.206383)
-
-[node name="санузел1_2" type="Node3D" parent="2 этаж" unique_id=507289718]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.724129, 0)
-
-[node name="Sketchfab_Scene3" parent="2 этаж/санузел1_2" unique_id=1974192401 instance=ExtResource("26_2f6be")]
-transform = Transform3D(-0.02, 0, -1.7484555e-09, 0, 0.02, 0, 1.7484555e-09, 0, -0.02, -45.563213, 8.102, 24.896107)
-chandeliers = Array[NodePath]([NodePath("../Sketchfab_Scene2")])
-
-[node name="Sketchfab_Scene2" parent="2 этаж/санузел1_2" unique_id=247234383 instance=ExtResource("28_2f6be")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -47.345333, 12.895737, 21.214138)
-
-[node name="санузел1_1" type="Node3D" parent="2 этаж" unique_id=1398001508]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.17317, 9.724129, 0)
-
-[node name="Sketchfab_Scene3" parent="2 этаж/санузел1_1" unique_id=1747607671 instance=ExtResource("26_2f6be")]
-transform = Transform3D(-0.02, 0, -1.7484555e-09, 0, 0.02, 0, 1.7484555e-09, 0, -0.02, -32.904675, 8.102001, 24.896107)
-chandeliers = Array[NodePath]([NodePath("../Sketchfab_Scene2")])
-
-[node name="Sketchfab_Scene2" parent="2 этаж/санузел1_1" unique_id=2072066456 instance=ExtResource("28_2f6be")]
-transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -35.534496, 12.895737, 21.214138)
 
 [node name="Sketchfab_Scene2" parent="2 этаж" unique_id=1596666343 instance=ExtResource("19_jslb4")]
 transform = Transform3D(-1.355053e-07, 0, 3.1, 0, 3.1, 0, -3.1, 0, -1.355053e-07, 7.55, 5.459382, 38.941)
@@ -2440,6 +2437,119 @@ transform = Transform3D(-2, 0, -1.7484555e-07, 0, 2, 0, 1.7484555e-07, 0, -2, -8
 [node name="Sketchfab_Scene23" parent="2 этаж" unique_id=273355015 instance=ExtResource("42_u2xn0")]
 transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -2.6875167, 18.470175, 36.836952)
 
+[node name="санузел2_3" type="Node3D" parent="2 этаж" unique_id=204204507]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.100407, 0)
+
+[node name="Sketchfab_Scene3" parent="2 этаж/санузел2_3" unique_id=114405872 instance=ExtResource("26_2f6be")]
+transform = Transform3D(-0.02, 0, -1.7484555e-09, 0, 0.02, 0, 1.7484555e-09, 0, -0.02, -86.86681, 8.102001, 24.888351)
+chandeliers = Array[NodePath]([NodePath("../Sketchfab_Scene2")])
+
+[node name="Sketchfab_Scene2" parent="2 этаж/санузел2_3" unique_id=1499291503 instance=ExtResource("28_2f6be")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -90.492294, 12.895737, 21.338514)
+
+[node name="Sketchfab_Scene" parent="2 этаж/санузел2_3" unique_id=1749681466 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(0.015, 0, 0, 0, 0.015, 0, 0, 0, 0.015, -90.73104, 7.585594, 19.132278)
+
+[node name="Sketchfab_Scene4" parent="2 этаж/санузел2_3" unique_id=1791627414 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(0.015, 0, 0, 0, -6.556708e-10, -0.0072036423, 0, 0.015, -3.148812e-10, -90.741104, 9.080322, 17.814634)
+
+[node name="Sketchfab_Scene5" parent="2 этаж/санузел2_3" unique_id=1030483120 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(-6.556708e-10, 0.015, -3.148812e-10, 0, -6.556708e-10, -0.0072036423, -0.015, -6.556708e-10, 1.3763896e-17, -93.49928, 9.080322, 20.44289)
+
+[node name="Sketchfab_Scene6" parent="2 этаж/санузел2_3" unique_id=537319648 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(-6.556708e-10, -0.015, 3.148812e-10, 0, -6.556708e-10, -0.0072036423, 0.015, -6.556708e-10, 1.3763896e-17, -85.436134, 9.080322, 17.777657)
+
+[node name="Sketchfab_Scene7" parent="2 этаж/санузел2_3" unique_id=1521240233 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(-0.010188444, -1.3113416e-09, 2.7527792e-17, 0, -6.556708e-10, -0.0072036423, 8.9070196e-10, -0.015, 3.148812e-10, -83.09323, 9.080322, 23.653967)
+
+[node name="Sketchfab_Scene8" parent="2 этаж/санузел2_3" unique_id=48062350 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(-0.015, -1.3113416e-09, 2.7527792e-17, 0, -6.556708e-10, -0.0072036423, 1.3113416e-09, -0.015, 3.148812e-10, -96.17587, 9.080322, 23.659096)
+
+[node name="Sketchfab_Scene9" parent="2 этаж/санузел2_3" unique_id=1424021666 instance=ExtResource("9_d3sub")]
+transform = Transform3D(0.16, 0, 0, 0, 0.16, 0, 0, 0, 0.16, -92.8754, 10.61767, 16.210777)
+
+[node name="Sketchfab_Scene10" parent="2 этаж/санузел2_3" unique_id=1752970774 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(-6.556708e-10, -0.015, 3.148812e-10, 0, -6.556708e-10, -0.0072036423, 0.015, -6.556708e-10, 1.3763896e-17, -90.57819, 9.080322, 13.596358)
+
+[node name="Sketchfab_Scene11" parent="2 этаж/санузел2_3" unique_id=1903681724 instance=ExtResource("9_d3sub")]
+transform = Transform3D(0.16, 0, 0, 0, 0.16, 0, 0, 0, 0.16, -85.60291, 10.61767, 16.210777)
+
+[node name="санузел2_1" type="Node3D" parent="2 этаж" unique_id=665441273]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.100407, 0)
+
+[node name="Sketchfab_Scene3" parent="2 этаж/санузел2_1" unique_id=1265178686 instance=ExtResource("26_2f6be")]
+transform = Transform3D(-0.02, 0, -1.7484555e-09, 0, 0.02, 0, 1.7484555e-09, 0, -0.02, -45.563213, 8.102, 24.896107)
+chandeliers = Array[NodePath]([NodePath("../Sketchfab_Scene2")])
+
+[node name="Sketchfab_Scene2" parent="2 этаж/санузел2_1" unique_id=1228016962 instance=ExtResource("28_2f6be")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -48.449387, 12.895737, 21.214138)
+
+[node name="Sketchfab_Scene" parent="2 этаж/санузел2_1" unique_id=1653307834 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(0.015, 0, 0, 0, 0.015, 0, 0, 0, 0.015, -48.898926, 7.585594, 19.132278)
+
+[node name="Sketchfab_Scene5" parent="2 этаж/санузел2_1" unique_id=1370873948 instance=ExtResource("47_71lm2")]
+transform = Transform3D(-1.7484555e-07, 0, -4, 0, 4, 0, 4, 0, -1.7484555e-07, -42.229725, 6.450701, 23.532162)
+
+[node name="Sketchfab_Scene6" parent="2 этаж/санузел2_1" unique_id=663554290 instance=ExtResource("48_7t47p")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -44.588696, 8.804946, 16.194078)
+
+[node name="Sketchfab_Scene7" parent="2 этаж/санузел2_1" unique_id=1725482989 instance=ExtResource("49_i70bl")]
+transform = Transform3D(-0.03, 0, -4.529874e-09, 0, 0.03, 0, 4.529874e-09, 0, -0.03, -50.104397, 6.3455896, 18.145998)
+
+[node name="Sketchfab_Scene8" parent="2 этаж/санузел2_1" unique_id=1093908888 instance=ExtResource("9_d3sub")]
+transform = Transform3D(0.16, 0, 0, 0, 0.16, 0, 0, 0, 0.16, -51.990517, 11.399627, 16.222034)
+
+[node name="Sketchfab_Scene4" parent="2 этаж/санузел2_1" unique_id=1727632939 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(0.015, 0, 0, 0, -6.556708e-10, -0.0072036423, 0, 0.015, -3.148812e-10, -49.233425, 9.080322, 17.75465)
+
+[node name="Sketchfab_Scene9" parent="2 этаж/санузел2_1" unique_id=900120250 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(-6.556708e-10, 0.015, -3.148812e-10, 0, -6.556708e-10, -0.0072036423, -0.015, -6.556708e-10, 1.3763896e-17, -51.991604, 9.080322, 20.44289)
+
+[node name="Sketchfab_Scene10" parent="2 этаж/санузел2_1" unique_id=735731466 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(-6.556708e-10, -0.015, 3.148812e-10, 0, -6.556708e-10, -0.0072036423, 0.015, -6.556708e-10, 1.3763896e-17, -43.406254, 9.080322, 17.777657)
+
+[node name="Sketchfab_Scene12" parent="2 этаж/санузел2_1" unique_id=1644879840 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(-6.556708e-10, -0.015, 3.148812e-10, 0, -6.556708e-10, -0.0072036423, 0.015, -6.556708e-10, 1.3763896e-17, -53.975872, 9.080322, 17.777657)
+
+[node name="Sketchfab_Scene11" parent="2 этаж/санузел2_1" unique_id=505192002 instance=ExtResource("25_hco8t")]
+transform = Transform3D(-0.004, 0, -6.0398325e-10, 0, 0.004, 0, 6.0398325e-10, 0, -0.004, -42.782524, 8.265335, 21.874655)
+
+[node name="санузел2_2" type="Node3D" parent="2 этаж" unique_id=1987513494]
+
+[node name="Sketchfab_Scene3" parent="2 этаж/санузел2_2" unique_id=51972779 instance=ExtResource("26_2f6be")]
+transform = Transform3D(-0.02, 0, -1.7484555e-09, 0, 0.02, 0, 1.7484555e-09, 0, -0.02, -74.93948, 18.13668, 24.888351)
+chandeliers = Array[NodePath]([NodePath("../Sketchfab_Scene2")])
+
+[node name="Sketchfab_Scene2" parent="2 этаж/санузел2_2" unique_id=1454303275 instance=ExtResource("28_2f6be")]
+transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, -78.61319, 22.930416, 21.338514)
+
+[node name="Sketchfab_Scene" parent="2 этаж/санузел2_2" unique_id=1306114892 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(0.015, 0, 0, 0, 0.015, 0, 0, 0, 0.015, -78.90708, 17.620274, 19.132278)
+
+[node name="Sketchfab_Scene4" parent="2 этаж/санузел2_2" unique_id=15932834 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(0.015, 0, 0, 0, -6.556708e-10, -0.0072036423, 0, 0.015, -3.148812e-10, -78.917145, 19.115002, 17.814634)
+
+[node name="Sketchfab_Scene5" parent="2 этаж/санузел2_2" unique_id=1065667940 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(-6.556708e-10, 0.015, -3.148812e-10, 0, -6.556708e-10, -0.0072036423, -0.015, -6.556708e-10, 1.3763896e-17, -81.67532, 19.115002, 20.44289)
+
+[node name="Sketchfab_Scene6" parent="2 этаж/санузел2_2" unique_id=348735555 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(-6.556708e-10, -0.015, 3.148812e-10, 0, -6.556708e-10, -0.0072036423, 0.015, -6.556708e-10, 1.3763896e-17, -73.42171, 19.115002, 17.777657)
+
+[node name="Sketchfab_Scene7" parent="2 этаж/санузел2_2" unique_id=1292126830 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(-0.005432086, -1.3113415e-09, 2.7527792e-17, 0, -6.5567074e-10, -0.0072036423, 4.7488813e-10, -0.014999999, 3.148812e-10, -73.323906, 19.115002, 23.653967)
+
+[node name="Sketchfab_Scene8" parent="2 этаж/санузел2_2" unique_id=964875390 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(-0.015, -1.3113416e-09, 2.7527792e-17, 0, -6.556708e-10, -0.0072036423, 1.3113416e-09, -0.015, 3.148812e-10, -84.35191, 19.115002, 23.659096)
+
+[node name="Sketchfab_Scene9" parent="2 этаж/санузел2_2" unique_id=283584679 instance=ExtResource("9_d3sub")]
+transform = Transform3D(0.16, 0, 0, 0, 0.16, 0, 0, 0, 0.16, -81.05144, 20.65235, 16.210777)
+
+[node name="Sketchfab_Scene10" parent="2 этаж/санузел2_2" unique_id=843912468 instance=ExtResource("8_0cqm8")]
+transform = Transform3D(-6.556708e-10, -0.015, 3.148812e-10, 0, -6.556708e-10, -0.0072036423, 0.015, -6.556708e-10, 1.3763896e-17, -78.754234, 19.115002, 13.596358)
+
+[node name="Sketchfab_Scene11" parent="2 этаж/санузел2_2" unique_id=1369288534 instance=ExtResource("9_d3sub")]
+transform = Transform3D(0.16, 0, 0, 0, 0.16, 0, 0, 0, 0.16, -73.77895, 20.65235, 16.210777)
+
 [node name="подвал" type="Node3D" parent="." unique_id=1671919142]
 
 [node name="Sketchfab_Scene8" parent="подвал" unique_id=1278552388 instance=ExtResource("9_gudfl")]
@@ -2470,10 +2580,6 @@ transform = Transform3D(-1.09278474e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278474
 
 [node name="Sketchfab_Scene4" parent="подвал" unique_id=346723198 instance=ExtResource("9_5lq4e")]
 transform = Transform3D(-1.09278474e-07, 0, 2.5, 0, 2.5, 0, -2.5, 0, -1.09278474e-07, 10.673419, 5.440278, 30.667019)
-
-[node name="Sketchfab_Scene5" parent="подвал" unique_id=114405872 instance=ExtResource("26_2f6be")]
-transform = Transform3D(0.02, 0, 0, 0, 0.02, 0, 0, 0, 0.02, -30.650103, -1.0480318, 16.476309)
-chandeliers = Array[NodePath]([NodePath("../Sketchfab_Scene4"), NodePath("../Sketchfab_Scene3"), NodePath("../Sketchfab_Scene2"), NodePath("../Sketchfab_Scene")])
 
 [node name="Sketchfab_Scene9" parent="подвал" unique_id=1424122498 instance=ExtResource("12_42jcm")]
 transform = Transform3D(-0.18804276, 0, -1.9911404, 0, 2, 0, 1.9911404, 0, -0.18804276, -15.291237, -3.5434563, 38.451645)

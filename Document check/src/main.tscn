@@ -44,6 +44,9 @@
 [ext_resource type="Resource" uid="uid://cqky8xvhlc5oy" path="res://Document check/StudentsData/student_3.tres" id="37_r6fi3"]
 [ext_resource type="Texture2D" uid="uid://nx6i0641ott" path="res://Document check/закрытый блакнот.png" id="42_ygfu4"]
 [ext_resource type="Texture2D" uid="uid://bab5vh2gxg1fa" path="res://Document check/открытый блакнот.png" id="43_bgbvy"]
+[ext_resource type="AudioStream" uid="uid://drj4iars8oban" path="res://sounds/печать.wav" id="45_r6fi3"]
+[ext_resource type="AudioStream" uid="uid://bql26ipu78hgx" path="res://sounds/звоночек .wav" id="46_ncgrg"]
+[ext_resource type="AudioStream" uid="uid://bs36uhammo1uq" path="res://sounds/фон документы.wav" id="47_m1367"]
 
 [sub_resource type="Resource" id="Resource_n36qx"]
 script = ExtResource("10_4xdjh")
@@ -283,3 +286,12 @@ drag_zone = NodePath("../Dragzone")
 inspect_zone = NodePath("../InspectZone")
 closed_texture = ExtResource("42_ygfu4")
 open_texture = ExtResource("43_bgbvy")
+
+[node name="stampSound" type="AudioStreamPlayer" parent="." unique_id=1984317334]
+stream = ExtResource("45_r6fi3")
+
+[node name="bellSound" type="AudioStreamPlayer" parent="." unique_id=476645203]
+stream = ExtResource("46_ncgrg")
+
+[node name="BackgroundSound" type="AudioStreamPlayer" parent="." unique_id=1341836705]
+stream = ExtResource("47_m1367")

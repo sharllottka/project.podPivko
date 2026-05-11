@@ -2,6 +2,7 @@ extends Area2D
 
 @export var stamp_type: String = "approved"  # "approved" или "denied"
 @export var stamp_mark_scene: PackedScene
+@onready var stampSound   = $"../stampSound"
 
 var is_held: bool = false
 var original_position: Vector2
@@ -44,6 +45,8 @@ func _place_stamp() -> void:
 			for bell in get_tree().get_nodes_in_group("bell"):
 				bell.get_node("TextureButton").disabled = false
 				
+			if stampSound:
+				stampSound.play()
 			doc.stamp_result = stamp_type
 			_release_stamp()
 			return

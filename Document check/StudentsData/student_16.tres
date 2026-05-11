@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="1_g52f2"]
 [ext_resource type="Texture2D" uid="uid://bgvguy5wn3fys" path="res://Document check/Students/кирюха_студак-removebg-preview.png" id="1_xn05o"]
-[ext_resource type="Texture2D" uid="uid://bwrkc5oip2iu1" path="res://Document check/Students/кирюха_пришёл-removebg-preview.png" id="2_44ep8"]
+[ext_resource type="Texture2D" uid="uid://ftxx8q7nb1ci" path="res://Document check/Students/кирюха_приходит-removebg-preview.png" id="2_xn05o"]
 
 [resource]
 script = ExtResource("1_g52f2")
@@ -12,7 +12,7 @@ dadname = "Андреевич"
 faculty = "ИИК"
 student_id = "344"
 issue_date = "22.05.2026"
-photo = ExtResource("2_44ep8")
+photo = ExtResource("2_xn05o")
 stamp = true
 id_photo = ExtResource("1_xn05o")
 metadata/_custom_type_script = "uid://bjw3khieg3bv7"

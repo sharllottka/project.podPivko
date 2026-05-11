@@ -6,6 +6,7 @@ const JUMP_VELOCITY = 4.5
 @onready var clue_label = find_child("ClueCounter")
 @onready var note_panel = find_child("NotePanel")
 @onready var notification_label = find_child("NotificationLabel")
+@onready var stepSound = $stepSound
 
 var note_alert_shown = false 
 
@@ -39,6 +40,14 @@ func _physics_process(delta: float) -> void:
 	if not _snap_up_stairs_check(delta):
 		move_and_slide()
 		_snap_down_to_stairs_check()
+	
+	var is_moving = direction.length() > 0 and is_on_floor()
+
+	if is_moving:
+		if not stepSound.playing:
+			stepSound.play()
+	else:
+		stepSound.stop()
 	
 func is_surface_too_steep(normal : Vector3) -> bool:
 	return normal.angle_to(Vector3.UP) > self.floor_max_angle

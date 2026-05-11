@@ -3,12 +3,15 @@ extends Control
 @export var document_spawner_path: NodePath
 @export var delay_seconds: float = 1.0
 @onready var button = $TextureButton
+@onready var BellSound = $"../bellSound"
 
 func _ready():
 	button.pressed.connect(_on_button_pressed)
 
 func _on_button_pressed():
 	button.disabled = true  # блокируем сразу
+	if BellSound:
+		BellSound.play()
 	spawn_with_delay()
 
 func spawn_with_delay() -> void:

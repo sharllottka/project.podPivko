@@ -4,7 +4,9 @@ extends Control
 @onready var wire_layer  = $WireLayer
 
 @onready var clue_dialog = $ClueDialog
-#@onready var win_sound   = $WinSound 
+@onready var win_sound   = $WinSound 
+@onready var piece_sound   = $pieceSound
+@onready var background   = $background
 
 var tile_scene = preload("res://minigame4/scenes/tile.tscn")
 
@@ -30,6 +32,10 @@ var fixed_map = [
 func _ready():
 	if clue_dialog:
 		clue_dialog.visible = false
+		
+	if background:
+		background.volume_db = -30
+		background.play()
 
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	
@@ -60,8 +66,8 @@ func _on_win():
 		if "has_wire_clue" in Global:
 			Global.has_wire_clue = true
 
-		#if win_sound:
-			#win_sound.play()
+		if win_sound:
+			win_sound.play()
 
 		if clue_dialog:
 			clue_dialog.visible = true
@@ -137,7 +143,7 @@ func generate_grid():
 		var rand_rot = rng.randi_range(0, 3)
 		for _r in range(rand_rot):
 			tile.rotate_tile()
-
+		tile.rotated.connect(_play_rotate_sound)
 		grid.add_child(tile)
 		tiles.append(tile)
 
@@ -160,3 +166,7 @@ func tile_edge_pos(col: int, row: int, side: String) -> Vector2:
 		"left":  return Vector2(tx,              ty + half)
 		"right": return Vector2(tx + TILE_SIZE, ty + half)
 	return Vector2.ZERO
+
+func _play_rotate_sound():
+	if piece_sound:
+		piece_sound.play()

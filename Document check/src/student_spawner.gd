@@ -42,6 +42,7 @@ func spawn_student() -> void:
 	student.move_duration = move_duration
 	student.setup(current_student_data)
 	student.appear()
+
 	current_student = student
 
 func approve_current_student() -> void:
@@ -50,17 +51,20 @@ func approve_current_student() -> void:
 		current_student = null
 	current_student_data = null
 
+
 func deny_current_student() -> void:
 	if current_student:
 		current_student.leave_denied()
 		current_student = null
 	current_student_data = null
 
+
 func remove_current_student() -> void:
 	if current_student:
 		current_student.leave()
 		current_student = null
 	current_student_data = null
+
 
 func _reset_deck() -> void:
 	_deck = _get_todays_students().duplicate()

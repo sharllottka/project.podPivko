@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://b7g5gfldtv7s3" path="res://player/fp_cam.gd" id="2_g1dw6"]
 [ext_resource type="Texture2D" uid="uid://dsydst6sbx840" path="res://models/записка.png" id="3_g1dw6"]
 [ext_resource type="Script" uid="uid://c2nmhiksucyxk" path="res://player/flashlight.gd" id="3_yw30f"]
+[ext_resource type="AudioStream" uid="uid://bexftote6g3rx" path="res://sounds/шаг.wav" id="5_qjkh3"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_sqvos"]
 
@@ -100,3 +101,6 @@ target_position = Vector3(0, -0.55, 0)
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.98471713, 0.01358223)
 target_position = Vector3(0, -0.75, 0)
+
+[node name="stepSound" type="AudioStreamPlayer" parent="." unique_id=508986709]
+stream = ExtResource("5_qjkh3")

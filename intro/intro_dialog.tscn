@@ -89,12 +89,16 @@ visible_ratio = 0.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="dialogue_ui/Canvas" unique_id=1944771483]
 libraries/ = SubResource("AnimationLibrary_iu5ac")
+speed_scale = 0.429
 
 [node name="continue" type="Button" parent="dialogue_ui/Canvas" unique_id=923027015]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
 offset_left = 1574.0
 offset_top = 905.0
-offset_right = 1866.0
-offset_bottom = 1004.0
+offset_right = -54.0
+offset_bottom = -76.0
 theme_override_font_sizes/font_size = 28
 text = "Продолжить"
 

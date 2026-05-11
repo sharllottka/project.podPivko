@@ -19,8 +19,8 @@ func _on_save():
 	$VBoxContainer/SaveButton.text = "Сохранить"
 
 func _on_settings():
-	# открываем твои настройки
-	pass
+	var options = load("res://options_menu.tscn").instantiate()
+	get_tree().root.add_child(options)
 
 func _on_main_menu():
 	get_tree().paused = false

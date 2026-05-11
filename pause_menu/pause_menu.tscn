@@ -67,11 +67,3 @@ layout_mode = 2
 theme_override_fonts/font = ExtResource("2_nwcfo")
 theme_override_font_sizes/font_size = 43
 text = "Настройки"
-
-[node name="MainMenuButton2" type="Button" parent="VBoxContainer" unique_id=1381263005]
-process_mode = 3
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_nwcfo")
-theme_override_font_sizes/font_size = 43
-text = "Главное меню
-"

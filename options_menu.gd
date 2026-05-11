@@ -14,6 +14,7 @@ var resolutions = [
 ]
 
 func _ready():
+	process_mode = Node.PROCESS_MODE_ALWAYS
 	# ползунки
 	music_slider.min_value = 0
 	music_slider.max_value = 1

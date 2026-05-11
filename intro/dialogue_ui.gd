@@ -58,7 +58,7 @@ func _ready():
 	print($/root/FinalDialog/dialogue_ui/Canvas/ColorRect)
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	fade_rect.modulate.a = 0.0
-	continue_button.pressed.connect(_on_continue)
+	#continue_button.pressed.connect(_on_continue)
 	_on_continue()
 
 func _on_continue():
@@ -79,4 +79,4 @@ func _fade_to_end():
 	tween.tween_property(fade_rect, "modulate:a", 1.0, 2.5)
 	await tween.finished
 	await get_tree().create_timer(3.0).timeout
-	get_tree().change_scene_to_file("res://Document check/scenes/main_menu.tscn")
+	get_tree().change_scene_to_file("res://main_menu/main_menu.tscn")

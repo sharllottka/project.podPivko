@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b0m23e8rvvcqi"]
 
-[ext_resource type="Script" uid="uid://br2kgqarsjkn7" path="res://intro/dialogue_ui.gd" id="1_4kytn"]
+[ext_resource type="Script" uid="uid://cur65bumqtw77" path="res://intro/dialogue_ui2.gd" id="1_4kytn"]
 [ext_resource type="Texture2D" uid="uid://dgyhuhxcofqmq" path="res://intro/Gemini_Generated_Image_8dlgry8dlgry8dlg.png" id="2_tqt33"]
 
 [sub_resource type="Animation" id="Animation_uqroq"]
@@ -92,7 +92,7 @@ libraries/ = SubResource("AnimationLibrary_iu5ac")
 speed_scale = 0.429
 
 [node name="continue" type="Button" parent="dialogue_ui/Canvas" unique_id=923027015]
-anchors_preset = -1
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 offset_left = 1574.0

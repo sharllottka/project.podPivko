@@ -37,9 +37,6 @@ func show_thought(text: String, duration: float = 4.0):
 		thought_label.text = text
 		thought_label.visible = true
 		await get_tree().create_timer(duration).timeout
-<<<<<<< HEAD
 
-=======
->>>>>>> 181e7798e52976fe3ecb51a3f5e9fb59cdee1a33
 		if is_instance_valid(thought_label):
 			thought_label.visible = false

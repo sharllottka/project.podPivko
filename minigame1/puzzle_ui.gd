@@ -1,4 +1,4 @@
-extends CanvasLayer 
+extends Control 
 
 var pieces_placed = 0 
 
@@ -38,8 +38,9 @@ func win():
 		close_menu()       
 
 func close_menu():
+	get_tree().paused = false
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
-	get_tree().change_scene_to_file("res://levels/level.tscn")
+	queue_free()
 
 func _on_button_pressed() -> void:
 	close_menu()

@@ -368,6 +368,7 @@ size = Vector2(20, 39)
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_p57ef"]
 
 [node name="Game" type="Node2D" unique_id=1732948925]
+process_mode = 3
 
 [node name="GameManager" type="Node" parent="." unique_id=1309515008]
 unique_name_in_owner = true

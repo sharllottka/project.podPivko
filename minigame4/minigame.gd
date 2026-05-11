@@ -4,7 +4,7 @@ extends Control
 @onready var wire_layer  = $WireLayer
 
 @onready var clue_dialog = $ClueDialog
-@onready var win_sound   = $WinSound 
+#@onready var win_sound   = $WinSound 
 
 var tile_scene = preload("res://minigame4/scenes/tile.tscn")
 
@@ -48,8 +48,9 @@ func _on_continue_button_pressed():
 	close_game()
 
 func close_game():
+	get_tree().paused = false
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-	get_tree().change_scene_to_file("res://levels/level.tscn")
+	queue_free()
 
 
 func _on_win():
@@ -59,8 +60,8 @@ func _on_win():
 		if "has_wire_clue" in Global:
 			Global.has_wire_clue = true
 
-		if win_sound:
-			win_sound.play()
+		#if win_sound:
+			#win_sound.play()
 
 		if clue_dialog:
 			clue_dialog.visible = true

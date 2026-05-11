@@ -9,8 +9,10 @@ var is_alive = true
 
 func _physics_process(delta: float) -> void:
 	# Если персонаж мертв, ничего не делаем (кроме гравитации, если хочешь)
+	if get_tree().paused:
+		return
 	if not is_alive:
-		return 
+		return
 
 	if not is_on_floor():
 		velocity += get_gravity() * delta

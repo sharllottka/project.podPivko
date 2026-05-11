@@ -558,3 +558,6 @@ text = "Продолжить"
 
 [node name="Slime4" parent="." unique_id=25203811 instance=ExtResource("6_p57ef")]
 position = Vector2(1123, 110)
+
+[connection signal="pressed" from="UI/ClueDialog/ContinueButton" to="UI/ClueDialog" method="_on_continue"]
+[connection signal="pressed" from="UI/ClueDialog/ContinueButton" to="UI/ClueDialog" method="_on_continue_button_pressed"]

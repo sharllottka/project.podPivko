@@ -1,10 +1,13 @@
 extends Control
 
+
+
 func _ready():
 	$YesButton.pressed.connect(_on_yes)
 	$NoButton.pressed.connect(_on_no)
 
 func _on_yes():
+	Global.last_scene = "day"
 	get_tree().paused = false
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	Global.player_pos = Vector3.ZERO  # сбрасываем позицию!

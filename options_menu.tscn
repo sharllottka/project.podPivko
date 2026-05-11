@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://capvd2cama7y4" path="res://options_menu.gd" id="1_lbr8e"]
 [ext_resource type="Texture2D" uid="uid://bh82q62swqi01" path="res://main_menu/backgraund.webp" id="2_t1lix"]
+[ext_resource type="FontFile" uid="uid://cxswcsdbqjj8u" path="res://main_menu/Jorick-Regular.ttf" id="3_4gmlt"]
 
 [node name="OptionsMenu" type="Control" unique_id=385572888]
 layout_mode = 3
@@ -26,15 +27,20 @@ offset_left = 423.0
 offset_top = 157.0
 offset_right = 1559.0
 offset_bottom = 890.0
+theme_override_constants/separation = 8
 alignment = 1
 
 [node name="Label" type="Label" parent="Panel/VBoxContainer" unique_id=70479275]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_4gmlt")
+theme_override_font_sizes/font_size = 45
 text = "НАСТРОЙКИ"
 horizontal_alignment = 1
 
 [node name="Label2" type="Label" parent="Panel/VBoxContainer" unique_id=657469599]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_4gmlt")
+theme_override_font_sizes/font_size = 45
 text = "Громкость музыки"
 horizontal_alignment = 1
 
@@ -43,6 +49,8 @@ layout_mode = 2
 
 [node name="Label3" type="Label" parent="Panel/VBoxContainer" unique_id=306139969]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_4gmlt")
+theme_override_font_sizes/font_size = 45
 text = "Громкость звуков"
 horizontal_alignment = 1
 
@@ -51,6 +59,8 @@ layout_mode = 2
 
 [node name="Label4" type="Label" parent="Panel/VBoxContainer" unique_id=851029210]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_4gmlt")
+theme_override_font_sizes/font_size = 45
 text = "Чувствительность мыши"
 horizontal_alignment = 1
 
@@ -59,6 +69,8 @@ layout_mode = 2
 
 [node name="FullscreenToggle" type="CheckButton" parent="Panel/VBoxContainer" unique_id=1546957828]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_4gmlt")
+theme_override_font_sizes/font_size = 45
 text = "Полный экран"
 alignment = 1
 
@@ -67,4 +79,6 @@ layout_mode = 2
 
 [node name="BackButton" type="Button" parent="Panel/VBoxContainer" unique_id=998070769]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_4gmlt")
+theme_override_font_sizes/font_size = 45
 text = "НАЗАД"

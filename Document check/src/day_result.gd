@@ -23,6 +23,7 @@ func _ready() -> void:
 	next_button.pressed.connect(_on_next_pressed)
 
 func _on_next_pressed() -> void:
+	Global.last_scene = "night"
 	GameManager.next_day()
 	Global.current_night = GameManager.current_day - 1  # ночь = новый день
 	get_tree().change_scene_to_file("res://levels/level.tscn") # главной сцены

@@ -62,6 +62,16 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 7
 
+[node name="Button4" type="Button" parent="VBoxContainer" unique_id=193844996]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_fonts/font = ExtResource("2_fu7sn")
+theme_override_font_sizes/font_size = 34
+theme_override_styles/normal = SubResource("StyleBoxFlat_glbon")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_nlkkf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_qe12f")
+text = "Продолжить игру"
+
 [node name="Button" type="Button" parent="VBoxContainer" unique_id=1611663285]
 layout_mode = 2
 size_flags_vertical = 3
@@ -70,7 +80,7 @@ theme_override_font_sizes/font_size = 34
 theme_override_styles/normal = SubResource("StyleBoxFlat_glbon")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_nlkkf")
 theme_override_styles/hover = SubResource("StyleBoxFlat_qe12f")
-text = "START GAME"
+text = "Начать игру"
 
 [node name="Button2" type="Button" parent="VBoxContainer" unique_id=1409201567]
 layout_mode = 2
@@ -80,7 +90,7 @@ theme_override_font_sizes/font_size = 34
 theme_override_styles/normal = SubResource("StyleBoxFlat_glbon")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_nlkkf")
 theme_override_styles/hover = SubResource("StyleBoxFlat_qe12f")
-text = "OPTIONS
+text = "Настройки
 "
 
 [node name="Button3" type="Button" parent="VBoxContainer" unique_id=563663800]
@@ -91,8 +101,7 @@ theme_override_font_sizes/font_size = 34
 theme_override_styles/normal = SubResource("StyleBoxFlat_glbon")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_nlkkf")
 theme_override_styles/hover = SubResource("StyleBoxFlat_qe12f")
-text = "EXIT
-
+text = "Выход
 "
 
 [node name="Label" type="Label" parent="." unique_id=546192882]
@@ -103,9 +112,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -270.0
-offset_top = -176.0
+offset_top = -158.0
 offset_right = 266.0
-offset_bottom = -126.0
+offset_bottom = -108.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0.107360266, 0.010551248, 0.011097785, 1)
@@ -115,6 +124,6 @@ theme_override_constants/shadow_offset_x = 11
 theme_override_constants/shadow_offset_y = 10
 theme_override_fonts/font = ExtResource("2_fu7sn")
 theme_override_font_sizes/font_size = 51
-text = "SHADOWS OF THE DORM"
+text = "Тени общаги"
 horizontal_alignment = 1
 vertical_alignment = 1

@@ -9,6 +9,7 @@ func _ready():
 
 func _on_resume():
 	get_tree().paused = false
+	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	queue_free()
 
 func _on_save():

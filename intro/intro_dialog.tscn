@@ -89,6 +89,7 @@ visible_ratio = 0.0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="dialogue_ui/Canvas" unique_id=1944771483]
 libraries/ = SubResource("AnimationLibrary_iu5ac")
+speed_scale = 0.429
 
 [node name="continue" type="Button" parent="dialogue_ui/Canvas" unique_id=923027015]
 offset_left = 1574.0

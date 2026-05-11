@@ -44,6 +44,7 @@
 [ext_resource type="Texture2D" uid="uid://cjsa5ewnqo8rn" path="res://minigame1/pazzels/image-part-40.png" id="40_dtthm"]
 [ext_resource type="Texture2D" uid="uid://bdorfgohn8s6b" path="res://minigame1/pazzels/image-part-41.png" id="41_is4e7"]
 [ext_resource type="Texture2D" uid="uid://ds3xt12sgrkhd" path="res://minigame1/pazzels/image-part-42.png" id="42_q4aix"]
+[ext_resource type="Texture2D" uid="uid://ctm4akrlg2r37" path="res://minigame1/pazzels/image-part-39.png" id="42_t6amn"]
 [ext_resource type="AudioStream" uid="uid://dc3e1i31wx7fc" path="res://minigame1/pazzels/пазл взять.wav" id="45_5cc2f"]
 [ext_resource type="AudioStream" uid="uid://dn8gcum5q8gar" path="res://minigame1/pazzels/пазл кинуть.mp3" id="46_gnbhc"]
 [ext_resource type="AudioStream" uid="uid://cgynw5ohkmgt8" path="res://minigame1/pazzels/пазл на месте.wav" id="47_80dot"]
@@ -352,7 +353,7 @@ process_mode = 3
 position = Vector2(996.00006, 1046.7778)
 
 [node name="visual" parent="PuzzleScaler/piece39" index="0" unique_id=2112941432]
-texture = ExtResource("39_sen5b")
+texture = ExtResource("42_t6amn")
 
 [node name="piece40" parent="PuzzleScaler" unique_id=155344969 instance=ExtResource("2_vewrl")]
 process_mode = 3

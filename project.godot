@@ -18,9 +18,9 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*uid://ciep08smys7li"
+SaveManager="*uid://187ogicx44cr"
+PauseManager="*uid://b2yqhwcufr7xc"
 GameManager="*uid://4mbyrx6yxuox"
-SaveManager="*uid://kxopg1bggbgo"
-PauseManager="*uid://fqel3wlifvvm"
 
 [debug]
 

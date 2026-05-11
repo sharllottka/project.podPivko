@@ -19,6 +19,8 @@
 [ext_resource type="Script" uid="uid://r1wubi0gylkg" path="res://dialogues/shadow.gd" id="14_lh335"]
 [ext_resource type="PackedScene" uid="uid://37eppmr10wbj" path="res://dialogues/dialogue_ui.tscn" id="14_ta7ci"]
 [ext_resource type="PackedScene" uid="uid://pw7yenedrbcb" path="res://dialogues/dialogue_trigger.tscn" id="15_lh335"]
+[ext_resource type="Script" uid="uid://nan1cdpsalo" path="res://finalwin/final1.gd" id="20_3ca7f"]
+[ext_resource type="PackedScene" uid="uid://17ts1ok0c351" path="res://finalwin/final_area.tscn" id="20_kogck"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hjsbj"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -111,3 +113,10 @@ speaker = NodePath("../Shadow")
 is_shadow_dialogue = true
 
 [node name="dialogue_ui" parent="." unique_id=866463881 instance=ExtResource("14_ta7ci")]
+
+[node name="FinalArea" parent="." unique_id=1707886643 instance=ExtResource("20_kogck")]
+transform = Transform3D(0.06865956, 0, 0.99764013, 0, 1, 0, -0.99764013, 0, 0.06865956, -8.075976, 1.0699831, -3.2503374)
+script = ExtResource("20_3ca7f")
+
+[connection signal="body_entered" from="FinalArea" to="FinalArea" method="_on_body_entered"]
+[connection signal="body_shape_entered" from="FinalArea" to="FinalArea" method="_on_body_shape_entered"]

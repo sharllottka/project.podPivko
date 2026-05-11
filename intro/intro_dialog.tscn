@@ -1,0 +1,110 @@
+[gd_scene format=3 uid="uid://b0m23e8rvvcqi"]
+
+[ext_resource type="Script" uid="uid://br2kgqarsjkn7" path="res://intro/dialogue_ui.gd" id="1_4kytn"]
+[ext_resource type="Texture2D" uid="uid://dgyhuhxcofqmq" path="res://intro/Gemini_Generated_Image_8dlgry8dlgry8dlg.png" id="2_tqt33"]
+
+[sub_resource type="Animation" id="Animation_uqroq"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("dialogue_text:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_cvu8u"]
+resource_name = "new_animation"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("dialogue_text:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.98),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_iu5ac"]
+_data = {
+&"RESET": SubResource("Animation_uqroq"),
+&"new_animation": SubResource("Animation_cvu8u")
+}
+
+[node name="IntroDialog" type="Control" unique_id=469173401]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="dialogue_ui" type="Control" parent="." unique_id=866463881]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4kytn")
+
+[node name="Canvas" type="CanvasLayer" parent="dialogue_ui" unique_id=468518295]
+
+[node name="ColorRect" type="ColorRect" parent="dialogue_ui/Canvas" unique_id=1653347050]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 850.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="speaker_name" type="RichTextLabel" parent="dialogue_ui/Canvas" unique_id=1251894812]
+offset_left = 33.0
+offset_top = 866.0
+offset_right = 448.0
+offset_bottom = 975.0
+theme_override_font_sizes/normal_font_size = 42
+text = "Speaker name"
+scroll_active = false
+
+[node name="dialogue_text" type="RichTextLabel" parent="dialogue_ui/Canvas" unique_id=449119109]
+offset_left = 49.0
+offset_top = 935.0
+offset_right = 1540.0
+offset_bottom = 1029.0
+theme_override_font_sizes/normal_font_size = 33
+text = "This is a dialogue here...
+"
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="dialogue_ui/Canvas" unique_id=1944771483]
+libraries/ = SubResource("AnimationLibrary_iu5ac")
+
+[node name="continue" type="Button" parent="dialogue_ui/Canvas" unique_id=923027015]
+offset_left = 1574.0
+offset_top = 905.0
+offset_right = 1866.0
+offset_bottom = 1004.0
+theme_override_font_sizes/font_size = 28
+text = "Продолжить"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1946263471]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_tqt33")
+
+[connection signal="pressed" from="dialogue_ui/Canvas/continue" to="dialogue_ui" method="_on_continue"]

@@ -11,7 +11,7 @@ func _on_start():
 	$VBoxContainer/Button.disabled = true
 	await get_tree().process_frame
 	await get_tree().process_frame
-	get_tree().change_scene_to_file("res://levels/level.tscn")
+	get_tree().change_scene_to_file("res://intro/intro_dialog.tscn")
 
 func _on_options():
 	var options = load("res://options_menu.tscn").instantiate()

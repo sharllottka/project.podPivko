@@ -2857,7 +2857,7 @@ transform = Transform3D(0.19280331, 0, -0.053168435, 0, 0.2, 0, 0.053168435, 0, 
 transform = Transform3D(2.4621642, 0, 0, 0, 2.3, 0, 0, 0, 2.3, -18.688705, 6.321135, 31.032541)
 
 [node name="Sketchfab_Scene2" parent="1 этаж" unique_id=631237503 instance=ExtResource("19_jslb4")]
-transform = Transform3D(-1.0053619e-07, 0, 2.3, 0, 2.3, 0, -2.3, 0, -1.0053619e-07, -12.296535, 6.2337966, 25.158548)
+transform = Transform3D(-1.0053619e-07, 0, 2.3, 0, 2.3, 0, -2.3, 0, -1.0053619e-07, -12.004715, 6.2337966, 25.158548)
 
 [node name="Sketchfab_Scene3" parent="1 этаж" unique_id=614611759 instance=ExtResource("31_mm0sa")]
 transform = Transform3D(2.3, 0, 0, 0, 2.3, 0, 0, 0, 2.3, -32.760345, 6.411457, 31.007996)
@@ -3323,11 +3323,11 @@ transform = Transform3D(-2.1855694e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.1855694e-
 [node name="Sketchfab_Scene14" parent="2 этаж" unique_id=2053511745 instance=ExtResource("29_w78tr")]
 transform = Transform3D(-1.3113416e-07, 0, -3, 0, 3, 0, 3, 0, -1.3113416e-07, 28.232935, 16.456701, 36.051445)
 
+[node name="Sketchfab_Scene24" parent="2 этаж" unique_id=399582072 instance=ExtResource("30_uuwef")]
+transform = Transform3D(-4.9000002e-05, 0, 4.283716e-12, 0, 4.9000002e-05, 0, -4.283716e-12, 0, -4.9000002e-05, 27.54028, 16.598457, 40.197136)
+
 [node name="Sketchfab_Scene18" parent="2 этаж" unique_id=1514882234 instance=ExtResource("30_uuwef")]
 transform = Transform3D(-3.059797e-10, 0, -0.007, 0, 0.007, 0, 0.007, 0, -3.059797e-10, 27.804993, 16.483076, 40.002502)
-
-[node name="Sketchfab_Scene18" parent="2 этаж/Sketchfab_Scene18" unique_id=399582072 instance=ExtResource("30_uuwef")]
-transform = Transform3D(-3.059797e-10, 0, -0.007, 0, 0.007, 0, 0.007, 0, -3.059797e-10, 27.804993, 16.483076, 37.816235)
 
 [node name="Sketchfab_Scene19" parent="2 этаж" unique_id=1566525201 instance=ExtResource("26_8s12h")]
 transform = Transform3D(7, 0, 0, 0, 7, 0, 0, 0, 7, -2.6674871, 16.446293, 34.348488)
@@ -3517,6 +3517,143 @@ transform = Transform3D(-0.05579823, 0, -0.19205873, 0, 0.2, 0, 0.19205873, 0, -
 
 [node name="Sketchfab_Scene54" parent="2 этаж" unique_id=1329722258 instance=ExtResource("22_ipmbr")]
 transform = Transform3D(-1.3113416e-07, 0, 3, 0, 3, 0, -3, 0, -1.3113416e-07, -28.322298, 16.378468, 19.319323)
+
+[node name="204" type="Node3D" parent="2 этаж" unique_id=260203668]
+
+[node name="0_24" type="Node3D" parent="2 этаж/204" unique_id=566058687]
+transform = Transform3D(-4.4995136, 0, 5.362311, 0, 7, 0, -5.362311, 0, -4.4995136, -58.850773, 19.606676, 32.647144)
+
+[node name="Object_40" type="MeshInstance3D" parent="2 этаж/204/0_24" unique_id=1555886195]
+mesh = SubResource("ArrayMesh_68n2k")
+
+[node name="4_29" type="Node3D" parent="2 этаж/204" unique_id=846336134]
+transform = Transform3D(4.4995136, 0, -5.362311, 0, 7, 0, 5.362311, 0, 4.4995136, -61.088078, 9.865453, 31.088427)
+
+[node name="Object_58" type="MeshInstance3D" parent="2 этаж/204/4_29" unique_id=1605641862]
+transform = Transform3D(1, 0, -2.9802322e-08, 0, 1, 0, 2.9802322e-08, 0, 1, 0.40175843, 1.3926908, -0.10331249)
+mesh = SubResource("ArrayMesh_bt8gv")
+
+[node name="2_34" type="Node3D" parent="2 этаж/204" unique_id=1892444506]
+transform = Transform3D(4.4995136, 0, -5.362311, 0, 7, 0, 5.362311, 0, 4.4995136, -59.895092, 18.353985, 31.067156)
+
+[node name="Object_68" type="MeshInstance3D" parent="2 этаж/204/2_34" unique_id=1811899492]
+transform = Transform3D(1, 0, -2.9802322e-08, 0, 1, 0, 2.9802322e-08, 0, 1, 0.23491025, 0.18090796, 0.017155647)
+mesh = SubResource("ArrayMesh_qr8u5")
+
+[node name="201" type="Node3D" parent="2 этаж" unique_id=1054474176]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.751009, 0)
+
+[node name="1_13" type="Node3D" parent="2 этаж/201" unique_id=1193703119]
+transform = Transform3D(-7, 0, -1.0569706e-06, 0, 7, 0, 1.0569706e-06, 0, -7, -18.847288, 9.860561, 31.098906)
+
+[node name="Object_24" type="MeshInstance3D" parent="2 этаж/201/1_13" unique_id=1247616147]
+mesh = SubResource("ArrayMesh_ny6lr")
+
+[node name="0_20" type="Node3D" parent="2 этаж/201" unique_id=128540572]
+transform = Transform3D(-7, 0, -6.119594e-07, 0, 7, 0, 6.119594e-07, 0, -7, -18.615358, 9.855667, 31.088522)
+
+[node name="Object_40" type="MeshInstance3D" parent="2 этаж/201/0_20" unique_id=1699523936]
+mesh = SubResource("ArrayMesh_68n2k")
+
+[node name="2_34" type="Node3D" parent="2 этаж/201" unique_id=1043295948]
+transform = Transform3D(-7, 0, -6.119594e-07, 0, 7, 0, 6.119594e-07, 0, -7, -18.38798, 9.865147, 31.067156)
+
+[node name="Object_68" type="MeshInstance3D" parent="2 этаж/201/2_34" unique_id=5309804]
+mesh = SubResource("ArrayMesh_qr8u5")
+
+[node name="202" type="Node3D" parent="2 этаж" unique_id=1718008618]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.751009, 0)
+
+[node name="0_21" type="Node3D" parent="2 этаж/202" unique_id=1674546795]
+transform = Transform3D(-7, 0, -6.119594e-07, 0, 7, 0, 6.119594e-07, 0, -7, -32.755005, 9.855667, 31.088522)
+
+[node name="Object_40" type="MeshInstance3D" parent="2 этаж/202/0_21" unique_id=183153361]
+mesh = SubResource("ArrayMesh_68n2k")
+
+[node name="2_34" type="Node3D" parent="2 этаж/202" unique_id=1018671995]
+transform = Transform3D(-7, 0, -6.119594e-07, 0, 7, 0, 6.119594e-07, 0, -7, -33.002846, 9.865147, 31.067156)
+
+[node name="Object_68" type="MeshInstance3D" parent="2 этаж/202/2_34" unique_id=606576441]
+mesh = SubResource("ArrayMesh_qr8u5")
+
+[node name="2_35" type="Node3D" parent="2 этаж/202" unique_id=553668013]
+transform = Transform3D(-7, 0, -6.119594e-07, 0, 7, 0, 6.119594e-07, 0, -7, -32.521248, 9.865147, 31.067156)
+
+[node name="Object_68" type="MeshInstance3D" parent="2 этаж/202/2_35" unique_id=1379442729]
+mesh = SubResource("ArrayMesh_qr8u5")
+
+[node name="2_34" type="Node3D" parent="2 этаж/202/2_35" unique_id=996114170]
+transform = Transform3D(-7, 0, -6.119594e-07, 0, 7, 0, 6.119594e-07, 0, -7, -33.002846, 9.865147, 31.067156)
+
+[node name="Object_68" type="MeshInstance3D" parent="2 этаж/202/2_35/2_34" unique_id=2114856595]
+mesh = SubResource("ArrayMesh_qr8u5")
+
+[node name="205" type="Node3D" parent="2 этаж" unique_id=1816169363]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -83.93054, 19.415066, -0.11215782)
+
+[node name="0_22" type="Node3D" parent="2 этаж/205" unique_id=483527964]
+transform = Transform3D(-7, 0, -6.119594e-07, 0, 7, 0, 6.119594e-07, 0, -7, 9.583397, 0.4641838, 31.088522)
+
+[node name="Object_40" type="MeshInstance3D" parent="2 этаж/205/0_22" unique_id=1409773754]
+mesh = SubResource("ArrayMesh_68n2k")
+
+[node name="2_34" type="Node3D" parent="2 этаж/205" unique_id=2048932322]
+transform = Transform3D(-7, 0, -6.119594e-07, 0, 7, 0, 6.119594e-07, 0, -7, 9.803566, 0.47366333, 31.067158)
+
+[node name="Object_68" type="MeshInstance3D" parent="2 этаж/205/2_34" unique_id=646681761]
+mesh = SubResource("ArrayMesh_qr8u5")
+
+[node name="5_24" type="Node3D" parent="2 этаж/205" unique_id=245757290]
+transform = Transform3D(-7, 0, -6.119594e-07, 0, 7, 0, 6.119594e-07, 0, -7, 9.346817, 0.4714222, 31.129366)
+
+[node name="Object_48" type="MeshInstance3D" parent="2 этаж/205/5_24" unique_id=1822074433]
+mesh = SubResource("ArrayMesh_2yot2")
+
+[node name="206" type="Node3D" parent="2 этаж" unique_id=1035327518]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -41.96527, 9.707533, -0.05607891)
+
+[node name="0_22" type="Node3D" parent="2 этаж/206" unique_id=21206674]
+transform = Transform3D(-7, 0, -6.119594e-07, 0, 7, 0, 6.119594e-07, 0, -7, -46.89342, 9.855667, 31.088522)
+
+[node name="Object_40" type="MeshInstance3D" parent="2 этаж/206/0_22" unique_id=1955192652]
+mesh = SubResource("ArrayMesh_68n2k")
+
+[node name="2_34" type="Node3D" parent="2 этаж/206" unique_id=562779610]
+transform = Transform3D(-7, 0, -6.119594e-07, 0, 7, 0, 6.119594e-07, 0, -7, -46.67324, 9.865147, 31.067158)
+
+[node name="Object_68" type="MeshInstance3D" parent="2 этаж/206/2_34" unique_id=446923722]
+mesh = SubResource("ArrayMesh_qr8u5")
+
+[node name="6_25" type="Node3D" parent="2 этаж/206" unique_id=1130946410]
+transform = Transform3D(-7, 0, -6.119594e-07, 0, 7, 0, 6.119594e-07, 0, -7, -47.117744, 9.868393, 31.11884)
+
+[node name="Object_50" type="MeshInstance3D" parent="2 этаж/206/6_25" unique_id=674646770]
+mesh = SubResource("ArrayMesh_x1123")
+
+[node name="203" type="Node3D" parent="2 этаж" unique_id=1742480310]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.751009, 0)
+
+[node name="1_15" type="Node3D" parent="2 этаж/203" unique_id=1718236494]
+transform = Transform3D(-7, 0, -1.0569706e-06, 0, 7, 0, 1.0569706e-06, 0, -7, -46.694706, 9.860561, 31.098906)
+
+[node name="0_22" type="Node3D" parent="2 этаж/203" unique_id=714606822]
+transform = Transform3D(-7, 0, -6.119594e-07, 0, 7, 0, 6.119594e-07, 0, -7, -46.89342, 9.855667, 31.088522)
+
+[node name="Object_40" type="MeshInstance3D" parent="2 этаж/203/0_22" unique_id=4514234]
+mesh = SubResource("ArrayMesh_68n2k")
+
+[node name="3_2" type="Node3D" parent="2 этаж/203" unique_id=1121590914]
+transform = Transform3D(-7, 0, -6.119594e-07, 0, 7, 0, 6.119594e-07, 0, -7, -47.109215, 9.862341, 31.154861)
+
+[node name="Object_4" type="MeshInstance3D" parent="2 этаж/203/3_2" unique_id=1364010315]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.003387928, -0.00049614906, 0)
+mesh = SubResource("ArrayMesh_pkock")
+
+[node name="2_34" type="Node3D" parent="2 этаж/203" unique_id=1627377156]
+transform = Transform3D(-7, 0, -6.119594e-07, 0, 7, 0, 6.119594e-07, 0, -7, -46.657528, 9.865147, 31.067156)
+
+[node name="Object_68" type="MeshInstance3D" parent="2 этаж/203/2_34" unique_id=1669021374]
+mesh = SubResource("ArrayMesh_qr8u5")
 
 [node name="подвал" type="Node3D" parent="." unique_id=1671919142]
 

@@ -11,4 +11,5 @@ func _on_continue():
 	visible = false
 	get_tree().paused = false
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	Global.show_thought(Global.sleep_thoughts.get(Global.current_night, "Пора спать."))
 	get_parent().queue_free()

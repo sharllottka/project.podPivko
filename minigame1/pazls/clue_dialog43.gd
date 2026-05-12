@@ -10,4 +10,5 @@ func _on_continue():
 		Global.puzzle_done = true
 	get_tree().paused = false
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	Global.show_thought(Global.sleep_thoughts.get(Global.current_night, "Пора спать."))
 	get_parent().queue_free()

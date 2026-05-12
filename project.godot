@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="крутые чиксы"
-run/main_scene="uid://b8plhjpixjnje"
+run/main_scene="uid://drlvaw7uu4163"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

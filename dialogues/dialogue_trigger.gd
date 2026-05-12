@@ -172,6 +172,7 @@ func _finish():
 			Global.clues_count += 1
 		Global.dialogue_done = true
 	end_dialogue()
+	Global.show_thought(Global.sleep_thoughts.get(Global.current_night, "Пора спать."))
 
 func _play_animation():
 	dialogue_animation.play("RESET")

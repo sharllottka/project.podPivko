@@ -1,28 +1,25 @@
 extends Node
-
 var player_pos: Vector3 = Vector3.ZERO
 var clues_count: int = 0
-var last_scene: String = "day"  # "day" или "night"
+var last_scene: String = "day"
 var pending_thought: String = ""
 var thought_label: Label = null
-
 var has_note: bool = false
 var note_notification_shown: bool = false
-
 var glitch_done: bool = false
 var shield_done: bool = false   
 var suitcase_done: bool = false 
 var puzzle_done: bool = false
 var dialogue_done: bool = false
-# переменные для сохранения
-var current_night: int = 1  # ночь
-var current_day: int = 1    # день
-
+var current_night: int = 1
+var current_day: int = 1
 var music_volume: float = 1.0
 var sfx_volume: float = 1.0
 var mouse_sensitivity: float = 0.2
 var is_fullscreen: bool = false
-var resolution_index: int = 2  # по умолчанию 1920x1080
+var resolution_index: int = 2
+var note_open: bool = false
+var _level_packed: PackedScene = null  # 👈 добавили сюда
 
 var night_thoughts = {
 	1: "Что-то скрипит... кажется, со второго этажа.",
@@ -31,7 +28,6 @@ var night_thoughts = {
 	4: "Свет погас. Щиток должен быть в подвале.",
 	5: "Снова подвал. Но на этот раз я не один здесь..."
 }
-
 var sleep_thoughts = {
 	1: "Всё... пора возвращаться. Нужно поспать до утра.",
 	2: "Хватит на сегодня. Иду спать.",
@@ -40,14 +36,22 @@ var sleep_thoughts = {
 	5: "Всё стало на свои места... Мне нужно поговорить с комендантом. Иду на выход."
 }
 
+func _ready():
+	_load_level_async()
+
+func _load_level_async():
+	ResourceLoader.load_threaded_request("res://levels/level.tscn")
+
+func get_level() -> PackedScene:
+	if _level_packed:
+		return _level_packed
+	_level_packed = ResourceLoader.load_threaded_get("res://levels/level.tscn")
+	return _level_packed
 
 func show_thought(text: String, duration: float = 4.0):
 	if thought_label:
 		thought_label.text = text
 		thought_label.visible = true
 		await get_tree().create_timer(duration).timeout
-
 		if is_instance_valid(thought_label):
 			thought_label.visible = false
-
-var note_open: bool = false

@@ -1,5 +1,4 @@
 extends Control
-
 @onready var day_label = $VBoxContainer/DayLabel
 @onready var correct_label = $VBoxContainer/CorrectLabel
 @onready var incorrect_label = $VBoxContainer/IncorrectLabel
@@ -8,26 +7,22 @@ extends Control
 
 func _ready() -> void:
 	var stats = GameManager.get_day_stats()
-	
+
 	day_label.text = "День %d завершён" % stats["day"]
 	correct_label.text = "Правильно: %d" % stats["correct"]
 	incorrect_label.text = "Неправильно: %d" % stats["incorrect"]
-	
+
 	if stats["got_warning"]:
 		warning_label.text = "⚠ Выговор! Всего выговоров: %d/3" % stats["warnings"]
 		warning_label.modulate = Color.RED
 	else:
 		warning_label.text = "✓ День без нареканий"
 		warning_label.modulate = Color.GREEN
-	
-	next_button.pressed.connect(_on_next_pressed)
+	next_button.pressed.connect(_on_next_pressed)  # 👈 добавь это
 
 func _on_next_pressed() -> void:
 	Global.last_scene = "night"
 	GameManager.next_day()
 	Global.current_night = GameManager.current_day - 1
 	Global.pending_thought = Global.night_thoughts.get(Global.current_night, "")
-	
-	# Показываем экран загрузки пока грузится level
-	await get_tree().process_frame
-	GameManager.go_to_level()
+	get_tree().change_scene_to_packed(Global.get_level())

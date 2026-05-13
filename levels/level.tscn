@@ -116,7 +116,7 @@ speaker_names = Array[String](["Тень", "Тень", "Тень", "Тень", "
 speaker = NodePath("../Shadow")
 is_shadow_dialogue = true
 
-[node name="dialogue_ui" parent="." unique_id=866463881 instance=ExtResource("14_ta7ci")]
+[node name="dialogue_ui" parent="." unique_id=866463881 groups=["interactable", "player"] instance=ExtResource("14_ta7ci")]
 
 [node name="FinalArea" parent="." unique_id=1707886643 instance=ExtResource("20_kogck")]
 transform = Transform3D(0.06865956, 0, 0.99764013, 0, 1, 0, -0.99764013, 0, 0.06865956, -8.075976, 1.0699831, -3.2503374)

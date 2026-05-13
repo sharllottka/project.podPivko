@@ -10,6 +10,7 @@ var pieces_placed = 0
 @onready var BackSound = $BackSound
 
 func _ready():
+	PauseManager.is_minigame = true
 	if clue_dialog:
 		clue_dialog.visible = false
 	

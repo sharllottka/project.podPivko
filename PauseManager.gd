@@ -3,6 +3,7 @@ extends Node
 var pause_menu_scene = preload("res://pause_menu/pause_menu.tscn")
 var is_paused = false
 var is_3d = false
+var is_minigame = false
 
 func _ready():
 	process_mode = Node.PROCESS_MODE_ALWAYS
@@ -20,7 +21,7 @@ func toggle_pause():
 		get_tree().root.add_child(menu)
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	else:
-		if is_3d:
+		if is_3d and not is_minigame:  # 👈 проверяем флаг
 			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 		else:
 			Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)

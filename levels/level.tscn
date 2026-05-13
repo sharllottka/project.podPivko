@@ -106,11 +106,11 @@ script = ExtResource("13_368ro")
 transform = Transform3D(-1.3113416e-06, 0, 30, 0, 30, 0, -30, 0, -1.3113416e-06, -27.66794, 0.014474392, 5.6220202)
 
 [node name="Shadow" parent="." unique_id=1364018208 instance=ExtResource("13_0qmeg")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -17.944092, -3.9832764, 0.33902073)
+transform = Transform3D(-0.050627794, 0, -0.9987176, 0, 1, 0, 0.9987176, 0, -0.050627794, -17.962648, -4.298937, 0.3115983)
 script = ExtResource("14_lh335")
 
 [node name="dialogue_trigger" parent="." unique_id=562309269 node_paths=PackedStringArray("speaker") instance=ExtResource("15_lh335")]
-transform = Transform3D(-0.9985326, 0, 0, 0, 1.4344083, 0, 0, 0, 1.9518067, -18.228277, -3.8011372, 0.3077578)
+transform = Transform3D(-0.73512065, 0, 0.31231362, 0, 1.2024983, 0, 0.10717699, 0, 2.1421406, -18.228277, -3.8011372, 0.4321733)
 dialogues = Array[String](["Ты пришёл.", "Я ждал тебя все эти ночи.", "Ты искал правду. Это похвально.", "Но сначала... сыграем в игру.", "Я буду задавать вопросы. Ты будешь отвечать.", "Посмотрим, насколько ты умён."])
 speaker_names = Array[String](["Тень", "Тень", "Тень", "Тень", "Тень", "Тень"])
 speaker = NodePath("../Shadow")

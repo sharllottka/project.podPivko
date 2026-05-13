@@ -59,6 +59,7 @@ var final_question = {
 }
 
 func _ready() -> void:
+	PauseManager.is_minigame = true
 	dialogue_ui = owner.get_node("dialogue_ui/Canvas")
 	dialogue_animation = owner.get_node("dialogue_ui/Canvas/AnimationPlayer")
 	speaker_name = owner.get_node("dialogue_ui/Canvas/speaker_name")
@@ -89,11 +90,10 @@ func start_dialogue(body):
 		if !dialogue_ui.visible:
 			dialogue_ui.visible = true
 		speaker.look_at(player.global_transform.origin)
-		speaker.rotation_degrees.x = 0
-		speaker.rotation_degrees.z = 0
 		continue_dialogue()
 
 func end_dialogue():
+	PauseManager.is_minigame = false
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	player.SPEED = 5.0
 	Global.mouse_sensitivity = 0.2  # верни то значение которое у тебя по умолчанию

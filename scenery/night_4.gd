@@ -3,6 +3,7 @@ extends Node3D
 @export var available_on_night: int = 3
 
 func _ready():
+	PauseManager.is_minigame = true
 	if Global.current_night != available_on_night:
 		visible = false
 		_disable_all(self)

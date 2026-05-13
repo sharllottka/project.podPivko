@@ -1,10 +1,12 @@
 extends Panel
 
 func _ready():
+	PauseManager.is_minigame = true
 	if not $ContinueButton.pressed.is_connected(_on_continue):
 		$ContinueButton.pressed.connect(_on_continue)
 
 func _on_continue():
+	PauseManager.is_minigame = false
 	if not Global.suitcase_done:
 		Global.clues_count += 1
 		Global.suitcase_done = true

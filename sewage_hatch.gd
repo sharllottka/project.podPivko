@@ -4,6 +4,7 @@ extends Area3D
 @onready var model = $Sketchfab_Scene
 
 func _ready():
+	PauseManager.is_minigame = true
 	if Global.current_night != 2:
 		visible = true
 		$CollisionShape3D.disabled = true

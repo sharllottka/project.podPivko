@@ -1,7 +1,7 @@
 extends Node3D
 
 func _ready():
-	if Global.current_night != 5:
+	if Global.current_night != 1:
 		visible = false
 		for child in get_children():
 			if child is Area3D:

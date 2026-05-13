@@ -15,6 +15,7 @@ var current_code = [0, 0, 0, 0]
 ]
 
 func _ready():
+	PauseManager.is_minigame = true
 	clue_dialog.visible = false
 	update_ui()
 

@@ -574,9 +574,8 @@ bus = &"SFX"
 stream = ExtResource("17_whupq")
 bus = &"SFX"
 
-[node name="BackSound" type="AudioStreamPlayer" parent="." unique_id=103545055]
+[node name="BackSound" type="AudioStreamPlayer" parent="." unique_id=1157177939]
 stream = ExtResource("16_rvl3t")
-bus = &"Music"
 
-[connection signal="pressed" from="UI/ClueDialog/ContinueButton" to="UI/ClueDialog" method="_on_continue"]
 [connection signal="pressed" from="UI/ClueDialog/ContinueButton" to="UI/ClueDialog" method="_on_continue_button_pressed"]
+[connection signal="pressed" from="UI/ClueDialog/ContinueButton" to="UI/ClueDialog" method="_on_continue"]

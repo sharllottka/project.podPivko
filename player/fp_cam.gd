@@ -3,10 +3,12 @@ extends Node3D
 @onready var interact_ray = $Camera3D/RayCast3D
 @onready var interact_label = $"../CanvasLayer/InteractLabel"
 
+
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	if Global.player_pos != Vector3.ZERO:
 		get_parent().global_position = Global.player_pos
+
 
 func _process(_delta: float) -> void:
 	_check_interaction_ui()

@@ -1,16 +1,16 @@
 extends Node3D
 
-@onready var dialogue_ui = get_tree().current_scene.get_node("dialogue_ui/Canvas")
-@onready var dialogue_animation = get_tree().current_scene.get_node("dialogue_ui/Canvas/AnimationPlayer")
-@onready var speaker_name: RichTextLabel = get_tree().current_scene.get_node("dialogue_ui/Canvas/speaker_name")
-@onready var dialogue_text: RichTextLabel = get_tree().current_scene.get_node("dialogue_ui/Canvas/dialogue_text")
-@onready var player: CharacterBody3D = get_tree().current_scene.get_node("player")
-@onready var continue_btn = dialogue_ui.get_node("continue")
-@onready var answers_container = dialogue_ui.get_node("answers_container")
-@onready var btn_a = dialogue_ui.get_node("answers_container/AnswerA")
-@onready var btn_b = dialogue_ui.get_node("answers_container/AnswerB")
-@onready var btn_c = dialogue_ui.get_node("answers_container/AnswerC")
-@onready var btn_d = dialogue_ui.get_node("answers_container/AnswerD")
+var dialogue_ui
+var dialogue_animation
+var speaker_name: RichTextLabel
+var dialogue_text: RichTextLabel
+var player: CharacterBody3D
+var continue_btn
+var answers_container
+var btn_a
+var btn_b
+var btn_c
+var btn_d
 
 @export var dialogues: Array[String]
 @export var speaker_names: Array[String]
@@ -59,6 +59,18 @@ var final_question = {
 }
 
 func _ready() -> void:
+	dialogue_ui = owner.get_node("dialogue_ui/Canvas")
+	dialogue_animation = owner.get_node("dialogue_ui/Canvas/AnimationPlayer")
+	speaker_name = owner.get_node("dialogue_ui/Canvas/speaker_name")
+	dialogue_text = owner.get_node("dialogue_ui/Canvas/dialogue_text")
+	player = owner.get_node("player")
+	continue_btn = dialogue_ui.get_node("continue")
+	answers_container = dialogue_ui.get_node("answers_container")
+	btn_a = dialogue_ui.get_node("answers_container/AnswerA")
+	btn_b = dialogue_ui.get_node("answers_container/AnswerB")
+	btn_c = dialogue_ui.get_node("answers_container/AnswerC")
+	btn_d = dialogue_ui.get_node("answers_container/AnswerD")
+
 	continue_btn.connect("pressed", Callable(self, "continue_dialogue"))
 	answers_container.visible = false
 

@@ -1,6 +1,7 @@
 [gd_scene format=4 uid="uid://doj6j8wn02h3c"]
 
 [ext_resource type="Script" uid="uid://dar283olrhhkb" path="res://minigame2/game_manager.gd" id="1_gee14"]
+[ext_resource type="Script" uid="uid://s34eutic714b" path="res://minigame2/scenes/game.gd" id="1_u04t5"]
 [ext_resource type="PackedScene" uid="uid://edgsc24mxid7" path="res://minigame2/scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://igvnixfr2kux" path="res://minigame2/assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="Texture2D" uid="uid://cocwa8ppj74wi" path="res://minigame2/assets/sprites/Dungeon Tile Set.png" id="4_0tnpc"]
@@ -14,6 +15,7 @@
 [ext_resource type="Script" uid="uid://c5njmnokvm15h" path="res://minigame2/scenes/exit_dialog.gd" id="12_2hw8f"]
 [ext_resource type="Script" uid="uid://jjv2x1knukhu" path="res://minigame4/scenes/Clue_Sewer.gd" id="13_ktg8q"]
 [ext_resource type="FontFile" uid="uid://h5is7nt7qxk5" path="res://Fonts/BF_TEXT_REGULAR.otf" id="13_tvuaa"]
+[ext_resource type="AudioStream" uid="uid://l000e8qwqct2" path="res://minigame2/assets/music/time_for_adventure.mp3" id="16_rvl3t"]
 [ext_resource type="AudioStream" uid="uid://dkstqtmmaj0dr" path="res://minigame2/assets/sounds/jump.wav" id="17_whupq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lnu2h"]
@@ -373,6 +375,7 @@ data = PackedByteArray("//uQBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWGluZwAA
 
 [node name="Game" type="Node2D" unique_id=1732948925]
 process_mode = 3
+script = ExtResource("1_u04t5")
 
 [node name="GameManager" type="Node" parent="." unique_id=1309515008]
 unique_name_in_owner = true
@@ -570,6 +573,10 @@ bus = &"SFX"
 [node name="JumpSound" type="AudioStreamPlayer" parent="." unique_id=747907998]
 stream = ExtResource("17_whupq")
 bus = &"SFX"
+
+[node name="BackSound" type="AudioStreamPlayer" parent="." unique_id=103545055]
+stream = ExtResource("16_rvl3t")
+bus = &"Music"
 
 [connection signal="pressed" from="UI/ClueDialog/ContinueButton" to="UI/ClueDialog" method="_on_continue"]
 [connection signal="pressed" from="UI/ClueDialog/ContinueButton" to="UI/ClueDialog" method="_on_continue_button_pressed"]

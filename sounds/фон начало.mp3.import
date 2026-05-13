@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bsogh6o81tqnu"
+path="res://.godot/imported/фон начало.mp3-6e507b161f5b14e75c0168239e0fd36d.mp3str"
+
+[deps]
+
+source_file="res://sounds/фон начало.mp3"
+dest_files=["res://.godot/imported/фон начало.mp3-6e507b161f5b14e75c0168239e0fd36d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

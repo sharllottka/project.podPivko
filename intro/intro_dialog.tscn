@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://b0m23e8rvvcqi"]
 
 [ext_resource type="Script" uid="uid://cur65bumqtw77" path="res://intro/dialogue_ui2.gd" id="1_4kytn"]
+[ext_resource type="Script" uid="uid://dw20tcbudhe0d" path="res://intro/intro_dialog.gd" id="1_fhb2w"]
 [ext_resource type="Texture2D" uid="uid://dgyhuhxcofqmq" path="res://intro/Gemini_Generated_Image_8dlgry8dlgry8dlg.png" id="2_tqt33"]
+[ext_resource type="AudioStream" uid="uid://bsogh6o81tqnu" path="res://sounds/фон начало.mp3" id="4_8ficc"]
 
 [sub_resource type="Animation" id="Animation_uqroq"]
 length = 0.001
@@ -46,6 +48,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_fhb2w")
 
 [node name="dialogue_ui" type="Control" parent="." unique_id=866463881]
 layout_mode = 1
@@ -110,5 +113,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_tqt33")
+
+[node name="BackSound" type="AudioStreamPlayer" parent="." unique_id=2100272368]
+stream = ExtResource("4_8ficc")
+bus = &"Music"
 
 [connection signal="pressed" from="dialogue_ui/Canvas/continue" to="dialogue_ui" method="_on_continue"]

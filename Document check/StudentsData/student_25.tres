@@ -2,17 +2,17 @@
 
 [ext_resource type="Script" uid="uid://bjw3khieg3bv7" path="res://Document check/src/student_data.gd" id="1_w75ag"]
 [ext_resource type="Texture2D" uid="uid://cormrafruhaj5" path="res://Document check/Students/алиночка_студак-removebg-preview.png" id="1_y68fh"]
-[ext_resource type="Texture2D" uid="uid://c2ts6dnf1kksu" path="res://Document check/Students/алиночка_пришла-removebg-preview.png" id="2_pvnkf"]
+[ext_resource type="Texture2D" uid="uid://cqtilgsrglhkl" path="res://Document check/Students/алиночка_приходит-removebg-preview.png" id="2_y68fh"]
 
 [resource]
 script = ExtResource("1_w75ag")
 name = "Алина"
 lastname = "Сингатулина"
 dadname = "Марсовна"
-faculty = "ИИК"
+faculty = "ИЭУ"
 student_id = "566"
 issue_date = "22.07.2026"
-photo = ExtResource("2_pvnkf")
+photo = ExtResource("2_y68fh")
 stamp = true
 id_photo = ExtResource("1_y68fh")
 metadata/_custom_type_script = "uid://bjw3khieg3bv7"

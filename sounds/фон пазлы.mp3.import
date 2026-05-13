@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b3vyafbewuh35"
+path="res://.godot/imported/фон пазлы.mp3-68ce3de00e6e6371cf196ce7a74d351f.mp3str"
+
+[deps]
+
+source_file="res://sounds/фон пазлы.mp3"
+dest_files=["res://.godot/imported/фон пазлы.mp3-68ce3de00e6e6371cf196ce7a74d351f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

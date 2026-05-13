@@ -7,14 +7,23 @@ var pieces_placed = 0
 @onready var snap_sound = $SnapSound
 @onready var win_sound = $WinSound
 @onready var clue_dialog = $ClueDialog
+@onready var BackSound = $BackSound
 
 func _ready():
 	if clue_dialog:
 		clue_dialog.visible = false
 	
 	Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
+	if BackSound:
+		BackSound.volume_db = -30
+		BackSound.finished.connect(_on_back_sound_finished)
+		BackSound.play()
 	await get_tree().create_timer(0.1).timeout
 	shuffle_pieces()
+
+func _on_back_sound_finished():	
+	if BackSound:
+		BackSound.play()
 
 func add_piece_placed():
 	pieces_placed += 1

@@ -12,6 +12,7 @@ dadname = "Семёнович"
 faculty = "ИИК"
 student_id = "899"
 issue_date = "22.06.2025"
+is_monster = true
 photo = ExtResource("2_hg0pn")
 stamp = true
 id_photo = ExtResource("1_gt1aa")

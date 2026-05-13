@@ -5,6 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://exrgmmp1d3pl" path="res://materials/WoodFloor032_2K-JPG_Roughness.jpg" id="3_q5xcp"]
 
 [resource]
+diffuse_mode = 1
+specular_mode = 2
 albedo_texture = ExtResource("1_40v3p")
 roughness_texture = ExtResource("3_q5xcp")
 normal_enabled = true

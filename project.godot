@@ -13,7 +13,7 @@ config_version=5
 config/name="крутые чиксы"
 run/main_scene="uid://drlvaw7uu4163"
 config/features=PackedStringArray("4.6", "Forward Plus")
-run/max_fps=400
+run/max_fps=60
 config/icon="res://icon.svg"
 
 [autoload]

@@ -47,6 +47,7 @@ func victory():
 	clue_dialog.visible = true
 
 func close_menu():
+	PauseManager.is_minigame = false
 	get_tree().paused = false
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	queue_free()

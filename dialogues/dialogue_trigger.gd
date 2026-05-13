@@ -59,7 +59,6 @@ var final_question = {
 }
 
 func _ready() -> void:
-	PauseManager.is_minigame = true
 	dialogue_ui = owner.get_node("dialogue_ui/Canvas")
 	dialogue_animation = owner.get_node("dialogue_ui/Canvas/AnimationPlayer")
 	speaker_name = owner.get_node("dialogue_ui/Canvas/speaker_name")

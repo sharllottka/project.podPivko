@@ -48,6 +48,7 @@ var maps = [
 
 
 func _ready():
+	PauseManager.is_minigame = true
 	fixed_map = maps[randi() % maps.size()]
 	if clue_dialog:
 		clue_dialog.visible = false

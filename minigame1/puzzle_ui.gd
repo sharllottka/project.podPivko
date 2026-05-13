@@ -10,6 +10,7 @@ var pieces_placed = 0
 @onready var BackSound = $BackSound
 
 func _ready():
+	print("puzzle")
 	PauseManager.is_minigame = true
 	if clue_dialog:
 		clue_dialog.visible = false
@@ -48,6 +49,7 @@ func win():
 		close_menu()       
 
 func close_menu():
+	PauseManager.is_minigame = false
 	get_tree().paused = false
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 	queue_free()

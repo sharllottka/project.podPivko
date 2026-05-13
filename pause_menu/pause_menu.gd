@@ -21,12 +21,11 @@ func _input(event: InputEvent):
 func _on_resume():
 	PauseManager.is_paused = false
 	get_tree().paused = false
-	if PauseManager.is_3d:
+	if PauseManager.is_3d and not PauseManager.is_minigame:  # 👈 добавь проверку
 		Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	else:
 		Input.set_mouse_mode(Input.MOUSE_MODE_VISIBLE)
 	queue_free()
-
 func _on_save():
 	var current = get_tree().current_scene.scene_file_path
 	if current == "res://Document check/scenes/day_result.tscn":

@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://doj6j8wn02h3c"]
 
 [ext_resource type="Script" uid="uid://dar283olrhhkb" path="res://minigame2/game_manager.gd" id="1_gee14"]
-[ext_resource type="Script" path="res://minigame2/scenes/game.gd" id="1_u04t5"]
+[ext_resource type="Script" uid="uid://s34eutic714b" path="res://minigame2/scenes/game.gd" id="1_u04t5"]
 [ext_resource type="PackedScene" uid="uid://edgsc24mxid7" path="res://minigame2/scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://igvnixfr2kux" path="res://minigame2/assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="Texture2D" uid="uid://cocwa8ppj74wi" path="res://minigame2/assets/sprites/Dungeon Tile Set.png" id="4_0tnpc"]

@@ -6,6 +6,7 @@ func _ready():
 
 func _on_continue():
 	PauseManager.is_minigame = false
+	print("sdfkdskfds")
 	if not Global.puzzle_done:
 		Global.clues_count += 1
 		Global.puzzle_done = true

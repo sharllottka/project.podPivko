@@ -12,4 +12,4 @@ faculty = "ИИК"
 student_id = "692"
 issue_date = "22.04.26"
 photo = ExtResource("1_pv6tk")
-metadata/_custom_type_script = "uid://37bor8c7a5qt"
+stamp = true

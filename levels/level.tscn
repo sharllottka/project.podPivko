@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://bda2xmfgwsxuy" path="res://electricbox/electric_box.tscn" id="4_safpt"]
 [ext_resource type="PackedScene" uid="uid://cwpfqk5b815vu" path="res://minigame4/scenes/minigame.tscn" id="5_gjl0y"]
 [ext_resource type="PackedScene" uid="uid://cc3jx6wd8mtud" path="res://hatch/sewage_hatch.tscn" id="6_vnv7o"]
-[ext_resource type="PackedScene" uid="uid://doj6j8wn02h3c" path="res://minigame2/scenes/game.tscn" id="7_d5x7l"]
+[ext_resource type="PackedScene" uid="uid://doj6j8wn02h3c" path="res://minigame2/scenes/game.tscn" id="8_kogck"]
 [ext_resource type="PackedScene" uid="uid://csao5mb6wrirl" path="res://scenery/paper1.tscn" id="8_rtcij"]
 [ext_resource type="Script" uid="uid://dwvtw1ajuh3rl" path="res://scenery/night_4.gd" id="9_u6cys"]
 [ext_resource type="PackedScene" uid="uid://swes0xktbyxu" path="res://scenery/paper2.tscn" id="9_ukwr8"]
@@ -19,8 +19,8 @@
 [ext_resource type="Script" uid="uid://r1wubi0gylkg" path="res://dialogues/shadow.gd" id="14_lh335"]
 [ext_resource type="PackedScene" uid="uid://37eppmr10wbj" path="res://dialogues/dialogue_ui.tscn" id="14_ta7ci"]
 [ext_resource type="PackedScene" uid="uid://pw7yenedrbcb" path="res://dialogues/dialogue_trigger.tscn" id="15_lh335"]
-[ext_resource type="Script" uid="uid://nan1cdpsalo" path="res://finalwin/final1.gd" id="20_3ca7f"]
-[ext_resource type="PackedScene" uid="uid://17ts1ok0c351" path="res://finalwin/final_area.tscn" id="20_kogck"]
+[ext_resource type="Script" path="res://finalwin/final1.gd" id="20_3ca7f"]
+[ext_resource type="PackedScene" path="res://finalwin/final_area.tscn" id="20_kogck"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hjsbj"]
 sky_top_color = Color(0, 0, 0, 1)
@@ -84,7 +84,7 @@ minigame_scene = ExtResource("5_gjl0y")
 
 [node name="SewageHatch" parent="." unique_id=1816285138 instance=ExtResource("6_vnv7o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -51.902733, -5, -4.3863115)
-minigame_scene = ExtResource("7_d5x7l")
+minigame_scene = ExtResource("8_kogck")
 
 [node name="бумажка2" parent="." unique_id=1167788028 instance=ExtResource("8_rtcij")]
 transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, -58.568382, 1.332622, 6.4580903)

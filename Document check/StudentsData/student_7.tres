@@ -11,5 +11,5 @@ dadname = "Алексеевич"
 faculty = "ИЭУ"
 student_id = "97"
 issue_date = "22.05.2026"
+is_monster = true
 photo = ExtResource("1_w5qd1")
-metadata/_custom_type_script = "uid://37bor8c7a5qt"

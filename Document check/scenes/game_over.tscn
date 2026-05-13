@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://dik7y6at3ubce"]
 
-[ext_resource type="Texture2D" uid="uid://bhumknyq8iae3" path="res://Document check/assets/died2.webp" id="1_wwbc3"]
+[ext_resource type="Script" uid="uid://joolfmoq3p7i" path="res://Document check/scenes/game_over.gd" id="1_4k5w1"]
+[ext_resource type="Texture2D" uid="uid://osgfb772g1py" path="res://Document check/scenes/7952481f-f631-4dcd-ad23-378f847eeb37.webp" id="1_wwbc3"]
+[ext_resource type="AudioStream" uid="uid://byhrjr62tmu6f" path="res://sounds/насмешка.mp3" id="3_yiybo"]
 
 [node name="game_over" type="Control" unique_id=189004756]
 layout_mode = 3
@@ -9,9 +11,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_4k5w1")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=2115740744]
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
 texture = ExtResource("1_wwbc3")
+
+[node name="LaughSound" type="AudioStreamPlayer" parent="." unique_id=881494696]
+stream = ExtResource("3_yiybo")

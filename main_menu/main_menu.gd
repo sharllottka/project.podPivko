@@ -14,6 +14,10 @@ func _ready():
 
 func _on_continue():
 	if SaveManager.has_save():
+		$VBoxContainer/Button4.text = "Загрузка..."
+		$VBoxContainer/Button4.disabled = true
+		await get_tree().process_frame
+		await get_tree().process_frame
 		SaveManager.load_game()
 		if Global.last_scene == "night":
 			get_tree().change_scene_to_file("res://levels/level.tscn")

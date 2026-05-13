@@ -22,14 +22,33 @@ var tiles       = []
 var grid_offset = Vector2.ZERO
 var win         = false
 
-var fixed_map = [
-	"corner", "line",   "t",      "corner", "line",   "corner",
-	"t",      "corner", "line",   "t",      "corner", "line",
-	"line",   "t",      "corner", "line",   "corner", "corner",
-	"corner", "line",   "corner", "t",      "line",   "corner"
+var fixed_map = []
+var maps = [
+	# Карта 1 (текущая)
+	[
+		"corner", "line",   "t",      "corner", "line",   "corner",
+		"t",      "corner", "line",   "t",      "corner", "line",
+		"line",   "t",      "corner", "line",   "corner", "corner",
+		"corner", "line",   "corner", "t",      "line",   "corner"
+	],
+	[
+		"corner", "corner", "line",   "line",   "line",   "corner",
+		"line",   "t",      "corner", "corner", "line",   "line",
+		"corner", "line",   "line",   "t",      "corner", "t",
+		"line",   "corner", "corner", "line",   "corner", "corner"
+	],
+	# Карта 3
+	[
+		"corner", "line",   "corner", "line",   "line",   "corner",
+		"line",   "corner", "t",      "corner", "corner", "line",
+		"corner", "line",   "line",   "line",   "t",      "line",
+		"line",   "corner", "corner", "corner", "line",   "corner"
+	],
 ]
 
+
 func _ready():
+	fixed_map = maps[randi() % maps.size()]
 	if clue_dialog:
 		clue_dialog.visible = false
 		

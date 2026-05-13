@@ -5,7 +5,6 @@ const SAVE_PATH = "user://savegame.cfg"
 func save_game():
 	var config = ConfigFile.new()
 	
-	# Global
 	config.set_value("global", "last_scene", Global.last_scene)
 	config.set_value("global", "current_night", Global.current_night)
 	config.set_value("global", "clues_count", Global.clues_count)
@@ -18,8 +17,9 @@ func save_game():
 	config.set_value("global", "music_volume", Global.music_volume)
 	config.set_value("global", "sfx_volume", Global.sfx_volume)
 	config.set_value("global", "is_fullscreen", Global.is_fullscreen)
+	config.set_value("global", "has_note", Global.has_note)
+	config.set_value("global", "note_notification_shown", Global.note_notification_shown)
 	
-	# GameManager
 	config.set_value("game", "current_day", GameManager.current_day)
 	config.set_value("game", "warnings", GameManager.warnings)
 	
@@ -30,7 +30,6 @@ func load_game():
 	if config.load(SAVE_PATH) != OK:
 		return false
 	
-	# Global
 	Global.last_scene = config.get_value("global", "last_scene", "day")
 	Global.current_night = config.get_value("global", "current_night", 1)
 	Global.clues_count = config.get_value("global", "clues_count", 0)
@@ -43,8 +42,9 @@ func load_game():
 	Global.music_volume = config.get_value("global", "music_volume", 1.0)
 	Global.sfx_volume = config.get_value("global", "sfx_volume", 1.0)
 	Global.is_fullscreen = config.get_value("global", "is_fullscreen", false)
+	Global.has_note = config.get_value("global", "has_note", false)
+	Global.note_notification_shown = config.get_value("global", "note_notification_shown", false)
 	
-	# GameManager
 	GameManager.current_day = config.get_value("game", "current_day", 1)
 	GameManager.warnings = config.get_value("game", "warnings", 0)
 	

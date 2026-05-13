@@ -49,6 +49,7 @@ func _on_settings():
 	options.tree_exited.connect(func(): $VBoxContainer.visible = true)
 
 func _on_main_menu():
+	SaveManager.save_game()
 	PauseManager.is_paused = false
 	get_tree().paused = false
 	queue_free()

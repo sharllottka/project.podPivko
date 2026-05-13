@@ -80,7 +80,7 @@ text = "Speaker name"
 scroll_active = false
 
 [node name="dialogue_text" type="RichTextLabel" parent="dialogue_ui/Canvas" unique_id=449119109]
-offset_left = 49.0
+offset_left = 35.0
 offset_top = 935.0
 offset_right = 1540.0
 offset_bottom = 1029.0

@@ -69,7 +69,7 @@ transform = Transform3D(15, 0, 0, 0, 1, 0, 0, 0, 15, 0, 0, 0)
 mesh = SubResource("BoxMesh_80vhd")
 
 [node name="player" parent="." unique_id=1711829232 instance=ExtResource("2_cwqvt")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -23.60083, 2.859718, 6.107359)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24.45302, 1.2814622, 4.487849)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=307518786]
 transform = Transform3D(0.7431448, 0.55144805, -0.37899977, 0, 0.56640625, 0.8241262, 0.6691306, -0.6124451, 0.42092186, 0, 7.8, 0)

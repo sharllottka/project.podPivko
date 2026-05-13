@@ -2,10 +2,14 @@ extends Node
 
 var pause_menu_scene = preload("res://pause_menu/pause_menu.tscn")
 var is_paused = false
-var is_3d = false  # флаг чтобы знать куда возвращать курсор
+var is_3d = false
 
-func _unhandled_input(event: InputEvent):
+func _ready():
+	process_mode = Node.PROCESS_MODE_ALWAYS
+
+func _input(event: InputEvent):
 	if event is InputEventKey and event.pressed and not event.echo and event.keycode == KEY_ESCAPE:
+		get_viewport().set_input_as_handled()
 		toggle_pause()
 
 func toggle_pause():

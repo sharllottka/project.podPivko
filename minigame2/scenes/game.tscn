@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://doj6j8wn02h3c"]
 
 [ext_resource type="Script" uid="uid://dar283olrhhkb" path="res://minigame2/game_manager.gd" id="1_gee14"]
-[ext_resource type="Script" uid="uid://s34eutic714b" path="res://minigame2/scenes/game.gd" id="1_u04t5"]
+[ext_resource type="Script" path="res://minigame2/scenes/game.gd" id="1_u04t5"]
 [ext_resource type="PackedScene" uid="uid://edgsc24mxid7" path="res://minigame2/scenes/player.tscn" id="1_uwrxv"]
 [ext_resource type="Texture2D" uid="uid://igvnixfr2kux" path="res://minigame2/assets/sprites/world_tileset.png" id="2_yqjtg"]
 [ext_resource type="Texture2D" uid="uid://cocwa8ppj74wi" path="res://minigame2/assets/sprites/Dungeon Tile Set.png" id="4_0tnpc"]
@@ -14,7 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://bkde3trt1o6lt" path="res://minigame2/scenes/note.tscn" id="11_kvpfn"]
 [ext_resource type="Script" uid="uid://c5njmnokvm15h" path="res://minigame2/scenes/exit_dialog.gd" id="12_2hw8f"]
 [ext_resource type="Script" uid="uid://jjv2x1knukhu" path="res://minigame4/scenes/Clue_Sewer.gd" id="13_ktg8q"]
-[ext_resource type="FontFile" uid="uid://h5is7nt7qxk5" path="res://Fonts/BF_TEXT_REGULAR.otf" id="13_tvuaa"]
+[ext_resource type="FontFile" uid="uid://cxswcsdbqjj8u" path="res://main_menu/Jorick-Regular.ttf" id="14_u04t5"]
 [ext_resource type="AudioStream" uid="uid://l000e8qwqct2" path="res://minigame2/assets/music/time_for_adventure.mp3" id="16_rvl3t"]
 [ext_resource type="AudioStream" uid="uid://dkstqtmmaj0dr" path="res://minigame2/assets/sounds/jump.wav" id="17_whupq"]
 
@@ -510,7 +510,7 @@ layout_mode = 0
 offset_top = 53.0
 offset_right = 208.0
 offset_bottom = 74.0
-theme_override_fonts/font = ExtResource("13_tvuaa")
+theme_override_fonts/font = ExtResource("14_u04t5")
 theme_override_font_sizes/font_size = 14
 text = "Вы хотите выйти из локации"
 horizontal_alignment = 1
@@ -523,6 +523,7 @@ offset_left = 32.0
 offset_top = 99.0
 offset_right = 68.0
 offset_bottom = 130.0
+theme_override_fonts/font = ExtResource("14_u04t5")
 text = "Да"
 
 [node name="NoButton" type="Button" parent="UI/ExitDialog" unique_id=1783785419]
@@ -532,6 +533,7 @@ offset_left = 132.0
 offset_top = 99.0
 offset_right = 163.0
 offset_bottom = 130.0
+theme_override_fonts/font = ExtResource("14_u04t5")
 text = "Нет"
 
 [node name="ClueDialog" type="Panel" parent="UI" unique_id=2144469042]
@@ -547,7 +549,7 @@ layout_mode = 0
 offset_top = 47.0
 offset_right = 201.0
 offset_bottom = 70.0
-theme_override_fonts/font = ExtResource("13_tvuaa")
+theme_override_fonts/font = ExtResource("14_u04t5")
 theme_override_font_sizes/font_size = 14
 text = "Вы получили улику!"
 horizontal_alignment = 1
@@ -559,7 +561,7 @@ offset_left = 42.0
 offset_top = 109.0
 offset_right = 153.0
 offset_bottom = 140.0
-theme_override_fonts/font = ExtResource("13_tvuaa")
+theme_override_fonts/font = ExtResource("14_u04t5")
 theme_override_font_sizes/font_size = 14
 text = "Продолжить"
 

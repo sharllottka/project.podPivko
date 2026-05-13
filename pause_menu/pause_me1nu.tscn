@@ -1,13 +1,21 @@
-[gd_scene format=3 uid="uid://dtt6lhrkchyua"]
+[gd_scene format=3 uid="uid://3n58uc58g7gm"]
 
 [ext_resource type="Script" uid="uid://vdxclom25y8r" path="res://pause_menu/pause_menu.gd" id="1_05uyy"]
 [ext_resource type="Texture2D" uid="uid://t3c1f1uius5x" path="res://pause_menu/фото общага 1.png" id="1_nwcfo"]
 [ext_resource type="FontFile" uid="uid://cxswcsdbqjj8u" path="res://main_menu/Jorick-Regular.ttf" id="2_nwcfo"]
 
-[node name="pause_menu" type="CanvasLayer" unique_id=1751965028]
+[node name="хуйня подзалупная" type="Control" unique_id=1653833075]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_05uyy")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1034385644]
+[node name="Canva" type="CanvasLayer" parent="." unique_id=846991868]
+
+[node name="TextureRect" type="TextureRect" parent="Canva" unique_id=1174223297]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -15,7 +23,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_nwcfo")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1233427775]
+[node name="VBoxContainer" type="VBoxContainer" parent="Canva" unique_id=1082049670]
 offset_left = 415.0
 offset_top = 164.0
 offset_right = 1551.0
@@ -23,14 +31,14 @@ offset_bottom = 897.0
 theme_override_constants/separation = 12
 alignment = 1
 
-[node name="Label" type="Label" parent="VBoxContainer" unique_id=1059450314]
+[node name="Label" type="Label" parent="Canva/VBoxContainer" unique_id=333178543]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_nwcfo")
 theme_override_font_sizes/font_size = 45
 text = "ПАУЗА"
 horizontal_alignment = 1
 
-[node name="ResumeButton" type="Button" parent="VBoxContainer" unique_id=871365468]
+[node name="ResumeButton" type="Button" parent="Canva/VBoxContainer" unique_id=1793012247]
 process_mode = 3
 layout_mode = 2
 theme_override_colors/font_outline_color = Color(1, 0, 0, 1)
@@ -39,21 +47,21 @@ theme_override_fonts/font = ExtResource("2_nwcfo")
 theme_override_font_sizes/font_size = 43
 text = "Продолжить"
 
-[node name="MainMenuButton" type="Button" parent="VBoxContainer" unique_id=417627523]
+[node name="MainMenuButton" type="Button" parent="Canva/VBoxContainer" unique_id=1323237357]
 process_mode = 3
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_nwcfo")
 theme_override_font_sizes/font_size = 43
 text = "Главное меню"
 
-[node name="SaveButton" type="Button" parent="VBoxContainer" unique_id=221539951]
+[node name="SaveButton" type="Button" parent="Canva/VBoxContainer" unique_id=20759679]
 process_mode = 3
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_nwcfo")
 theme_override_font_sizes/font_size = 43
 text = "Сохранение"
 
-[node name="SettingsButton" type="Button" parent="VBoxContainer" unique_id=2040517312]
+[node name="SettingsButton" type="Button" parent="Canva/VBoxContainer" unique_id=427454737]
 process_mode = 3
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_nwcfo")

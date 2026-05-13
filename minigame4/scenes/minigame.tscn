@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://by6y32ufiig3s" path="res://minigame4/wire_layer.gd" id="2_hwsak"]
 [ext_resource type="Script" uid="uid://dsyhs8r5vatli" path="res://minigame4/exit.gd" id="3_uwtn2"]
 [ext_resource type="Script" uid="uid://cfu6gy3iyj623" path="res://minigame2/scenes/clue_dialog.gd" id="4_pxxjs"]
-[ext_resource type="FontFile" uid="uid://h5is7nt7qxk5" path="res://Fonts/BF_TEXT_REGULAR.otf" id="5_3ofm1"]
+[ext_resource type="FontFile" uid="uid://cxswcsdbqjj8u" path="res://main_menu/Jorick-Regular.ttf" id="5_t5s0r"]
 [ext_resource type="AudioStream" uid="uid://dnn2foysnog" path="res://sounds/щиток деталь.wav" id="6_t5s0r"]
 [ext_resource type="AudioStream" uid="uid://cstgppbtjcmoe" path="res://sounds/фон щиток.wav" id="7_ss8nw"]
 
@@ -55,7 +55,6 @@ text = "X"
 script = ExtResource("3_uwtn2")
 
 [node name="ClueDialog" type="Panel" parent="." unique_id=218878887]
-visible = false
 layout_mode = 0
 offset_left = 586.0
 offset_top = 304.0
@@ -69,7 +68,7 @@ offset_left = 122.0
 offset_top = 76.0
 offset_right = 611.39136
 offset_bottom = 132.0
-theme_override_fonts/font = ExtResource("5_3ofm1")
+theme_override_fonts/font = ExtResource("5_t5s0r")
 theme_override_font_sizes/font_size = 34
 text = "Вы получили улику!"
 horizontal_alignment = 1
@@ -82,7 +81,7 @@ offset_left = 212.0
 offset_top = 231.0
 offset_right = 519.0455
 offset_bottom = 301.0
-theme_override_fonts/font = ExtResource("5_3ofm1")
+theme_override_fonts/font = ExtResource("5_t5s0r")
 theme_override_font_sizes/font_size = 34
 text = "Продолжить"
 

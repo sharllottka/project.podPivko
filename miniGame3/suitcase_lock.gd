@@ -18,9 +18,6 @@ func _ready():
 	clue_dialog.visible = false
 	update_ui()
 
-func _input(event):
-	if event.is_action_pressed("ui_cancel"):
-		close_menu()
 
 func update_ui():
 	for i in range(4):

@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://c1n70ithjb6a0" path="res://miniGame3/замок.png" id="1_m6bos"]
 [ext_resource type="AudioStream" uid="uid://0vplv0ngb1w3" path="res://miniGame3/для замка.wav" id="3_ktbh8"]
 [ext_resource type="AudioStream" uid="uid://bfwou26akl3vb" path="res://miniGame3/открыть чемодан.wav" id="4_2ussq"]
+[ext_resource type="FontFile" uid="uid://cxswcsdbqjj8u" path="res://main_menu/Jorick-Regular.ttf" id="5_d1w68"]
 [ext_resource type="AudioStream" uid="uid://cwh8yolhwosxb" path="res://miniGame3/error.ogg" id="5_y5n2i"]
 [ext_resource type="Script" uid="uid://cn0fic6l3dkob" path="res://miniGame3/clue_dialog23.gd" id="6_rs0xw"]
 [ext_resource type="FontFile" uid="uid://h5is7nt7qxk5" path="res://Fonts/BF_TEXT_REGULAR.otf" id="7_shqye"]
@@ -39,9 +40,9 @@ texture = ExtResource("1_m6bos")
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1011768548]
 layout_mode = 0
 offset_left = 362.0
-offset_top = 440.0
+offset_top = 454.0
 offset_right = 680.0
-offset_bottom = 571.0
+offset_bottom = 585.0
 scale = Vector2(3.5, 3.5)
 alignment = 1
 
@@ -54,6 +55,7 @@ text = "^"
 
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer" unique_id=1830728643]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("7_shqye")
 text = "0
 "
 horizontal_alignment = 1
@@ -73,6 +75,7 @@ text = "^"
 
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer2" unique_id=1589533707]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("7_shqye")
 text = "0
 "
 horizontal_alignment = 1
@@ -92,6 +95,7 @@ text = "^"
 
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer3" unique_id=1317869550]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("7_shqye")
 text = "0
 "
 horizontal_alignment = 1
@@ -111,6 +115,7 @@ text = "^"
 
 [node name="Label" type="Label" parent="HBoxContainer/VBoxContainer4" unique_id=342513580]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("7_shqye")
 text = "0
 "
 horizontal_alignment = 1
@@ -139,7 +144,6 @@ theme_override_font_sizes/font_size = 32
 text = "X"
 
 [node name="ClueDialog" type="Panel" parent="." unique_id=691153949]
-visible = false
 layout_mode = 0
 offset_left = 618.0
 offset_top = 351.0
@@ -153,7 +157,7 @@ offset_left = -7.0
 offset_top = 98.0
 offset_right = 733.19354
 offset_bottom = 175.0
-theme_override_fonts/font = ExtResource("7_shqye")
+theme_override_fonts/font = ExtResource("5_d1w68")
 theme_override_font_sizes/font_size = 44
 text = "Вы получили улику!"
 horizontal_alignment = 1
@@ -166,7 +170,7 @@ offset_left = 172.0
 offset_top = 259.0
 offset_right = 541.4839
 offset_bottom = 342.0
-theme_override_fonts/font = ExtResource("7_shqye")
+theme_override_fonts/font = ExtResource("5_d1w68")
 theme_override_font_sizes/font_size = 34
 text = "Продолжить"
 

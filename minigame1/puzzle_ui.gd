@@ -54,10 +54,6 @@ func close_menu():
 func _on_button_pressed() -> void:
 	close_menu()
 
-func _input(event):
-	if event.is_action_pressed("ui_cancel"): 
-		close_menu()
-
 func play_pick():
 	if pick_sound:
 		pick_sound.pitch_scale = randf_range(0.9, 1.1)

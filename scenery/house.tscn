@@ -3254,16 +3254,10 @@ transform = Transform3D(-1.7484555e-07, 0, 4, 0, 4, 0, -4, 0, -1.7484555e-07, -2
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.255597, 0)
 
 [node name="люстра" parent="2 этаж/холл 2 эт" unique_id=1692797120 instance=ExtResource("28_egufs")]
-transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09, 19.229967, 13.262431, 36.606686)
-
-[node name="люстра2" parent="2 этаж/холл 2 эт" unique_id=577747468 instance=ExtResource("28_egufs")]
-transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09, 19.229967, 13.262431, 26.030052)
+transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09, 19.229967, 13.262431, 30.606686)
 
 [node name="люстра3" parent="2 этаж/холл 2 эт" unique_id=1745116341 instance=ExtResource("28_egufs")]
-transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09, 2.6542182, 13.262431, 26.030052)
-
-[node name="люстра4" parent="2 этаж/холл 2 эт" unique_id=220903207 instance=ExtResource("28_egufs")]
-transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09, 1.9291058, 13.262431, 36.606686)
+transform = Transform3D(-4.371139e-09, 0, 0.1, 0, 0.1, 0, -0.1, 0, -4.371139e-09, 2.6542182, 13.262431, 30.567844)
 
 [node name="Sketchfab_Scene2" parent="2 этаж" unique_id=1596666343 instance=ExtResource("19_jslb4")]
 transform = Transform3D(-1.355053e-07, 0, 3.1, 0, 3.1, 0, -3.1, 0, -1.355053e-07, 7.55, 5.459382, 38.941)

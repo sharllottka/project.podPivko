@@ -19,22 +19,27 @@
 [ext_resource type="Script" uid="uid://r1wubi0gylkg" path="res://dialogues/shadow.gd" id="14_lh335"]
 [ext_resource type="PackedScene" uid="uid://37eppmr10wbj" path="res://dialogues/dialogue_ui.tscn" id="14_ta7ci"]
 [ext_resource type="PackedScene" uid="uid://pw7yenedrbcb" path="res://dialogues/dialogue_trigger.tscn" id="15_lh335"]
-[ext_resource type="Script" path="res://finalwin/final1.gd" id="20_3ca7f"]
-[ext_resource type="PackedScene" path="res://finalwin/final_area.tscn" id="20_kogck"]
+[ext_resource type="Script" uid="uid://nan1cdpsalo" path="res://finalwin/final1.gd" id="20_3ca7f"]
+[ext_resource type="PackedScene" uid="uid://17ts1ok0c351" path="res://finalwin/final_area.tscn" id="20_kogck"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_hjsbj"]
 sky_top_color = Color(0, 0, 0, 1)
 sky_horizon_color = Color(0, 0, 0, 1)
+sky_energy_multiplier = 0.0
 sky_cover_modulate = Color(0, 0, 0, 1)
 ground_bottom_color = Color(0, 0, 0, 1)
 ground_horizon_color = Color(0, 0, 0, 1)
+sun_curve = 1e-05
+use_debanding = false
+energy_multiplier = 0.0
 
 [sub_resource type="Sky" id="Sky_cwqvt"]
 sky_material = SubResource("ProceduralSkyMaterial_hjsbj")
 
 [sub_resource type="Environment" id="Environment_5mrsh"]
-background_mode = 2
+background_mode = 1
 sky = SubResource("Sky_cwqvt")
+reflected_light_source = 1
 tonemap_mode = 2
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_umreq"]

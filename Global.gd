@@ -40,6 +40,7 @@ var sleep_thoughts = {
 	5: "Всё стало на свои места... Мне нужно поговорить с комендантом. Иду на выход."
 }
 
+
 func show_thought(text: String, duration: float = 4.0):
 	if thought_label:
 		thought_label.text = text

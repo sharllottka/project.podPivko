@@ -571,5 +571,5 @@ bus = &"SFX"
 stream = ExtResource("17_whupq")
 bus = &"SFX"
 
-[connection signal="pressed" from="UI/ClueDialog/ContinueButton" to="UI/ClueDialog" method="_on_continue"]
 [connection signal="pressed" from="UI/ClueDialog/ContinueButton" to="UI/ClueDialog" method="_on_continue_button_pressed"]
+[connection signal="pressed" from="UI/ClueDialog/ContinueButton" to="UI/ClueDialog" method="_on_continue"]

@@ -6,7 +6,6 @@ var current_day: int = 1
 # Счётчики за текущий день
 var correct_today: int = 0
 var incorrect_today: int = 0
-
 var day_rules: Array[String] = [
 	"Сегодня нельзя пропускать студентов с Юрфака",
 	"Сегодня нельзя пропускать студентов без печати",
@@ -33,6 +32,32 @@ const MAX_WARNINGS: int = 3
 signal day_ended
 signal game_over
 signal all_days_completed
+
+# В начало файла добавь
+var _level_instance: Node = null
+
+func preload_level() -> void:
+	if _level_instance != null:
+		return  # уже загружен, выходим
+	var packed = load("res://levels/level.tscn")
+	_level_instance = packed.instantiate()
+	_level_instance.visible = false
+	_level_instance.process_mode = Node.PROCESS_MODE_DISABLED
+	get_tree().root.add_child(_level_instance)
+
+func go_to_level() -> void:
+	if _level_instance == null:
+		preload_level()
+	if get_tree().current_scene != _level_instance:
+		get_tree().current_scene.visible = false
+	# Скрываем текущую сцену
+	get_tree().current_scene.visible = false
+	_level_instance.visible = true
+	_level_instance.process_mode = Node.PROCESS_MODE_INHERIT  # ← размораживаем
+	get_tree().current_scene = _level_instance
+	var player_cam = _level_instance.get_node_or_null("player/Camera3D")
+	if player_cam and player_cam.has_method("_initialize"):
+		player_cam._initialize()
 
 func process_decision(stamp_result: String, is_monster: bool) -> void:
 	var correct = (stamp_result == "approved") != is_monster

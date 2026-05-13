@@ -3,7 +3,7 @@ extends Node3D
 @export var available_on_night: int = 1
 
 func _ready():
-	if Global.current_night != available_on_night:
+	if Global.current_night != available_on_night or Global.puzzle_done:
 		visible = false
 		_disable_all(self)
 

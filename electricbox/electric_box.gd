@@ -6,7 +6,7 @@ extends Area3D
 
 func _ready():
 	if Global.current_night != available_on_night:
-		visible = false
+		visible = true
 		$CollisionShape3D.disabled = true
 
 func open_minigame():

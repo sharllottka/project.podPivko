@@ -49,3 +49,5 @@ func show_thought(text: String, duration: float = 4.0):
 
 		if is_instance_valid(thought_label):
 			thought_label.visible = false
+
+var note_open: bool = false

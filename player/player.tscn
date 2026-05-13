@@ -58,6 +58,7 @@ text = "Улик собрано: 0/5"
 horizontal_alignment = 1
 
 [node name="NotePanel" type="Panel" parent="CanvasLayer" unique_id=1782311088]
+process_mode = 3
 visible = false
 offset_left = 455.0
 offset_top = 197.0
@@ -65,9 +66,20 @@ offset_right = 1479.7668
 offset_bottom = 832.0
 
 [node name="ЗапискаRemovebgPreview" type="Sprite2D" parent="CanvasLayer/NotePanel" unique_id=713736369]
+process_mode = 3
 position = Vector2(508, 313)
 scale = Vector2(0.8333333, 0.8333333)
 texture = ExtResource("3_g1dw6")
+
+[node name="CloseButton" type="Button" parent="CanvasLayer/NotePanel" unique_id=2001745084]
+process_mode = 3
+layout_mode = 0
+offset_left = 907.0
+offset_top = 31.0
+offset_right = 981.0
+offset_bottom = 97.0
+theme_override_font_sizes/font_size = 32
+text = "X"
 
 [node name="NotificationLabel" type="Label" parent="CanvasLayer" unique_id=1067764482]
 visible = false
@@ -106,3 +118,5 @@ target_position = Vector3(0, -0.75, 0)
 [node name="stepSound" type="AudioStreamPlayer" parent="." unique_id=508986709]
 stream = ExtResource("5_qjkh3")
 bus = &"SFX"
+
+[connection signal="pressed" from="CanvasLayer/NotePanel/CloseButton" to="CanvasLayer/NotePanel/CloseButton" method="_on_pressed"]

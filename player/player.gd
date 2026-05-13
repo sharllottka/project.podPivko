@@ -17,8 +17,14 @@ var _last_frame_was_on_floor = -INF
 func _ready():
 	Global.thought_label = find_child("ThoughtLabel")
 	if Global.pending_thought != "":
+		await get_tree().process_frame
+		await get_tree().process_frame
 		Global.show_thought(Global.pending_thought)
 		Global.pending_thought = ""
+	var close_btn = find_child("CloseButton")
+	if close_btn:
+		close_btn.pressed.connect(toggle_note)
+
 
 func _physics_process(delta: float) -> void:
 	if is_on_floor(): _last_frame_was_on_floor = Engine.get_physics_frames()
@@ -110,5 +116,12 @@ func toggle_note():
 	note_panel.visible = !note_panel.visible
 	if note_panel.visible:
 		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+		Global.note_open = true
+		SPEED = 0.0
+		velocity = Vector3.ZERO
+		if notification_label:
+			notification_label.visible = false
 	else:
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+		Global.note_open = false
+		SPEED = 5.0

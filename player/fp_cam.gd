@@ -24,6 +24,8 @@ func _check_interaction_ui() -> void:
 		interact_label.visible = false
 
 func _input(event: InputEvent) -> void:
+	if Global.note_open:
+		return
 	if event is InputEventMouseMotion:
 		get_parent().rotate_y(deg_to_rad(-event.relative.x * Global.mouse_sensitivity))
 		rotate_x(deg_to_rad(-event.relative.y * Global.mouse_sensitivity))

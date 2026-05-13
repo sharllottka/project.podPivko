@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://bnsupk1382a06"]
+
+[ext_resource type="Script" uid="uid://dcr5s458y0pl5" path="res://bed_end/bad_ending.gd" id="1_e3xva"]
+[ext_resource type="FontFile" uid="uid://cxswcsdbqjj8u" path="res://main_menu/Jorick-Regular.ttf" id="2_kp8d2"]
+[ext_resource type="AudioStream" uid="uid://m6nr3j7qdxjf" path="res://sounds/плохой конец.mp3" id="3_gahbe"]
+
+[node name="BadEnding" type="Control" unique_id=780381834]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e3xva")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=871557669]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Label" type="Label" parent="." unique_id=530408109]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -159.5
+offset_top = -106.0
+offset_right = 159.5
+offset_bottom = 106.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("2_kp8d2")
+theme_override_font_sizes/font_size = 80
+text = "КОНЕЦ"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="EndSound" type="AudioStreamPlayer" parent="." unique_id=1180983870]
+stream = ExtResource("3_gahbe")

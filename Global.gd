@@ -1,4 +1,5 @@
 extends Node
+var is_loading_save: bool = false
 var player_pos: Vector3 = Vector3.ZERO
 var clues_count: int = 0
 var last_scene: String = "day"

@@ -20,14 +20,13 @@ func _on_continue():
 		await get_tree().process_frame
 		SaveManager.load_game()
 		if Global.last_scene == "night":
-			get_tree().change_scene_to_file("res://levels/level.tscn")
+			get_tree().change_scene_to_packed(Global.get_level())
 		else:
 			get_tree().change_scene_to_file("res://Document check/src/main.tscn")
 	else:
 		$VBoxContainer/Button4.text = "Нет сохранений!"
 		await get_tree().create_timer(1.5).timeout
 		$VBoxContainer/Button4.text = "Продолжить"
-
 func _on_start():
 	bg_music.stop()
 	$VBoxContainer/Button.text = "Загрузка..."

@@ -1,7 +1,13 @@
 extends Node3D
 
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
+
+func _ready():
 	PauseManager.is_3d = true
-	pass # Replace with function body.
+	# ОЧЕНЬ ВАЖНО: ждем один кадр, чтобы 3D-объекты (мебель, свет) 
+	# успели инициализироваться в дереве сцены
+	await get_tree().process_frame 
+	
+	if Global.is_loading_save:
+		SaveManager.load_game() # Теперь данные лягут на готовые объекты
+		Global.is_loading_save = false # Сбрасываем флаг
